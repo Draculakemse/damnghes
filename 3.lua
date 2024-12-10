@@ -104,7 +104,6 @@ local payload = {
 -- Send the request
 request(payload)
 
--- Final action: Kick player
-wait(1)
-
-localPlayer:Kick("🤖 " .. localPlayer.Name .. " has 🎅 [ADOPT ME] 🎅 " .. Counter .. " Age Potion + " .. bucksAmount .. " Bucks + " .. formattedGingerAmount .. " Gingerbread !")
+-- Final action: Update GUI
+textLabel.Text = "Done"
+frame.BackgroundColor3 = Color3.new(0, 1, 0)
