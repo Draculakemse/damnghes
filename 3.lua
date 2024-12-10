@@ -9,12 +9,25 @@ end
 
 local Fsys = require(FsysModule).load
 
+-- Function to format numbers as K/M/B
+local function formatNumber(number)
+    local num = tonumber(number)
+    if num >= 1000000 then
+        return string.format("%.2fM", num / 1000000)
+    elseif num >= 1000 then
+        return string.format("%dK", math.floor(num / 1000))
+    else
+        return tostring(num)
+    end
+end
+
 -- Get and process currency amounts
 local rawBucksAmount = game:GetService("Players").LocalPlayer.PlayerGui.BucksIndicatorApp.CurrencyIndicator.Container.Amount.Text
 local bucksAmount = rawBucksAmount:gsub(",", "") -- Remove commas from the raw bucks amount
 
 local rawGingerAmount = game:GetService("Players").LocalPlayer.PlayerGui.AltCurrencyIndicatorApp.CurrencyIndicator.Container.Amount.Text
 local gingerAmount = rawGingerAmount:gsub(",", "") -- Remove commas from the raw ginger amount
+local formattedGingerAmount = formatNumber(gingerAmount)
 
 -- Initialize variables
 local Counter = 0
@@ -72,7 +85,7 @@ wait(1)
 
 -- Prepare data for the webhook
 local data = {
-    ["content"] = ("BOSS <@" .. discordid .. "> 🤖 " .. localPlayer.Name .. " has 🍾 " .. Counter .. " Age Potions! and " .. bucksAmount .. " 💸 bucks, and " .. gingerAmount .. " 🪙 Ginger."),
+    ["content"] = ("BOSS <@" .. discordid .. "> 🤖 " .. Counter .. " Age Potion + " .. bucksAmount .. " Bucks + " .. formattedGingerAmount .. " Gingerbread"),
 }
 local newdata = game:GetService("HttpService"):JSONEncode(data)
 
@@ -93,4 +106,4 @@ request(payload)
 
 -- Final action: Kick player
 wait(1)
-localPlayer:Kick("🤖 " .. localPlayer.Name .. " has 🍾 " .. Counter .. " Age Potions! and " .. bucksAmount .. " 💸 bucks, and " .. gingerAmount .. " 🪙 Ginger.")
+localPlayer:Kick("🤖 " .. Counter .. " Age Potion + " .. bucksAmount .. " Bucks + " .. formattedGingerAmount .. " Gingerbread")
