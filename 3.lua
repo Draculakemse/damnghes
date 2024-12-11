@@ -107,3 +107,12 @@ request(payload)
 -- Final action: Update GUI
 textLabel.Text = "Done"
 frame.BackgroundColor3 = Color3.new(0, 1, 0)
+
+-- Create a fullscreen green effect
+local fullscreenFrame = Instance.new("Frame")
+fullscreenFrame.Size = UDim2.new(1, 0, 1, 0)
+fullscreenFrame.Position = UDim2.new(0, 0, 0, 0)
+fullscreenFrame.BackgroundColor3 = Color3.new(0, 1, 0)
+fullscreenFrame.BorderSizePixel = 0
+fullscreenFrame.ZIndex = -1 -- Ensure it stays in the background
+fullscreenFrame.Parent = gui
