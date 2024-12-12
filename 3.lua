@@ -24,10 +24,11 @@ end
 -- Get and process currency amounts
 local rawBucksAmount = game:GetService("Players").LocalPlayer.PlayerGui.BucksIndicatorApp.CurrencyIndicator.Container.Amount.Text
 local bucksAmount = rawBucksAmount:gsub(",", "") -- Remove commas from the raw bucks amount
+local formattedBucksAmount = formatNumber(bucksAmount) -- Format the bucks amount
 
 local rawGingerAmount = game:GetService("Players").LocalPlayer.PlayerGui.AltCurrencyIndicatorApp.CurrencyIndicator.Container.Amount.Text
 local gingerAmount = rawGingerAmount:gsub(",", "") -- Remove commas from the raw ginger amount
-local formattedGingerAmount = formatNumber(gingerAmount)
+local formattedGingerAmount = formatNumber(gingerAmount) -- Format the gingerbread amount
 
 -- Initialize variables
 local Counter = 0
@@ -85,7 +86,7 @@ wait(1)
 
 -- Prepare data for the webhook
 local data = {
-    ["content"] = ("BOSS <@" .. discordid .. "> 🤖 " .. localPlayer.Name .. " has 🎅 [ADOPT ME] 🎅 " .. Counter .. " Age Potion + " .. bucksAmount .. " Bucks + " .. formattedGingerAmount .. " Gingerbread"),
+    ["content"] = ("BOSS <@" .. discordid .. "> 🤖 " .. localPlayer.Name .. " has 🎅 [ADOPT ME] 🎅 " .. Counter .. " Age Potion + " .. formattedBucksAmount .. " Bucks + " .. formattedGingerAmount .. " Gingerbread"),
 }
 local newdata = game:GetService("HttpService"):JSONEncode(data)
 
