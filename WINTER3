@@ -1,3 +1,7 @@
+   task.spawn(function()
+    loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/e4315db490a84e920190f83279c4732e.lua"))()
+end)
+
 function Optimizer()
     print("-- Boost Performance Activated --")
     UserSettings():GetService("UserGameSettings").MasterVolume = 0
@@ -132,10 +136,6 @@ if game.Players.LocalPlayer.Name == getgenv().Config.MainAccount then
     for i, v in pairs(debug.getupvalue(require(game:GetService("ReplicatedStorage").ClientModules.Core.RouterClient.RouterClient).init, 7)) do
         v.Name = i 
     end
-
-   task.spawn(function()
-    loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/e4315db490a84e920190f83279c4732e.lua"))()
-end)
 
     task.spawn(function()
         task.wait(30)
