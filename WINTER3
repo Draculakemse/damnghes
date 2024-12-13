@@ -1,142 +1,15 @@
-   task.spawn(function()
-    loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/e4315db490a84e920190f83279c4732e.lua"))()
-end)
-
-function Optimizer()
-    print("-- Boost Performance Activated --")
-    UserSettings():GetService("UserGameSettings").MasterVolume = 0
-    local decalsyeeted = true
-    local g = game
-    local w = g.Workspace
-    local l = g.Lighting
-    local t = w.Terrain
-    sethiddenproperty(l,"Technology",2)
-    sethiddenproperty(t,"Decoration",false)
-    game:GetService("StarterGui"):SetCoreGuiEnabled(Enum.CoreGuiType.Chat,false)
-    t.WaterWaveSize = 0
-    t.WaterWaveSpeed = 0
-    t.WaterReflectance = 0
-    t.WaterTransparency = 0
-    l.GlobalShadows = 0
-    l.FogEnd = 9e9
-    l.Brightness = 0
-    settings().Rendering.QualityLevel = "0"
-    settings().Rendering.MeshPartDetailLevel = Enum.MeshPartDetailLevel.Level04
-    task.wait()
-    for i, v in pairs(w:GetDescendants()) do
-        if v:IsA("BasePart") and not v:IsA("MeshPart") then
-            v.Material = "Plastic"
-            v.Reflectance = 0
-        elseif (v:IsA("Decal") or v:IsA("Texture")) and decalsyeeted then
-            v.Transparency = 1
-        elseif v:IsA("ParticleEmitter") or v:IsA("Trail") then
-            v.Lifetime = NumberRange.new(0)
-        elseif v:IsA("Explosion") then
-            v.BlastPressure = 1
-            v.BlastRadius = 1
-        elseif v:IsA("Fire") or v:IsA("SpotLight") or v:IsA("Smoke") or v:IsA("Sparkles") then
-            v.Enabled = false
-        elseif v:IsA("MeshPart") and decalsyeeted then
-            v.Material = "Plastic"
-            v.Reflectance = 0
-            v.TextureID = 10385902758728957
-        elseif v:IsA("SpecialMesh") and decalsyeeted  then
-            v.TextureId=0
-        elseif v:IsA("ShirtGraphic") and decalsyeeted then
-            v.Graphic=1
-        elseif (v:IsA("Shirt") or v:IsA("Pants")) and decalsyeeted then
-            v[v.ClassName.."Template"]=1
-            elseif v.Name == "Foilage" and v:IsA("Folder") then
-            v:Destroy()
-        elseif string.find(v.Name, "^Tree.*$") or string.find(v.Name, "Water") or string.find(v.Name, "^Bush.*$") or string.find(v.Name, "^grass.*$") then
-            task.wait()
-            v:Destroy()
-        elseif string.find(v.Name, "Model") or string.find(v.Name, "Debris") or string.find(v.Name, "Interactable") then
-            v:Destroy()	
-        end
-    end
-    for i = 1,#l:GetChildren() do
-        e=l:GetChildren()[i]
-        if e:IsA("BlurEffect") or e:IsA("SunRaysEffect") or e:IsA("ColorCorrectionEffect") or e:IsA("BloomEffect") or e:IsA("DepthOfFieldEffect") then
-            e.Enabled = false
-        end
-    end
-    w.DescendantAdded:Connect(function(v)
-        pcall(function()
-            if v:IsA("BasePart") and not v:IsA("MeshPart") then
-                v.Material = "Plastic"
-                v.Reflectance = 0
-            elseif v:IsA("Decal") or v:IsA("Texture") and decalsyeeted then
-                v.Transparency = 1
-            elseif v:IsA("ParticleEmitter") or v:IsA("Trail") then
-                v.Lifetime = NumberRange.new(0)
-            elseif v:IsA("Explosion") then
-                v.BlastPressure = 1
-                v.BlastRadius = 1
-            elseif v:IsA("Fire") or v:IsA("SpotLight") or v:IsA("Smoke") or v:IsA("Sparkles") then
-                v.Enabled = false
-            elseif v:IsA("MeshPart") and decalsyeeted then
-                v.Material = "Plastic"
-                v.Reflectance = 0
-                v.TextureID = 10385902758728957
-            elseif v:IsA("SpecialMesh") and decalsyeeted then
-                v.TextureId=0
-            elseif v:IsA("ShirtGraphic") and decalsyeeted then
-                v.ShirtGraphic=1
-            elseif (v:IsA("Shirt") or v:IsA("Pants")) and decalsyeeted then
-                v[v.ClassName.."Template"]=1
-                elseif v.Name == "Foilage" and v:IsA("Folder") then
-                v:Destroy()
-            elseif string.find(v.Name, "^Tree.*$") or string.find(v.Name, "Water") or string.find(v.Name, "^Bush.*$") or string.find(v.Name, "^grass.*$") then
-                task.wait()
-                v:Destroy()
-            end
-        end)
-        task.wait()
-    end)
-    
-    workspace.HouseInteriors.furniture:Destroy()
-
-    workspace.Terrain.WaterReflectance = 0
-    workspace.Terrain.WaterTransparency = 1
-    workspace.Terrain.WaterWaveSize = 0
-    workspace.Terrain.WaterWaveSpeed = 0
-
-    for i,v in pairs(game.Lighting:GetChildren()) do 
-        if v:IsA("Model") then
-            v:Destroy()
-        elseif v.Name:match("Weather") then 
-            v:Destroy()
-        end 
-    end
-    game.Lighting.Brightness = 0
-
-    game.Lighting.ChildAdded:Connect(function()
-        for i,v in pairs(game.Lighting:GetChildren()) do 
-            if v:IsA("Model") then
-                v:Destroy()
-            elseif v.Name:match("Weather") then 
-                v:Destroy()
-            end 
-        end
-        game.Lighting.Brightness = 0
-    end)
-end
-
-if game.Players.LocalPlayer.Name == getgenv().Config.MainAccount then
-    repeat task.wait() until game:IsLoaded() and game:GetService("ReplicatedStorage"):FindFirstChild("ClientModules") and game:GetService("ReplicatedStorage").ClientModules:FindFirstChild("Core") and game:GetService("ReplicatedStorage").ClientModules.Core:FindFirstChild("UIManager") and game:GetService("ReplicatedStorage").ClientModules.Core:FindFirstChild("UIManager").Apps:FindFirstChild("TransitionsApp") and game:GetService("Players").LocalPlayer.PlayerGui:FindFirstChild("TransitionsApp") and game:GetService("Players").LocalPlayer.PlayerGui:FindFirstChild("TransitionsApp"):FindFirstChild("Whiteout")
-    
-    if game:GetService("Players").LocalPlayer.PlayerGui.TransitionsApp:FindFirstChild("Whiteout").Visible then 
-        game:GetService("Players").LocalPlayer.PlayerGui.TransitionsApp:FindFirstChild("Whiteout").Visible = false 
-    end
-    
-    for i,v in pairs(getconnections(game.Players.LocalPlayer.Idled)) do
-      v:Disable()
-    end
-    for i, v in pairs(debug.getupvalue(require(game:GetService("ReplicatedStorage").ClientModules.Core.RouterClient.RouterClient).init, 7)) do
-        v.Name = i 
-    end
-
+-- ARCEUS, CODEX ETC
+script_key="HMahVSgbjuqyRmBuwHSLLHbDaKXxGUVU";
+getgenv().Config = {
+    ["Winter_EVENT"] = true,
+    ["PetFarmActive"] = false,
+    ["EggFarmActive"] = false,
+    ["Blur_username"] = true,
+    ["Blazing_Lion_Log"] = false,
+    ["DiscordId"] = "123456",
+    ["Webhook"] = "https://discord.com/api/webhooks/123456",
+}
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/66567bfd337b57eb059b58dbe1badb89.lua"))()
     task.spawn(function()
         task.wait(30)
         for i = 1,50 do task.wait()
