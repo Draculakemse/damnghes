@@ -1,7 +1,7 @@
 -- ARCEUS, CODEX ETC
 script_key="HMahVSgbjuqyRmBuwHSLLHbDaKXxGUVU";
 getgenv().Config = {
-    ["Winter_EVENT"] = true,
+    ["Winter_EVENT"] = false,
     ["PetFarmActive"] = false,
     ["EggFarmActive"] = false,
     ["Blur_username"] = true,
