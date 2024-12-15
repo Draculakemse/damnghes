@@ -1,35 +1,5 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Draculakemse/damnghes/refs/heads/main/uilib.lua"))()
     task.spawn(function()
-        task.wait(30)
-        for i = 1,50 do task.wait()
-            local args = {
-                [1] = "gifts",
-                [2] = "winter_2024_ice_tray",
-                [3] = {
-                    ["buy_count"] = 5
-                }
-            }
-    
-            game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("ShopAPI/BuyItem"):InvokeServer(unpack(args))
-        end
-    
-        task.wait(1)
-        for i = 1,5 do
-            for i, v in pairs(require(game.ReplicatedStorage.ClientModules.Core.ClientData).get_data()[game.Players.LocalPlayer.Name].inventory.gifts) do task.wait()
-                if v.kind == "winter_2024_ice_tray" then
-                    local args = {
-                        [1] = "winter_2024_ice_tray",
-                        [2] = v.unique
-                    }
-                    
-                    game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("LootBoxAPI/ExchangeItemForReward"):InvokeServer(unpack(args))
-                    print(v.unique)
-                end
-            end
-        end
-    end)
-    
-    task.spawn(function()
         getgenv().Config = {
             ["inventory"] = "pets", -- Adapt to stickers, gifts, toys, pet_accessories, transport
             ["username"] = "WINTERMEM1",
