@@ -1,1 +1,1997 @@
-([[This file was protected with MoonSec V3]]):gsub('.+', (function(a) _XcDJgSJBicKe = a; end)); return(function(f,...)local s;local h;local l;local o;local r;local t;local e=24915;local n=0;local d={};while n<611 do n=n+1;while n<0x1ed and e%0x472c<0x2396 do n=n+1 e=(e-837)%3765 local a=n+e if(e%0xd92)>=0x6c9 then e=(e+0x254)%0xc0e2 while n<0x1a0 and e%0x1c88<0xe44 do n=n+1 e=(e+229)%40770 local l=n+e if(e%0x1ca4)>0xe52 then e=(e+0x3a0)%0x181e local e=86521 if not d[e]then d[e]=0x1 o="\4\8\116\111\110\117\109\98\101\114\85\68\122\80\79\81\71\107\0\6\115\116\114\105\110\103\4\99\104\97\114\106\114\89\112\82\85\112\68\0\6\115\116\114\105\110\103\3\115\117\98\68\67\84\104\83\80\114\90\0\6\115\116\114\105\110\103\4\98\121\116\101\76\99\112\112\102\82\77\69\0\5\116\97\98\108\101\6\99\111\110\99\97\116\66\117\108\117\113\108\95\68\0\5\116\97\98\108\101\6\105\110\115\101\114\116\86\104\76\80\71\122\104\107\5";end elseif e%2~=0 then e=(e*0x1ef)%0x1c00 local e=45906 if not d[e]then d[e]=0x1 s=tonumber;end else e=(e*0x3f5)%0x78cb n=n+1 local e=83953 if not d[e]then d[e]=0x1 t=(not t)and _ENV or t;end end end elseif e%2~=0 then e=(e*0x7e)%0x4dd7 while n<0x1f9 and e%0x15f0<0xaf8 do n=n+1 e=(e+98)%5753 local o=n+e if(e%0x135e)<=0x9af then e=(e+0x32b)%0x7213 local e=84895 if not d[e]then d[e]=0x1 t=getfenv and getfenv();end elseif e%2~=0 then e=(e+0xe4)%0x69ac local e=41317 if not d[e]then d[e]=0x1 end else e=(e*0x2f8)%0x713a n=n+1 local e=461 if not d[e]then d[e]=0x1 r=function(d)local e=0x01 local function n(n)e=e+n return d:sub(e-n,e-0x01)end while true do local d=n(0x01)if(d=="\5")then break end local e=h.byte(n(0x01))local e=n(e)if d=="\2"then e=l.UDzPOQGk(e)elseif d=="\3"then e=e~="\0"elseif d=="\6"then t[e]=function(n,e)return f(8,nil,f,e,n)end elseif d=="\4"then e=t[e]elseif d=="\0"then e=t[e][n(h.byte(n(0x01)))];end local n=n(0x08)l[n]=e end end end end end else e=(e+0x39d)%0x552c n=n+1 while n<0x94 and e%0x28e2<0x1471 do n=n+1 e=(e*776)%20118 local t=n+e if(e%0x3540)>=0x1aa0 then e=(e+0x3c3)%0x5725 local e=77055 if not d[e]then d[e]=0x1 h=string;end elseif e%2~=0 then e=(e-0xd3)%0x1dee local e=43475 if not d[e]then d[e]=0x1 end else e=(e*0xfb)%0x49ed n=n+1 local e=74740 if not d[e]then d[e]=0x1 l={};end end end end end e=(e*865)%37265 end r(o);local e={};for n=0x0,0xff do local d=l.jrYpRUpD(n);e[n]=d;e[d]=n;end local function a(n)return e[n];end local h=(function(o,r)local f,d=0x01,0x10 local n={{},{},{}}local t=-0x01 local e=0x01 local h=o while true do n[0x03][l.DCThSPrZ(r,e,(function()e=f+e return e-0x01 end)())]=(function()t=t+0x01 return t end)()if t==(0x0f)then t=""d=0x000 break end end local t=#r while e<t+0x01 do n[0x02][d]=l.DCThSPrZ(r,e,(function()e=f+e return e-0x01 end)())d=d+0x01 if d%0x02==0x00 then d=0x00 l.VhLPGzhk(n[0x01],(a((((n[0x03][n[0x02][0x00]]or 0x00)*0x10)+(n[0x03][n[0x02][0x01]]or 0x00)+h)%0x100)));h=o+h;end end return l.Buluql_D(n[0x01])end);r(h(232,"!S2xTQ)*HnhIUpb.ShxxHSnQISbm.SSn2hQhQH)2h*Q2)nI>bnSbx{x2)SQ.*In)Qh*SInb.S22xQ2Tx*p**HU)2*IUTp..xTF)h*nnQhhh*hnUHnhIx.nS)2nHH*QhhnUpppI..2Hp2bpxTTH)Q*.nSpS.2.p2TS.Qb*2HIxhQxn.Inp{.Hx.Q2TSHh)pnLUH*2HIpx.SAnQT)2HIHhhUpSIb.2hhUxNI2QxHnnn.ISUFpxbS.QSIb2.ITHQb*)U.U*pn.)e.SIx.)IShxQ*hnNISUxp.xHTSQp*I*2*hnUIpH2nUbS.pS22hQ***hTh2bh.bb*AUp2bIx*Tb)SnnInbH.hS*+S2U)QYh2x)pHSnnUT>pRHxx2SQ2*QnxT2QphxIbpTbU1Q2.Qx)*hHhnUxb,pIhhUSkhxnQhHhH2hxUpbUb2I2UnSxxb)QnpHQInU2pHSnIhpSSU))HQHhnnpQIUphSQU2pn2Q)*H2HSh*hh., h.IUhbS2b)QHIn)hSpxUn.h.Up2bIx2Tp))n.hpppbG}.#UT.)#7h22)hHiUpbnbT2LxpTIQbQ*2hT2HIh2.S=Q2nSQ2b*h*n*STh)2hhUSupS*T*)QTh**hnU))hH2UIbSSdxP))HgHUHQhIUnHhhTbhE4SUx*)x*SI*Uxp2pU.T22ph.TxnQj)hHxhhbn0x.SxTxQ)IHH2hT2Hph2.)S)x22SQQThHwhsTh)2hnU)SUSx2S)**UHQ*nUj)hHSU.2)2SxS))*QnphSUQ*2Hhp)bIShTUTUH2HTUSUnppn2hh.){nxQQTHnhxIQhIph.{I2UhST2nQIHpnQUHbx12..2hp2bhxHT.*)n.UhbTwQSQl*T*.20hQ2*/UQpxbTbI.*2*xhxhS22h*THHpnb*bH.h2HxQ))Hnx2ThnThh.)SIx2xb)S*n)HhQQ2)hIxUHS.SnTHxhQn*lhQp2*2HhpTbUT))2)2)nn.hUp*p.n2hh.Q_n)Q*2Hb*.UyUIpxp.I2UhSTx/*hH*HIUbb).ybS23p2bhxTQSHSIUUbpr.U.b>n2Q.2_hQQ)HnQpTUS.I2S2hxHQ*S22h*2HUI)b.4);SS*xbTnHIx2Thn*hIpp.pxQTBQh*p)hhhQ2)hITUp2*TST2xn*S*HhSp2*2HhpTbIx.Q.)xHnn)U&U2IIn2hh.)j.Q.TIHShpnIpnp)b2I2UhST2.)SH6n.nnUQpT-Us2p2bhxnThnIhnU2bU.TSnS)Tx.2(hQn)II.p*.hStSQ2px))SSQ"));r(h(78,"xoWV!MJk<-YO{3Q_OWJY<-V{Q{-M!{_k!JM<oO{MkYof3QkMoYQV-kVOQJMbDVWn{MkMVWQ!<-!!_YO-!J_3-{MMOOko<Q!WQOYWMY_k-W!3_=3!J!WJ{3W<QG__OWJW O{WJ3O33kk3!WQV-YVQQVYYJ3_-YOM-VJk!WY!MQOO4MJYMOQJ<oOQ7<YoW_o-OWkQ---J<LOJBoYVV3k-<!VQ3YQ!3oWOoJ!WS{OJQo_{OkYW-_3<OM-Y{JoJWWV3V-J!V_<JO!Voo-<JOoMYYM<#QkQVhMM_oYOJ<Q-OYkYW<3:J{W-_ZV<Q-3VYFJovYOYJ3VQQ3k_Q9-JO!Jook{YkYWV3Y<MVkQQ<<W3_E-YJk_YJqokV<3k<Y!J_o!!JMoI{!JkoO3M<QoY_-kk!QQkY3MVOtJ!<MViQ!<kVO_MY_M<o<YkJVo{3{k{31<VYRM!_3O!J{ooOJMoo!OY-kWW3!VQ_WooOMJQo-{-<{VOQ_<V!<_!Y-JOLoMYo0WO3o-JV{<O-QMJ/OO3kW2V3okMVM3_k{VWQW!k"));local e=(-l.PIYRjPBo+(function()local t,d=l.QnhRiOSV,l.OZSjCeGD;(function(e,n)n(n(e,n)and n(e,e and n),e(e,e))end)(function(e,n)if t>l.hzqurWAH then return e end t=t+l.OZSjCeGD d=(d*l.xMjDmS_p)%l.YbUdGnjk if(d%l.HwrIzEPp)<l.lbsZdqFb then return n(e(n,e),e(n and e,n))else return e end return e end,function(e,n)if t>l.ygaXSIES then return e end t=t+l.OZSjCeGD d=(d*l.wWQVWKWk)%l.ximsRBLU if(d%l.GOdJzvGT)<=l.QYpjoATu then d=(d+l.DuXkAZek)%l.GSOxachK return e else return n(e(e and e,e)and n(e,n),n(n and n,n))end return n(n(n,e),e(e,e))end)return d;end)())local te=(getfenv)or(function()return _ENV end);local a=l.sjxU_ftb or l.rLyEjQeY;local t=l.IRjJSelJ;local ee=l.OZSjCeGD;local r=l.FUuEaRPy;local o=l.fmZQuDJm;local function le(u,...)local c=h(e,"cr/d{.H!_;yS8k2Rd/r{r2/_d/{&{H.B.y8kk82rRH_8;yyzyyS{/./;dR{r2HlyRyi{v2.k;_;ry{S{_Sy{y!;!8H222!R20kIyrk/y/RPRd!.M.R.!HH!r_=r8{ddAdy{{SrS;k/2rk;2_Rdq/Rkky2/22Ry/Rdk{..2HkH.!{!R_2_;yrykSHSk8rkR!W!2_{_2;_r;%krRd{8yk_k22_R/H8HS_{_k/{d.d_{/{8S88Rk8k;kR2SRy;8y8S#Sy8{{d{H{S.kHSH.3yr2r2/_d/ydyS8{8Rk{2{k;22NrRSyYS.S{S28_r2{S{;.rHH.{!y!;;S;ry_{M./.{.2H_k;2rRy2RR2^.//r;8/k:kH2A2yH_.R!S!kr8d(dmdy{{;r8{8Skr2{R{82R.r/B;S/8_8Hk0ky/k.8H2!r!!!S!d_RyHS{yk8{.8Hy!7!y_{k{uSrSrRS;8N8yk{k22_R/R8{HrK/!/{/2d_yry{S;y{S{kSkrk/k{I.p;RSrR8{kHk_2/28HyHR!k__;C;ry0yd{H...yH{H2282d22A/J.yySSS28_k/{2{SHrHRHk_w!k//d_dH{z{yySSRkr2H8/R.a/kk18r!/{/H882!2M2yR{.FHk_/___R;d;SS_SdS8S.2m2.R/2SRSndy_S_S88HkK{!.d.8HdH!_.rH///yd{d2SrSH.8Hy!i!y_{Ryw!Ldr SH8H8yk{k2.kH3H8H!!d_./{ddd_{/{88Hk/kd2/R/__;R;8yHS0RkdBd!dk.eHi{dHRH2_;_y_ky.d8{R.).yH{k!2HR_Rr6{r{r;/Hd!8Sk/k82HRURy&{r2._//dddH{T{yy{8y8;2S2rR_xd;yy2y2S_8/rddS.{dk.;!#!2!S!R_Sdz.d{{{2._yRkS2.22kkR;&rt!z.dmd_d;{_{SHr{QHS!Q!y_.;_!.S/S88{.8!/!e!y_{2a}!r!/nrSd/tk{N{!{kH1!vpHr.ry/{/2y_ydS.8_kdHy;S!2__;/RW)2r;/k2{d{{r{2.rrH!!HS_!d2;_y{ySSyS.Skk_kdk8y/IdRRr{r/k{=Sd!{r{yd;...k/{H{{S///RdH{O{y;.y2Sr!/_u_H;C;y2!rk/y/!8RkH2L2yR{R2%_5/.S/;8ykdkk2!RrRS/.S._U_S;{;2y_SdS88Hkeky2_22R_K/.y!!_k_RdHd2{_./.8H_!7!y_{;2ySy/ykSH8r8yk{k22_r8R8sHr=rS/{/2d_;/{8.HH,Hyy;!2__;/;kyHS9SykHkrk_2/28r!m+jyr{d4dyd/d8{HHr.yH{H2;2;e_8;Hy^SVS{SR8_RHk82y/{Rym{X2r2///kdH{w!{.{.2H_!d!8_H;Fy8S_y2S_8/2PkH2Q2ytHrRY_rdr8/_d)dy{{H2!5H/Hk!H_r_yyy;28_S_S88!k,kS2{<yR_//U2rH/r/yd.d2H2./!8!y!b!S_{_R;_yRy8SH8.8yk{k22yR/R2eH//d//{/Rd_.H{8.HHw!8__!2_y;/;2yHSGSy2{kSk_2{28R_Px/#r{d2{.d/d2{H./.y!;H2_y;8_8;yygS;S{S28_k/R;2HR/RyJ_l2r_///8{S{J{S.{.2H_!{!8yHy;;yy.y2S;8/2.kH2/rOR{oFF_r/r8/HdK{8.2{2.SH/!R!H_:_yS{S_y_S.S88;kb2r2{VMRye/r9rH/;/yd{d2{_HI.8HS!P!S_{_2;_S{S/SH8H8yRHk22_R/R8r<rjrR/{dDd_{{{8!H!/Hy!;!2_k;/;kyH8/2k8{k{k_zZ28RHB1zyd{r2/8d/{/{H./.yH{_{!__!_8;_y#yyS{S22dk/kR2HR.RyE.B2/y/!/8d;{jHk.{.2H_;/_2_H;{;yy{y28d8/882r2Z22R{RRA_r{r8d_d2dy{;{2HyH/H8!H;/;2;{y{y_S{S88HkIRyRH22R2%/r/rHdR/y.{{y{_._.8H8!)_{_{_2;yy/SrSH8/8ykHk22_Q2R8(yrQr2/{ddd_H/.!.HH{Hy!_!2y.;/S8SSSLS28{k/k_2_28RHr!7yr!r2/yd/{r{H.{_2H{H2!_8R_8;!ya8yS2S2k%k/2d2HP_Ry/y{_r_/y/8H_{#{S.{H/H_!HS-_H;X;ykHy2S;8/khiy2z2yR{{Sh_rdr8d_{{dy{8{2!dH/H8!HyA8r;{y!y_S;S882kJkyZg22BJF/=2rH/r/yd{./{_.y.8HH!o!8_{y2;8y/S.SH8!8yk8k2R_R_R8l2rG{r/{d!d_.{.r.HH;Hy_S!2__;/y8S;S?8/8{k2k_2S28}_r{xyrkr2/yd/d8{H!}__H{!!!__S_8SHyaS8SHS2kdk/R/2HR=Ry*{r8r_/S/8{r{}{8.{!2!y!/_._H;;;yS;y28y8{882r2NgRR{R26_r//_/Hd;dy{R{2.yH/_8!R_ ;d;{y!y_8!S8k_)dky2R22RS#/&8rH/+drd{{!{_.k.8H_!M;y;S_2yry/S.SH828y2H2{2_RkR8/(rzry/{/2dS{/._.HH_Hy!{!2__y;;8SrS58H8{82k_2/BHRHq;Wyr{r2/;d/{2.!.FHdH{!y!__/_8SHyyyySkS2krk/2r2H6/:Rl{r_r_{y/8dH{6{y.y.2!r!/!2_H;r;yyySHS_8.88h{2&2SR{,ps_rH.Y/HdKdy!/{2.;H/H8y}_u_y;{;Ry_S/S8");local n=l.QnhRiOSV;l._hlyTYFM(function()l.CbplbLWl()n=n+l.OZSjCeGD end)local function e(e,d)if d then return n end;n=e+n;end local d,n,k=f(l.QnhRiOSV,f,e,c,l.LcppfRME);local function h()local n,d=l.LcppfRME(c,e(l.OZSjCeGD,l.FUuEaRPy),e(l._bIWBprK,l.UcVIcAZD)+l.IRjJSelJ);e(l.IRjJSelJ);return(d*l.WMePgLwp)+n;end;local _=true;local _=l.QnhRiOSV local function y()local e=n();local n=n();local r=l.OZSjCeGD;local t=(d(n,l.OZSjCeGD,l.eiLpukfG)*(l.IRjJSelJ^l.ieqEFzaA))+e;local e=d(n,l.eWouBWqv,l.HPnpdESY);local n=((-l.OZSjCeGD)^d(n,l.ieqEFzaA));if(e==l.QnhRiOSV)then if(t==_)then return n*l.QnhRiOSV;else e=l.OZSjCeGD;r=l.QnhRiOSV;end;elseif(e==l.KAocZLLb)then return(t==l.QnhRiOSV)and(n*(l.OZSjCeGD/l.QnhRiOSV))or(n*(l.QnhRiOSV/l.QnhRiOSV));end;return l.FskEUSpa(n,e-l.BikAlUsx)*(r+(t/(l.IRjJSelJ^l.nvzQmJhp)));end;local b=n;local function p(n)local d;if(not n)then n=b();if(n==l.QnhRiOSV)then return'';end;end;d=l.DCThSPrZ(c,e(l.OZSjCeGD,l.FUuEaRPy),e(l._bIWBprK,l.UcVIcAZD)+n-l.OZSjCeGD);e(n)local e=""for n=(l.OZSjCeGD+_),#d do e=e..l.DCThSPrZ(d,n,n)end return e;end;local _=#l.glTGXPkL(s('\49.\48'))~=l.OZSjCeGD local e=n;local function z(...)return{...},l.qsUhbeuY('#',...)end local function ne()local a={};local s={};local e={};local c={s,a,nil,e};local e=n()local f={}for t=l.OZSjCeGD,e do local d=k();local e;if(d==l.OZSjCeGD)then e=(k()~=#{});elseif(d==l.FUuEaRPy)then local n=y();if _ and l.ZMbsMMIt(l.glTGXPkL(n),'.(\48+)$')then n=l.Qm_mePTR(n);end e=n;elseif(d==l.QnhRiOSV)then e=p();end;f[t]=e;end;c[l.FUuEaRPy]=k();for e=l.OZSjCeGD,n()do a[e-(#{l.OZSjCeGD})]=ne();end;for c=l.OZSjCeGD,n()do local e=k();if(d(e,l.OZSjCeGD,l.OZSjCeGD)==l.QnhRiOSV)then local a=d(e,l.IRjJSelJ,l.FUuEaRPy);local k=d(e,l.fmZQuDJm,l.UcVIcAZD);local e={h(),h(),nil,nil};if(a==l.QnhRiOSV)then e[r]=h();e[o]=h();elseif(a==#{l.OZSjCeGD})then e[r]=n();elseif(a==u[l.IRjJSelJ])then e[r]=n()-(l.IRjJSelJ^l.tSIwteAp)elseif(a==u[l.FUuEaRPy])then e[r]=n()-(l.IRjJSelJ^l.tSIwteAp)e[o]=h();end;if(d(k,l.OZSjCeGD,l.OZSjCeGD)==l.OZSjCeGD)then e[t]=f[e[t]]end if(d(k,l.IRjJSelJ,l.IRjJSelJ)==l.OZSjCeGD)then e[r]=f[e[r]]end if(d(k,l.FUuEaRPy,l.FUuEaRPy)==l.OZSjCeGD)then e[o]=f[e[o]]end s[c]=e;end end;return c;end;local function de(d,e,n)local t=e;local t=n;return s(l.ZMbsMMIt(l.ZMbsMMIt(({l._hlyTYFM(d)})[l.IRjJSelJ],e),n))end local function m(u,e,k)local function ne(...)local h,p,s,g,y,d,c,b,_,j,ne,n;local e=l.QnhRiOSV;while-l.OZSjCeGD<e do if e<l.FUuEaRPy then if l.OZSjCeGD>e then h=f(l.UcVIcAZD,l.IRjJSelJ,l.OZSjCeGD,l.vYQneuam,u);p=f(l.UcVIcAZD,l.JdLjTyie,l.IRjJSelJ,l.ELikeCZX,u);else if e>-l.IRjJSelJ then repeat if e~=l.OZSjCeGD then d=-l.KeUpsz_r;c=-l.OZSjCeGD;break;end;s=f(l.UcVIcAZD,l.FWjlumGo,l.FUuEaRPy,l.ukdSG_ZB,u);y=z g=l.QnhRiOSV;until true;else s=f(l.UcVIcAZD,l.FWjlumGo,l.FUuEaRPy,l.ukdSG_ZB,u);y=z g=l.QnhRiOSV;end end else if e>=l._bIWBprK then if l.UcVIcAZD~=e then n=f(l.vYQneuam);else e=-l.IRjJSelJ;end else if e>l.QnhRiOSV then repeat if l.FUuEaRPy~=e then j=l.qsUhbeuY('#',...)-l.OZSjCeGD;ne={};break;end;b={};_={...};until true;else b={};_={...};end end end e=e+l.OZSjCeGD;end;for e=l.QnhRiOSV,j do if(e>=s)then b[e-s]=_[e+l.OZSjCeGD];else n[e]=_[e+l.OZSjCeGD];end;end;local e=j-s+l.OZSjCeGD local e;local f;local function s(...)while true do end end while true do if d<-l.i_HBXMfq then d=d+l.fsrfqqHm end e=h[d];f=e[ee];if f>=l.oQhBIHez then if f>l.vzbQodwg then if f<=l.ujnGpcSG then if f>=l.j_KvvhAh then if l.QtnXlVIM<f then if l.ElAcqbX_~=f then local h,k,o,f,a;local d=l.QnhRiOSV;while d>-l.OZSjCeGD do if d<=l.IRjJSelJ then if l.OZSjCeGD>d then h=e;else if d>-l.OZSjCeGD then for e=l.FgfIGVIs,l.MUuhjuJr do if l.OZSjCeGD<d then o=r;break;end;k=t;break;end;else o=r;end end else if l.fmZQuDJm>=d then if d==l.fmZQuDJm then a=h[k];else f=h[o];end else if l.fmZQuDJm~=d then repeat if d>l._bIWBprK then d=-l.IRjJSelJ;break;end;n(a,f);until true;else n(a,f);end end end d=d+l.OZSjCeGD end else local e=e[t]n[e]=n[e]()end else if l.wybAaPaz<f then repeat if l.j_KvvhAh~=f then n[e[t]]=m(p[e[r]],nil,k);break;end;local e=e[t]n[e]=n[e](a(n,e+l.OZSjCeGD,c))until true;else n[e[t]]=m(p[e[r]],nil,k);end end else if f<=l.wybAaPaz then d=e[r];else if l.owcqfxbC~=f then for k=l.wybAaPaz,l.oCauKqVJ do if f~=l.QX_AULlJ then local k,c,_,s,b,y,u,f;for f=l.QnhRiOSV,l.UcVIcAZD do if l.IRjJSelJ<f then if l.fmZQuDJm>=f then if l.IRjJSelJ<f then for a=l.vzbQodwg,l.kabtdqVk do if f<l.fmZQuDJm then k=e[t];c=n[e[r]];n[k+l.OZSjCeGD]=c;n[k]=c[e[o]];d=d+l.OZSjCeGD;e=h[d];break;end;f=l.QnhRiOSV;while f>-l.OZSjCeGD do if l.IRjJSelJ>=f then if f<l.OZSjCeGD then _=e;else if f>l.QnhRiOSV then for e=l.QtnXlVIM,l.oozxeeVi do if f~=2 then s=t;break;end;b=r;break;end;else s=t;end end else if 4>=f then if f~=0 then for e=30,80 do if f>3 then u=_[s];break;end;y=_[b];break;end;else u=_[s];end else if 5<f then f=-2;else n(u,y);end end end f=f+1 end d=d+1;e=h[d];break;end;else k=e[t];c=n[e[r]];n[k+1]=c;n[k]=c[e[o]];d=d+1;e=h[d];end else if 5<f then k=e[t];c=n[e[r]];n[k+1]=c;n[k]=c[e[o]];else k=e[t]n[k]=n[k](a(n,k+1,e[r]))d=d+1;e=h[d];end end else if f<=0 then k=e[t];c=n[e[r]];n[k+1]=c;n[k]=c[e[o]];d=d+1;e=h[d];else if-2<f then for l=22,97 do if 2>f then f=0;while f>-1 do if f<3 then if f>0 then if f~=-2 then for e=31,55 do if f<2 then s=t;break;end;b=r;break;end;else s=t;end else _=e;end else if f<=4 then if f>2 then repeat if f~=3 then u=_[s];break;end;y=_[b];until true;else u=_[s];end else if 4<=f then for e=30,54 do if 5<f then f=-2;break;end;n(u,y);break;end;else f=-2;end end end f=f+1 end d=d+1;e=h[d];break;end;k=e[t]n[k]=n[k](a(n,k+1,e[r]))d=d+1;e=h[d];break;end;else f=0;while f>-1 do if f<3 then if f>0 then if f~=-2 then for e=31,55 do if f<2 then s=t;break;end;b=r;break;end;else s=t;end else _=e;end else if f<=4 then if f>2 then repeat if f~=3 then u=_[s];break;end;y=_[b];until true;else u=_[s];end else if 4<=f then for e=30,54 do if 5<f then f=-2;break;end;n(u,y);break;end;else f=-2;end end end f=f+1 end d=d+1;e=h[d];end end end end break;end;n[e[t]]=n[e[r]][e[o]];break;end;else n[e[t]]=n[e[r]][e[o]];end end end else if f<56 then if f>=54 then if f~=52 then for l=21,58 do if f~=54 then local f;for l=0,6 do if l<3 then if l<1 then n[e[t]]=n[e[r]][e[o]];d=d+1;e=h[d];else if 0<l then for r=31,77 do if 2>l then f=e[t]n[f](n[f+1])d=d+1;e=h[d];break;end;n[e[t]]={};d=d+1;e=h[d];break;end;else n[e[t]]={};d=d+1;e=h[d];end end else if l<=4 then if 0<l then repeat if 3~=l then n[e[t]][e[r]]=n[e[o]];d=d+1;e=h[d];break;end;n[e[t]]=n[e[r]][e[o]];d=d+1;e=h[d];until true;else n[e[t]][e[r]]=n[e[o]];d=d+1;e=h[d];end else if 4~=l then repeat if l~=6 then n[e[t]]=k[e[r]];d=d+1;e=h[d];break;end;n[e[t]][e[r]]=n[e[o]];until true;else n[e[t]][e[r]]=n[e[o]];end end end end break;end;local e=e[t]n[e]=n[e](a(n,e+1,c))break;end;else local e=e[t]n[e]=n[e](a(n,e+1,c))end else if 50<f then for l=16,72 do if 52<f then for l=0,3 do if l<2 then if l~=-4 then repeat if l~=1 then n[e[t]]=(e[r]~=0);d=d+1;e=h[d];break;end;k[e[r]]=n[e[t]];d=d+1;e=h[d];until true;else k[e[r]]=n[e[t]];d=d+1;e=h[d];end else if 0<l then for f=41,73 do if 3~=l then n[e[t]]=k[e[r]];d=d+1;e=h[d];break;end;if(n[e[t]]~=e[o])then d=d+1;else d=e[r];end;break;end;else if(n[e[t]]~=e[o])then d=d+1;else d=e[r];end;end end end break;end;d=e[r];break;end;else d=e[r];end end else if f>57 then if f~=58 then local d=e[t]local l,e=y(n[d](a(n,d+1,e[r])))c=e+d-1 local e=0;for d=d,c do e=e+1;n[d]=l[e];end;else if(n[e[t]]~=e[o])then d=d+1;else d=e[r];end;end else if 54~=f then repeat if 56~=f then local h,a,l,o,f,k;local d=0;while d>-1 do if d>=4 then if 6<=d then if d~=4 then for e=32,61 do if 6~=d then d=-2;break;end;n[k]=f;break;end;else d=-2;end else if d>3 then for e=29,69 do if d~=4 then k=h[a];break;end;f=o[h[l]];break;end;else f=o[h[l]];end end else if d>=2 then if d>=-1 then for e=46,54 do if 2~=d then o=n;break;end;l=r;break;end;else l=r;end else if-3<d then for n=30,86 do if 1~=d then h=e;break;end;a=t;break;end;else a=t;end end end d=d+1 end break;end;n[e[t]]=k[e[r]];until true;else local l,f,h,o,a,k;local d=0;while d>-1 do if d>=4 then if 6<=d then if d~=4 then for e=32,61 do if 6~=d then d=-2;break;end;n[k]=a;break;end;else d=-2;end else if d>3 then for e=29,69 do if d~=4 then k=l[f];break;end;a=o[l[h]];break;end;else a=o[l[h]];end end else if d>=2 then if d>=-1 then for e=46,54 do if 2~=d then o=n;break;end;h=r;break;end;else h=r;end else if-3<d then for n=30,86 do if 1~=d then l=e;break;end;f=t;break;end;else f=t;end end end d=d+1 end end end end end else if f<37 then if 33<=f then if 34<f then if 35~=f then local o,f,a,h,l;local d=0;while d>-1 do if d<3 then if d<1 then o=e;else if d~=0 then for e=38,70 do if d>1 then a=r;break;end;f=t;break;end;else f=t;end end else if 5<=d then if 4<d then for e=16,79 do if 6>d then n(l,h);break;end;d=-2;break;end;else n(l,h);end else if d==4 then l=o[f];else h=o[a];end end end d=d+1 end else local e=e[t]n[e](n[e+1])end else if 33~=f then local e=e[t]n[e]=n[e]()else local f;for l=0,6 do if 2>=l then if 1<=l then if l>=0 then repeat if l<2 then n[e[t]]=n[e[r]][e[o]];d=d+1;e=h[d];break;end;n[e[t]]=n[e[r]][e[o]];d=d+1;e=h[d];until true;else n[e[t]]=n[e[r]][e[o]];d=d+1;e=h[d];end else n[e[t]]=k[e[r]];d=d+1;e=h[d];end else if l<=4 then if 2<=l then for f=48,76 do if l~=3 then n[e[t]]=n[e[r]][e[o]];d=d+1;e=h[d];break;end;n[e[t]]=n[e[r]][e[o]];d=d+1;e=h[d];break;end;else n[e[t]]=n[e[r]][e[o]];d=d+1;e=h[d];end else if l>5 then n[e[t]]=k[e[r]];else f=e[t]n[f]=n[f](n[f+1])d=d+1;e=h[d];end end end end end end else if 30>=f then local d=e[t]local t={n[d](n[d+1])};local l=0;for e=d,e[o]do l=l+1;n[e]=t[l];end else if f~=32 then local d=e[t]n[d]=n[d](a(n,d+1,e[r]))else local l;for f=0,6 do if 2<f then if 5>f then if 1~=f then repeat if 4~=f then n[e[t]]=k[e[r]];d=d+1;e=h[d];break;end;n[e[t]]=n[e[r]][e[o]];d=d+1;e=h[d];until true;else n[e[t]]=n[e[r]][e[o]];d=d+1;e=h[d];end else if f~=3 then for o=27,52 do if f~=5 then n[e[t]]=k[e[r]];break;end;l=e[t]n[l]=n[l]()d=d+1;e=h[d];break;end;else n[e[t]]=k[e[r]];end end else if 0>=f then l=e[t]n[l]=n[l](a(n,l+1,e[r]))d=d+1;e=h[d];else if f>=-3 then repeat if f~=2 then n[e[t]]=n[e[r]];d=d+1;e=h[d];break;end;l=e[t]n[l](a(n,l+1,e[r]))d=d+1;e=h[d];until true;else l=e[t]n[l](a(n,l+1,e[r]))d=d+1;e=h[d];end end end end end end end else if 40<f then if f>42 then if 39<=f then repeat if 44~=f then if(n[e[t]]~=e[o])then d=d+1;else d=e[r];end;break;end;local h,k,a,o,f,l;local d=0;while d>-1 do if 4>d then if d>=2 then if d>=1 then repeat if 3~=d then a=r;break;end;o=n;until true;else o=n;end else if 1>d then h=e;else k=t;end end else if d>5 then if 2~=d then for e=23,56 do if 6<d then d=-2;break;end;n[l]=f;break;end;else n[l]=f;end else if 4<d then l=h[k];else f=o[h[a]];end end end d=d+1 end until true;else local o,a,k,f,h,l;local d=0;while d>-1 do if 4>d then if d>=2 then if d>=1 then repeat if 3~=d then k=r;break;end;f=n;until true;else f=n;end else if 1>d then o=e;else a=t;end end else if d>5 then if 2~=d then for e=23,56 do if 6<d then d=-2;break;end;n[l]=h;break;end;else n[l]=h;end else if 4<d then l=o[a];else h=f[o[k]];end end end d=d+1 end end else if 41==f then local d=e[t]n[d](a(n,d+1,e[r]))else do return end;end end else if f<39 then if f>=33 then repeat if 37<f then n[e[t]]=m(p[e[r]],nil,k);break;end;k[e[r]]=n[e[t]];until true;else k[e[r]]=n[e[t]];end else if 35<=f then for d=26,61 do if f~=40 then local d=e[t];local l=n[e[r]];n[d+1]=l;n[d]=l[e[o]];break;end;n[e[t]][e[r]]=n[e[o]];break;end;else local l=e[t];local d=n[e[r]];n[l+1]=d;n[l]=d[e[o]];end end end end end else if 14>=f then if 7>f then if 2<f then if f>=5 then if f>=1 then repeat if 6>f then local e=e[t]local l,d=y(n[e](n[e+1]))c=d+e-1 local d=0;for e=e,c do d=d+1;n[e]=l[d];end;break;end;n[e[t]]={};until true;else n[e[t]]={};end else if f>=0 then repeat if f~=3 then local d=e[t];local l=n[e[r]];n[d+1]=l;n[d]=l[e[o]];break;end;n[e[t]]=(e[r]~=0);until true;else n[e[t]]=(e[r]~=0);end end else if 0<f then if-2~=f then for d=13,91 do if 1~=f then local d=e[t]n[d]=n[d](a(n,d+1,e[r]))break;end;local e=e[t]n[e](a(n,e+1,c))break;end;else local d=e[t]n[d]=n[d](a(n,d+1,e[r]))end else n[e[t]]=n[e[r]][n[e[o]]];end end else if f<=10 then if f<9 then if 5<f then for l=16,54 do if f~=8 then local f,j,s,p,_,u,b,m,l,g,ee,z;for l=0,6 do if l>2 then if l<5 then if l>=1 then for o=36,67 do if 3<l then f=e[t]g,ee=y(n[f](n[f+1]))c=ee+f-1 z=0;for e=f,c do z=z+1;n[e]=g[z];end;d=d+1;e=h[d];break;end;l=0;while l>-1 do if 3>=l then if l>1 then if l>=-1 then for e=23,98 do if l~=2 then u=n;break;end;_=r;break;end;else _=r;end else if l>-3 then repeat if 1>l then s=e;break;end;p=t;until true;else p=t;end end else if 6>l then if 2<=l then repeat if l>4 then m=s[p];break;end;b=u[s[_]];until true;else b=u[s[_]];end else if 3<=l then repeat if 6<l then l=-2;break;end;n[m]=b;until true;else l=-2;end end end l=l+1 end d=d+1;e=h[d];break;end;else l=0;while l>-1 do if 3>=l then if l>1 then if l>=-1 then for e=23,98 do if l~=2 then u=n;break;end;_=r;break;end;else _=r;end else if l>-3 then repeat if 1>l then s=e;break;end;p=t;until true;else p=t;end end else if 6>l then if 2<=l then repeat if l>4 then m=s[p];break;end;b=u[s[_]];until true;else b=u[s[_]];end else if 3<=l then repeat if 6<l then l=-2;break;end;n[m]=b;until true;else l=-2;end end end l=l+1 end d=d+1;e=h[d];end else if 4<l then repeat if l<6 then f=e[t]n[f](a(n,f+1,c))d=d+1;e=h[d];break;end;n[e[t]]=k[e[r]];until true;else n[e[t]]=k[e[r]];end end else if l<=0 then f=e[t]n[f]=n[f](a(n,f+1,e[r]))d=d+1;e=h[d];else if l~=0 then repeat if 2~=l then f=e[t];j=n[e[r]];n[f+1]=j;n[f]=j[e[o]];d=d+1;e=h[d];break;end;n[e[t]]=k[e[r]];d=d+1;e=h[d];until true;else f=e[t];j=n[e[r]];n[f+1]=j;n[f]=j[e[o]];d=d+1;e=h[d];end end end end break;end;local l=e[t];local h=e[o];local t=l+2 local l={n[l](n[l+1],n[t])};for e=1,h do n[t+e]=l[e];end;local l=l[1]if l then n[t]=l d=e[r];else d=d+1;end;break;end;else local f,p,s,j,_,b,u,z,l,g,ee,m;for l=0,6 do if l>2 then if l<5 then if l>=1 then for o=36,67 do if 3<l then f=e[t]g,ee=y(n[f](n[f+1]))c=ee+f-1 m=0;for e=f,c do m=m+1;n[e]=g[m];end;d=d+1;e=h[d];break;end;l=0;while l>-1 do if 3>=l then if l>1 then if l>=-1 then for e=23,98 do if l~=2 then b=n;break;end;_=r;break;end;else _=r;end else if l>-3 then repeat if 1>l then s=e;break;end;j=t;until true;else j=t;end end else if 6>l then if 2<=l then repeat if l>4 then z=s[j];break;end;u=b[s[_]];until true;else u=b[s[_]];end else if 3<=l then repeat if 6<l then l=-2;break;end;n[z]=u;until true;else l=-2;end end end l=l+1 end d=d+1;e=h[d];break;end;else l=0;while l>-1 do if 3>=l then if l>1 then if l>=-1 then for e=23,98 do if l~=2 then b=n;break;end;_=r;break;end;else _=r;end else if l>-3 then repeat if 1>l then s=e;break;end;j=t;until true;else j=t;end end else if 6>l then if 2<=l then repeat if l>4 then z=s[j];break;end;u=b[s[_]];until true;else u=b[s[_]];end else if 3<=l then repeat if 6<l then l=-2;break;end;n[z]=u;until true;else l=-2;end end end l=l+1 end d=d+1;e=h[d];end else if 4<l then repeat if l<6 then f=e[t]n[f](a(n,f+1,c))d=d+1;e=h[d];break;end;n[e[t]]=k[e[r]];until true;else n[e[t]]=k[e[r]];end end else if l<=0 then f=e[t]n[f]=n[f](a(n,f+1,e[r]))d=d+1;e=h[d];else if l~=0 then repeat if 2~=l then f=e[t];p=n[e[r]];n[f+1]=p;n[f]=p[e[o]];d=d+1;e=h[d];break;end;n[e[t]]=k[e[r]];d=d+1;e=h[d];until true;else f=e[t];p=n[e[r]];n[f+1]=p;n[f]=p[e[o]];d=d+1;e=h[d];end end end end end else if f>=6 then repeat if 10>f then local e=e[t]local l,d=y(n[e](n[e+1]))c=d+e-1 local d=0;for e=e,c do d=d+1;n[e]=l[d];end;break;end;n[e[t]]=n[e[r]][e[o]];until true;else n[e[t]]=n[e[r]][e[o]];end end else if 13>f then if f~=12 then local e=e[t]n[e](a(n,e+1,c))else n[e[t]]=n[e[r]][n[e[o]]];end else if 10<f then repeat if f>13 then local e=e[t]n[e]=n[e](n[e+1])break;end;local l,s,u,_,k;for f=0,5 do if 3<=f then if f<4 then l=e[t]u,_=y(n[l](a(n,l+1,e[r])))c=_+l-1 k=0;for e=l,c do k=k+1;n[e]=u[k];end;d=d+1;e=h[d];else if 2<f then for k=45,86 do if 5~=f then l=e[t]n[l]=n[l](a(n,l+1,c))d=d+1;e=h[d];break;end;n[e[t]]=n[e[r]][e[o]];break;end;else l=e[t]n[l]=n[l](a(n,l+1,c))d=d+1;e=h[d];end end else if 0<f then if 2~=f then l=e[t];s=n[e[r]];n[l+1]=s;n[l]=s[e[o]];d=d+1;e=h[d];else n(e[t],e[r]);d=d+1;e=h[d];end else n[e[t]]=n[e[r]][e[o]];d=d+1;e=h[d];end end end until true;else local e=e[t]n[e]=n[e](n[e+1])end end end end else if 21>=f then if f>=18 then if f<20 then if 14<=f then for l=30,78 do if f<19 then local l,k,a;for f=0,6 do if 3<=f then if f<=4 then if f>=0 then for l=41,59 do if 4~=f then n[e[t]]=n[e[r]][n[e[o]]];d=d+1;e=h[d];break;end;n[e[t]]=n[e[r]][e[o]];d=d+1;e=h[d];break;end;else n[e[t]]=n[e[r]][e[o]];d=d+1;e=h[d];end else if f>1 then for c=13,88 do if 6>f then n[e[t]]=n[e[r]][e[o]];d=d+1;e=h[d];break;end;l=e[t]k={n[l](n[l+1])};a=0;for e=l,e[o]do a=a+1;n[e]=k[a];end break;end;else l=e[t]k={n[l](n[l+1])};a=0;for e=l,e[o]do a=a+1;n[e]=k[a];end end end else if 0<f then if f==1 then n[e[t]]=n[e[r]][e[o]];d=d+1;e=h[d];else l=e[t]n[l]=n[l](n[l+1])d=d+1;e=h[d];end else n[e[t]]=n[e[r]][e[o]];d=d+1;e=h[d];end end end break;end;n[e[t]][e[r]]=n[e[o]];break;end;else local l,k,f;for a=0,6 do if 3<=a then if a<=4 then if a>=0 then for l=41,59 do if 4~=a then n[e[t]]=n[e[r]][n[e[o]]];d=d+1;e=h[d];break;end;n[e[t]]=n[e[r]][e[o]];d=d+1;e=h[d];break;end;else n[e[t]]=n[e[r]][e[o]];d=d+1;e=h[d];end else if a>1 then for c=13,88 do if 6>a then n[e[t]]=n[e[r]][e[o]];d=d+1;e=h[d];break;end;l=e[t]k={n[l](n[l+1])};f=0;for e=l,e[o]do f=f+1;n[e]=k[f];end break;end;else l=e[t]k={n[l](n[l+1])};f=0;for e=l,e[o]do f=f+1;n[e]=k[f];end end end else if 0<a then if a==1 then n[e[t]]=n[e[r]][e[o]];d=d+1;e=h[d];else l=e[t]n[l]=n[l](n[l+1])d=d+1;e=h[d];end else n[e[t]]=n[e[r]][e[o]];d=d+1;e=h[d];end end end end else if 17<=f then repeat if f~=21 then n[e[t]]=k[e[r]];break;end;local l;for f=0,1 do if-2~=f then for o=37,52 do if 0<f then l=e[t]n[l](n[l+1])break;end;n(e[t],e[r]);d=d+1;e=h[d];break;end;else n(e[t],e[r]);d=d+1;e=h[d];end end until true;else local l;for f=0,1 do if-2~=f then for o=37,52 do if 0<f then l=e[t]n[l](n[l+1])break;end;n(e[t],e[r]);d=d+1;e=h[d];break;end;else n(e[t],e[r]);d=d+1;e=h[d];end end end end else if f<=15 then n[e[t]]=(e[r]~=0);else if f>14 then for d=17,60 do if f~=16 then local d=e[t]local l,e=y(n[d](a(n,d+1,e[r])))c=e+d-1 local e=0;for d=d,c do e=e+1;n[d]=l[e];end;break;end;local e=e[t]n[e]=n[e](n[e+1])break;end;else local e=e[t]n[e]=n[e](n[e+1])end end end else if f<26 then if f>23 then if f>24 then local e=e[t]n[e](n[e+1])else do return end;end else if 19~=f then for l=30,71 do if f~=22 then local d=e[t]local t={n[d](n[d+1])};local l=0;for e=d,e[o]do l=l+1;n[e]=t[l];end break;end;local l=e[t];local h=e[o];local t=l+2 local l={n[l](n[l+1],n[t])};for e=1,h do n[t+e]=l[e];end;local l=l[1]if l then n[t]=l d=e[r];else d=d+1;end;break;end;else local l=e[t];local h=e[o];local t=l+2 local l={n[l](n[l+1],n[t])};for e=1,h do n[t+e]=l[e];end;local l=l[1]if l then n[t]=l d=e[r];else d=d+1;end;end end else if 28<=f then if f~=26 then repeat if f<29 then n[e[t]]={};break;end;local d=e[t]n[d](a(n,d+1,e[r]))until true;else local d=e[t]n[d](a(n,d+1,e[r]))end else if f>=22 then for l=33,59 do if 27>f then local l;n[e[t]]=k[e[r]];d=d+1;e=h[d];n[e[t]]=n[e[r]][e[o]];d=d+1;e=h[d];n[e[t]]=k[e[r]];d=d+1;e=h[d];n[e[t]]=n[e[r]];d=d+1;e=h[d];n(e[t],e[r]);d=d+1;e=h[d];l=e[t]n[l]=n[l](n[l+1])d=d+1;e=h[d];n[e[t]]=n[e[r]][e[o]];break;end;k[e[r]]=n[e[t]];break;end;else local l;n[e[t]]=k[e[r]];d=d+1;e=h[d];n[e[t]]=n[e[r]][e[o]];d=d+1;e=h[d];n[e[t]]=k[e[r]];d=d+1;e=h[d];n[e[t]]=n[e[r]];d=d+1;e=h[d];n(e[t],e[r]);d=d+1;e=h[d];l=e[t]n[l]=n[l](n[l+1])d=d+1;e=h[d];n[e[t]]=n[e[r]][e[o]];end end end end end end d=1+d;end;end;return ne end;local t=0xff;local k={};local h=(1);local r='';(function(n)local d=n local f=0x00 local e=0x00 d={(function(o)if f>0x2d then return o end f=f+1 e=(e+0x1090-o)%0x19 return(e%0x03==0x2 and(function(d)if not n[d]then e=e+0x01 n[d]=(0x38);end return true end)'dejEW'and d[0x2](0xef+o))or(e%0x03==0x1 and(function(d)if not n[d]then e=e+0x01 n[d]=(0x67);r='\37';t={function()t()end};r=r..'\100\43';end return true end)'KOtTB'and d[0x1](o+0x1b8))or(e%0x03==0x0 and(function(d)if not n[d]then e=e+0x01 n[d]=(0x5d);r={r..'\58 a',r};k[h]=ne();h=h+((not l.TpUH_aSL)and 1 or 0);r[1]='\58'..r[1];t[2]=0xff;end return true end)'Yxkur'and d[0x3](o+0x11c))or o end),(function(l)if f>0x22 then return l end f=f+1 e=(e+0x126e-l)%0x37 return(e%0x03==0x1 and(function(d)if not n[d]then e=e+0x01 n[d]=(0x49);end return true end)'dyeEg'and d[0x3](0x99+l))or(e%0x03==0x0 and(function(d)if not n[d]then e=e+0x01 n[d]=(0x3f);k[h]=te();h=h+t;end return true end)'UqTZr'and d[0x2](l+0x3a3))or(e%0x03==0x2 and(function(d)if not n[d]then e=e+0x01 n[d]=(0xbc);end return true end)'bUgT_'and d[0x1](l+0x1a6))or l end),(function(l)if f>0x21 then return l end f=f+1 e=(e+0xaea-l)%0x2d return(e%0x03==0x0 and(function(d)if not n[d]then e=e+0x01 n[d]=(0xb2);end return true end)'z_sty'and d[0x3](0x268+l))or(e%0x03==0x2 and(function(d)if not n[d]then e=e+0x01 n[d]=(0x7d);t[2]=(t[2]*(de(function()k()end,a(r))-de(t[1],a(r))))+1;k[h]={};t=t[2];h=h+t;end return true end)'ETiGW'and d[0x2](l+0x341))or(e%0x03==0x1 and(function(d)if not n[d]then e=e+0x01 n[d]=(0x8);end return true end)'LnjsT'and d[0x1](l+0x231))or l end)}d[0x1](0x54e)end){};local e=m(a(k));return e(...);end return le((function()local n={}local e=0x01;local d;if l.TpUH_aSL then d=l.TpUH_aSL(le)else d=''end if l.ZMbsMMIt(d,l._HQBtRbW)then e=e+0;else e=e+1;end n[e]=0x02;n[n[e]+0x01]=0x03;return n;end)(),...)end)((function(n,e,d,l,t,r)local r;if 4<=n then if n>5 then if 6>=n then do return t[d]end;else if 7~=n then do return d(n,nil,d);end else do return setmetatable({},{['__\99\97\108\108']=function(e,l,d,t,n)if n then return e[n]elseif t then return e else e[l]=d end end})end end end else if n>0 then repeat if 5~=n then local n=l;local h,f,l=t(2);do return function()local t,e,d,r=e(d,n(n,n),n(n,n)+3);n(4);return(r*h)+(d*f)+(e*l)+t;end;end;break;end;local n=l;do return function()local e=e(d,n(n,n),n(n,n));n(1);return e;end;end;until true;else local n=l;do return function()local e=e(d,n(n,n),n(n,n));n(1);return e;end;end;end end else if n>1 then if n==3 then do return e(1),e(4,t,l,d,e),e(5,t,l,d)end;else do return 16777216,65536,256 end;end else if 1>n then do return e(1),e(4,t,l,d,e),e(5,t,l,d)end;else do return function(d,e,n)if n then local e=(d/2^(e-1))%2^((n-1)-(e-1)+1);return e-e%1;else local e=2^(e-1);return(d%(e+e)>=e)and 1 or 0;end;end;end;end end end end),...)
+--[[
+_G.AgingPotionMode = true
+_G.EggHatchMode = false
+EggName = "Garden Egg"
+]]
+
+repeat task.wait(1) until game:IsLoaded()
+
+if not _G.AgingPotionMode and not _G.EggHatchMode then
+    _G.AgingPotionMode = true
+end
+
+if _G.AgingPotionMode and _G.EggHatchMode then
+    game.Players.LocalPlayer:Kick("Select ONE Mode")
+end
+
+print("Executed Roleck Task Script - V4.0")
+repeat task.wait() until game:IsLoaded() and game:GetService("ReplicatedStorage"):FindFirstChild("ClientModules") and game:GetService("ReplicatedStorage").ClientModules:FindFirstChild("Core") and game:GetService("ReplicatedStorage").ClientModules.Core:FindFirstChild("UIManager") and game:GetService("ReplicatedStorage").ClientModules.Core:FindFirstChild("UIManager").Apps:FindFirstChild("TransitionsApp") and game:GetService("Players").LocalPlayer.PlayerGui:FindFirstChild("TransitionsApp") and game:GetService("Players").LocalPlayer.PlayerGui:FindFirstChild("TransitionsApp"):FindFirstChild("Whiteout")
+
+if game:GetService("Players").LocalPlayer.PlayerGui.TransitionsApp:FindFirstChild("Whiteout").Visible then 
+    game:GetService("Players").LocalPlayer.PlayerGui.TransitionsApp:FindFirstChild("Whiteout").Visible = false 
+end
+
+
+local RS = game:GetService("ReplicatedStorage")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local ClientData = require(RS.ClientModules.Core.ClientData)
+local Player = game:GetService("Players").LocalPlayer
+local RouterClient = require(RS.ClientModules.Core:WaitForChild("RouterClient"):WaitForChild("RouterClient"))
+local Main_Menu = require(RS.ClientModules.Core.UIManager.Apps.MainMenuApp)
+local VirtualInputManager = game:GetService("VirtualInputManager")
+local LiveOpsMapSwap = require(game:GetService("ReplicatedStorage").SharedModules.Game.LiveOpsMapSwap)
+
+--local Fsys = require(RS:WaitForChild("Fsys")).load
+
+game.Players.LocalPlayer.Idled:Connect(function() 
+    game:GetService("VirtualUser"):Button2Down(Vector2.new(0, 0), workspace.CurrentCamera.CFrame) 
+    task.wait(1)
+    game:GetService("VirtualUser"):Button2Up(Vector2.new(0, 0), workspace.CurrentCamera.CFrame) 
+end)
+
+for i, v in pairs(debug.getupvalue(RouterClient.init, 7)) do
+    v.Name = i
+end
+
+
+---------------- Warn Control ---------------------------------
+local old;old = hookfunction(warn,function(data)
+   return
+end)
+---------------------------------------------------------------
+
+function clickGuiButton(button: Instance, xOffset: number, yOffset: number)
+	local xOffset = xOffset or 60
+	local yOffset = yOffset or 60
+	task.wait()
+	VirtualInputManager:SendMouseButtonEvent(button.AbsolutePosition.X + xOffset, button.AbsolutePosition.Y + yOffset, 0, true, game, 1)
+	task.wait()
+	VirtualInputManager:SendMouseButtonEvent(button.AbsolutePosition.X + xOffset, button.AbsolutePosition.Y + yOffset, 0, false, game, 1)
+	task.wait()
+end
+
+function CheckStarterEgg()
+    for i,v in pairs(ClientData.get_data()[game.Players.LocalPlayer.Name].inventory.pets) do
+        if v.id == "starter_egg" then
+            return true
+        end
+    end
+    return false
+end
+
+function CheckTradeLicense()
+    for i,v in pairs(ClientData.get_data()[game.Players.LocalPlayer.Name].inventory.toys) do
+        if v.id:match("license") then
+            return true
+        end
+    end
+    return false
+end
+
+if CheckStarterEgg() and require(game:GetService("ReplicatedStorage").ClientModules.Game.ColorThemeManager).get_theme_color() == "pink" then
+    game:GetService("ReplicatedStorage").API["SettingsAPI/SetSetting"]:FireServer("theme_color", "black")
+    task.wait(3)
+end
+
+repeat
+    if Player.PlayerGui.NewsApp.EnclosingFrame.MainFrame.Contents.PlayButton.Visible then
+        clickGuiButton(Player.PlayerGui.NewsApp.EnclosingFrame.MainFrame.Contents.PlayButton)
+    end
+    if Player.PlayerGui.DialogApp.Dialog.RoleChooserDialog.Baby.Visible then
+        clickGuiButton(Player.PlayerGui.DialogApp.Dialog.RoleChooserDialog.Baby)
+    end
+    task.wait(1.1)
+    -- After Choose Parent
+    Player.PlayerGui.DialogApp.Dialog:WaitForChild("RobuxProductDialog")
+    if Player.PlayerGui.DialogApp.Dialog.RobuxProductDialog.Visible then 
+        for i,v in pairs(Player.PlayerGui.DialogApp.Dialog.RobuxProductDialog.Buttons:GetChildren()) do 
+            if v.ClassName == "ImageButton" then 
+                clickGuiButton(v)
+            end
+        end
+    end
+    Player.PlayerGui:WaitForChild("DailyLoginApp")
+    if Player.PlayerGui.DailyLoginApp.Enabled and Player.PlayerGui.DailyLoginApp.Frame.Visible then 
+        for i,v in pairs(Player.PlayerGui.DailyLoginApp.Frame.Body.Buttons:GetChildren()) do 
+            if v.Name == "ClaimButton" then
+                clickGuiButton(v)
+            end 
+        end
+    end
+    game:GetService("Players").LocalPlayer.PlayerGui.DialogApp.Dialog:WaitForChild("UpdatesDialog")
+    if game:GetService("Players").LocalPlayer.PlayerGui.DialogApp.Dialog.UpdatesDialog.Visible then 
+        for i,v in pairs(game:GetService("Players").LocalPlayer.PlayerGui.DialogApp.Dialog.UpdatesDialog.Buttons:GetChildren()) do 
+            if v.ClassName == "ImageButton" then 
+                clickGuiButton(v)
+            end
+        end
+    end
+until game:GetService("Players").LocalPlayer.Character and workspace.Camera.CameraSubject == game:GetService("Players").LocalPlayer.Character:WaitForChild("Humanoid")
+
+if CheckStarterEgg() and require(game:GetService("ReplicatedStorage").ClientModules.Game.ColorThemeManager).get_theme_color() == "pink" then
+    local Tutorial_Statuses = {"Avatar Tutorial Started", "Avatar Editor Opened", "Avatar Editor Closed", "Housing Tutorial Started", "Housing Editor Opened", "House Exited", "Nursery Tutorial Started", "Nursery Entered", "Started Egg Received", "Quest Tutorial Started", "Quest App Opened", "Quest App Closed", "Tutorial Ailment Spawned"}
+    Main_Menu.run_tutorial = function() return end 
+    Main_Menu.run_housing_tutorial = function() return end 
+    Main_Menu.name_pet_mini_tutorial = function() return end
+    Main_Menu.run_avatar_tutorial = function() return end
+    Main_Menu.run_nursery_tutorial = function() return end 
+    Main_Menu.get_should_skip_tutorial = function() return true end 
+    require(game:GetService("ReplicatedStorage").SharedModules.PolicyHelper).is_external_link_allowed = function() return false end 
+    Main_Menu.has_spoken_with_sir_woofington = function() return true end 
+    Main_Menu.is_legacy_housing_tutorial_done = function() return true end 
+    local args = {
+        [1] = "Parents",
+        [2] = {["dont_send_back_home"] = true}
+    }
+    game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("TeamAPI/ChooseTeam"):InvokeServer(unpack(args))
+    for i,v in pairs(Tutorial_Statuses) do task.wait()
+        RS.API["LegacyTutorialAPI/StashTutorialStatus"]:FireServer(v)
+        RS.API["LegacyTutorialAPI/MarkTutorialCompleted"]:FireServer()
+    end
+    RS.API["LegacyTutorialAPI/EquipTutorialEgg"]:FireServer()
+    game:Shutdown()
+end
+
+task.spawn(function()
+    while not CheckTradeLicense() do
+        pcall(function()
+            game:GetService("ReplicatedStorage"):WaitForChild("API"):FindFirstChild("TradeAPI/BeginQuiz"):FireServer()
+            for i,v in pairs(getgc(true)) do
+                if type(v) == "table" and rawget(v,"question_index") then
+                    for i,v in pairs(v.quiz) do
+                        game:GetService("ReplicatedStorage"):WaitForChild("API"):FindFirstChild("TradeAPI/AnswerQuizQuestion"):FireServer(v.answer)
+                    end 
+                end 
+            end
+        end)
+        task.wait(1)
+    end
+end)
+
+task.spawn(function()
+    repeat task.wait() until game:IsLoaded() and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
+    task.wait(4)
+    game:GetService("Players").LocalPlayer.PlayerGui.DialogApp.Dialog:WaitForChild("RobuxProductDialog")
+    if game:GetService("Players").LocalPlayer.PlayerGui.DialogApp.Dialog.RobuxProductDialog.Visible then 
+        for i,v in pairs(game:GetService("Players").LocalPlayer.PlayerGui.DialogApp.Dialog.RobuxProductDialog.Buttons:GetChildren()) do 
+            if v.ClassName == "ImageButton" then 
+                clickGuiButton(v)
+            end
+        end
+    end
+    wait(0.5)
+    game:GetService("Players").LocalPlayer.PlayerGui:WaitForChild("DailyLoginApp")
+    if game:GetService("Players").LocalPlayer.PlayerGui.DailyLoginApp.Enabled and game:GetService("Players").LocalPlayer.PlayerGui.DailyLoginApp.Frame.Visible then 
+        for i,v in pairs(game:GetService("Players").LocalPlayer.PlayerGui.DailyLoginApp.Frame.Body.Buttons:GetChildren()) do 
+            if v.Name == "ClaimButton" then
+                clickGuiButton(v)
+                task.wait(0.5)
+                clickGuiButton(v)
+            end 
+        end
+    end
+    wait(0.5)
+    game:GetService("Players").LocalPlayer.PlayerGui.DialogApp.Dialog:WaitForChild("UpdatesDialog")
+    if game:GetService("Players").LocalPlayer.PlayerGui.DialogApp.Dialog.UpdatesDialog.Visible then 
+        for i,v in pairs(game:GetService("Players").LocalPlayer.PlayerGui.DialogApp.Dialog.UpdatesDialog.Buttons:GetChildren()) do 
+            if v.ClassName == "ImageButton" then 
+                clickGuiButton(v)
+            end
+        end
+    end
+end)
+
+---------- Extra GUI Control and Buttons and IMAGES blah blah -------------
+game:GetService("Players").LocalPlayer.PlayerGui.DialogApp.Enabled = false
+game:GetService("Players").LocalPlayer.PlayerGui.InteractionsApp.Enabled = false
+game:GetService("Players").LocalPlayer.PlayerGui.NavigatorApp.Enabled = false
+
+------- Transition App Disabled (whatever it is) --------
+require(game.ReplicatedStorage.ClientModules.Core.UIManager.Apps.TransitionsApp).transition = function() return end 
+require(game.ReplicatedStorage.ClientModules.Core.UIManager.Apps.TransitionsApp).sudden_fill = function() return end
+if game:GetService("Players").LocalPlayer.PlayerGui.TransitionsApp:FindFirstChild("Whiteout").Visible then 
+    game:GetService("Players").LocalPlayer.PlayerGui.TransitionsApp:FindFirstChild("Whiteout").Visible = false 
+end
+--------- Rolox OVerlay Screen
+ScreenGui = Instance.new("ScreenGui")
+Frame = Instance.new("Frame")
+Frame_2 = Instance.new("Frame")
+TextLabel = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.Name = "RoloxBotOverlay"
+ScreenGui.Enabled = false
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0, 0, 0, -70)
+Frame.Size = UDim2.new(1, 0, 1, 70)
+
+Frame_2.Parent = Frame
+Frame_2.AnchorPoint = Vector2.new(0.5, 0.5)
+Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_2.BackgroundTransparency = 1.000
+Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+Frame_2.Size = UDim2.new(0.75, 0, 0, 750)
+
+TextLabel.Parent = Frame_2
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Size = UDim2.new(1, 0, 1, 0)
+TextLabel.Font = Enum.Font.GothamBold
+TextLabel.Text = "Error.."
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 30.000
+TextLabel.RichText = true
+
+function disp_time(time)
+    local days = math.floor(time/86400)
+    local hours = math.floor(math.fmod(time, 86400)/3600)
+    local minutes = math.floor(math.fmod(time,3600)/60)
+    local seconds = math.floor(math.fmod(time,60))
+    return string.format("%d:%02d:%02d:%02d",days,hours,minutes,seconds)
+end
+
+game:GetService("UserInputService").InputBegan:Connect(function(input)
+    if input.KeyCode == Enum.KeyCode.Q then
+        if ScreenGui.Enabled == false then
+            ScreenGui.Enabled = true
+        else
+            ScreenGui.Enabled = false
+        end
+    end
+end)
+
+_G.Status = "Loading..."
+StartPotions = tonumber((function() local t={} for i,v in pairs(ClientData.get_data()[game.Players.LocalPlayer.Name].inventory.food)do if v.id=="pet_age_potion"then table.insert(t,i)end end return #t end)())
+StartBucks = ClientData.get_data()[Player.Name].money
+OldDifPots = 0
+OldDifPotTime = os.time()
+getgenv().StartTimeAC = os.time()
+function SetStatus()
+    Potions = tostring((function() local t={} for i,v in pairs(ClientData.get_data()[game.Players.LocalPlayer.Name].inventory.food)do if v.id=="pet_age_potion"then table.insert(t,i)end end return #t end)())
+    EventCurrency = (ClientData.get_data()[game.Players.LocalPlayer.Name][require(game:GetService("ReplicatedStorage").SharedModules.SharedDB.AltCurrencyData)["name"]] or 0)
+    Bucks = ClientData.get_data()[Player.Name].money
+    
+    DifPotion = tonumber(Potions) - StartPotions
+    DifBucks = ClientData.get_data()[Player.Name].money - StartBucks
+
+    if DifPotion > 0 then
+        Potions = Potions .. " (+"..DifPotion..")"
+    end
+    if DifBucks > 0 then Bucks = Bucks .. " (+"..DifBucks..")" end
+
+    if _G.AgingPotionMode then
+        if DifPotion > OldDifPots then
+            OldDifPots = DifPotion
+            OldDifPotTime = os.time()
+        else
+            if (os.time() - OldDifPotTime >= 7200) and (DifPotion > 0) and (DifPotion / math.floor((os.time() - StartTimeAC)/60/60) < 1) and (not _G.AccStuck) then
+                RequestWebhook("Shutting down due to no pots in past 2 hours")
+                game.Players.LocalPlayer:Kick("Account is Stuck")
+                game:Shutdown()
+                _G.AccStuck = true
+            end
+        end
+    end
+
+    getgenv().StatsAM = {
+        Bucks = DifBucks,
+        Potions = DifPotion
+    }
+
+    TextLabel.Text = [[<font color="rgb(255,180,180)">]]..game.Players.LocalPlayer.Name..[[</font> - ||||7||||
+    Status: <font color="rgb(187, 166, 255)"> ]].._G.Status..[[ </font>
+    Potions: <font color="rgb(252, 207, 71)">]]..Potions..[[</font>
+    Bucks: <font color="rgb(0, 191, 41)">]]..Bucks..[[</font>
+    Event Currency: <font color="rgb(237, 63, 14)">]]..EventCurrency..[[</font>
+    Total Time: <font color="rgb(137, 41, 255)">]]..disp_time(os.time() - StartTimeAC)..[[</font>
+
+    <font color="rgb(130, 255, 228)">Press Q to toggle</font>
+    ]]
+end
+
+SetStatus()
+ScreenGui.Enabled = true
+
+spawn(function()
+    while task.wait(1) and (not getgenv().Disconnected) do
+        successC, errorC = pcall(SetStatus)
+        if not successC then print(errorC) end
+    end
+end)
+
+---------------------------------------------------
+repeat task.wait() until game.Players.LocalPlayer
+task.wait(2)
+local args = {
+    [1] = "Babies",
+    [2] = {["dont_send_back_home"] = true}
+}
+game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("TeamAPI/ChooseTeam"):InvokeServer(unpack(args))
+
+repeat wait() until game.Players.LocalPlayer.Character
+repeat wait() until game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
+repeat wait() until game:GetService("Players").LocalPlayer.Character and workspace.Camera.CameraSubject == game:GetService("Players").LocalPlayer.Character:WaitForChild("Humanoid")
+local HRP = Player.Character.HumanoidRootPart
+--game.Players.LocalPlayer.Character:FindFirstChild("Humanoid").WalkSpeed = 0 -- Disable Walkspeed
+
+local args = {
+    [1] = false
+}
+game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("AvatarAPI/SetPlayerOnPlayerCollision"):FireServer(unpack(args))
+
+---------------- Equip Pet ----------------------
+
+for i, v in pairs(ClientData.get_data()[game.Players.LocalPlayer.Name].inventory.pets) do
+    if v.id ~= "practice_dog" and v.id ~= "winter_2024_minigame_winter_fawn" and v.id ~= "winter_2024_minigame_winter_buck" and v.id ~= "winter_2024_minigame_winter_doe" then    
+        game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("ToolAPI/Equip"):InvokeServer(i)
+        break
+    end
+end
+
+Bucks = tonumber(ClientData.get("money"))
+print("Bucks:", Bucks)
+Pets = {}
+
+inv = {}
+for i,v in pairs(ClientData.get_data()[game.Players.LocalPlayer.Name].inventory.pets) do 
+    table.insert(inv, i)
+end
+
+---------- FUNCTIONS ---------
+function CheckInv(pet)
+    for i, v in pairs(inv) do
+        if v == pet then
+            return true
+        end
+    end
+    return false
+end
+
+function findPetName(PetID)
+    for _, entry in pairs(require(game:GetService("ReplicatedStorage").ClientDB.Inventory.InventoryDB).pets) do
+        if type(entry) == "table" and string.lower(entry.id) == string.lower(PetID) then
+            return entry.name
+        end
+    end
+    return nil
+end
+
+function findPetID(petName)
+    for _, entry in pairs(require(game:GetService("ReplicatedStorage").ClientDB.Inventory.InventoryDB).pets) do
+        if type(entry) == "table" and string.lower(entry.name) == string.lower(petName) then
+            return entry.id
+        end
+    end
+    return nil
+end
+
+function findItemID(itemName, itemType)
+    for _, entry in pairs(require(game:GetService("ReplicatedStorage").ClientDB.Inventory.InventoryDB)[itemType]) do
+        if type(entry) == "table" and string.lower(entry.name) == string.lower(itemName) then
+            return entry.id
+        end
+    end
+    return nil
+end
+
+function findItemName(itemID, itemType)
+    if require(RS.ClientDB.Inventory.InventoryDB)[itemType] == nil then return "INVALID CATEGORY" end
+
+    for _, entry in pairs(require(RS.ClientDB.Inventory.InventoryDB)[itemType]) do
+        if type(entry) == "table" and string.lower(entry.id) == string.lower(itemID) then
+            return entry.name
+        end
+    end
+    return "ITEM NOT FOUND"
+end
+
+function IsInInv(petUnique)
+    for i,v in pairs(ClientData.get_data()[game.Players.LocalPlayer.Name].inventory.pets) do 
+        if v.unique == petUnique then return true end
+    end
+    return false
+end
+
+function RequestWebhook(Desc) 
+    local WebhookURL = "https://discord.com/api/webhooks/1312196298002399273/0_wyKgd3W99vsJ273KAzwQbO1pZmSFdw5hmKZirfBQpiVszly1sf_0BNVIXxftN27Epl"
+    local Request = http_request or request or HttpPost or syn.request
+    local Data = {
+        ["content"] = "",
+        ["embeds"] = {
+            {
+                ["title"] = game.Players.LocalPlayer.Name,
+                ["description"] = Desc .. "\nCurrent Task: " .. _G.Status,
+                ["color"] = tonumber(0x7269da),
+                ["fields"] = {
+                    {
+                        ["name"] = "Stats",
+                        ["value"] = "Online: " .. disp_time(os.time() - StartTimeAC) .. "\nPotions: " .. tostring(getgenv().StatsAM.Potions) .. "\nBucks: ".. tostring(getgenv().StatsAM.Bucks),
+                        ["inline"] = true -- Optional, set to true for side-by-side fields
+                    }
+                }
+            }
+        }
+    }
+    local HeadersVar = {
+        ["content-type"] = "application/json"
+    }  
+   Request({Url = WebhookURL, Body = game:GetService("HttpService"):JSONEncode(Data), Method = "POST", Headers = HeadersVar})
+end
+
+function SendLureNotif(Desc)
+    local WebhookURL = "https://discord.com/api/webhooks/1313101377475575888/3h3maLFWLr3PRIVXPIJN5Vtks_wtaN26PK4Glq0dPj3iSSxKH8wWH5ZLV-dPfxzKqygM"
+    local Request = http_request or request or HttpPost or syn.request
+    local Data = {
+        ["content"] = "",
+        ["embeds"] = {
+            {
+                ["title"] = game.Players.LocalPlayer.Name,
+                ["description"] = ("Lure Reward: __**" ..Desc.. "**__"),
+                ["color"] = tonumber(0xFFA500),
+            }
+        }
+    }
+    local HeadersVar = {
+        ["content-type"] = "application/json"
+    }  
+   Request({Url = WebhookURL, Body = game:GetService("HttpService"):JSONEncode(Data), Method = "POST", Headers = HeadersVar})
+end
+
+function RoT(t)
+    for i, v in pairs(t) do
+        return v
+    end
+end
+
+function isInTable(tableA, item)
+    for i, v in pairs(tableA) do
+        if v == item then return true end
+    end
+    return false
+end
+
+function removeFromTable(tableA, item)
+    for i, value in ipairs(tableA) do
+        if value == item then
+            table.remove(tableA, i)
+            break
+        end
+    end
+end
+
+function GetMainMap()
+    for i, v in pairs(game.Workspace.Interiors:GetChildren()) do
+        if v.Name:match("MainMap") then
+            return v.Name
+        end
+    end
+    return "MainMap/Default"
+end
+
+function EquipLastPet()
+    if IsInInv(ClientData.get_data()[game.Players.LocalPlayer.Name].last_equipped_pets[1]) then
+        RS.API:WaitForChild("ToolAPI/Unequip"):InvokeServer(ClientData.get_data()[game.Players.LocalPlayer.Name].last_equipped_pets[1])
+        task.wait(0.25)
+        RS.API:WaitForChild("ToolAPI/Equip"):InvokeServer(ClientData.get_data()[game.Players.LocalPlayer.Name].last_equipped_pets[1])
+        task.wait(1)
+    end
+end
+
+function CheckExistwID(id)
+    local playerInventory = ClientData.get_data()[game.Players.LocalPlayer.Name].inventory.pets
+    
+    for i, v in pairs(playerInventory) do
+        if v.id ~= "practice_dog" and 
+           v.id ~= "winter_2024_minigame_winter_fawn" and 
+           v.id ~= "winter_2024_minigame_winter_buck" and 
+           v.id ~= "winter_2024_minigame_winter_doe" then
+           
+            if i == id then
+                return true
+            end
+        end
+    end
+    
+    return false
+end
+
+function GetEggAmount()
+    EggsInAcc = {}
+    for i,v in pairs(ClientData.get_data()[game.Players.LocalPlayer.Name].inventory.pets) do
+        if v.id == findPetID(EggName) then
+            table.insert(EggsInAcc, i)
+        end
+    end
+    return #EggsInAcc
+end
+
+function GetEgg()
+    print("Get Egg Function Called")
+    if GetEggAmount() == 0 then
+        RS.API["ShopAPI/BuyItem"]:InvokeServer("pets", findPetID(EggName), {})
+        for i,v in pairs(ClientData.get_data()[game.Players.LocalPlayer.Name].inventory.pets) do
+            if v.id == findPetID(EggName) then        
+                return i
+            end
+        end
+    elseif GetEggAmount() > 0 then
+        for i,v in pairs(ClientData.get_data()[game.Players.LocalPlayer.Name].inventory.pets) do
+            if v.id == findPetID(EggName) then        
+                return i
+            end
+        end
+    end
+end   
+
+function EquipEgg()
+    game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("ToolAPI/Unequip"):InvokeServer(GetEgg())
+    game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("ToolAPI/Equip"):InvokeServer(GetEgg())
+end
+
+if _G.AgingPotionMode then
+    print("== Selected Mode : Aging Potion ==")
+    Pets = {}
+    for i,v in pairs(ClientData.get_data()[game.Players.LocalPlayer.Name].inventory.pets) do
+        if v.properties.age == 6 then        
+            table.insert(Pets, i)
+        end
+    end
+
+    if #Pets == 0 then
+        print("------  0 Full Grown Pets  -----")
+        Pets = {}
+        for i, v in pairs(ClientData.get_data()[game.Players.LocalPlayer.Name].inventory.pets) do
+            if v.id ~= "practice_dog" and v.id ~= "winter_2024_minigame_winter_fawn" and v.id ~= "winter_2024_minigame_winter_buck" and v.id ~= "winter_2024_minigame_winter_doe" then    
+                table.insert(Pets, i)
+            end
+        end
+    end    
+
+    if #Pets == 0 then
+        Pets = {}
+        RS.API["ShopAPI/BuyItem"]:InvokeServer("pets", "cracked_egg", {})
+        task.wait(1)
+        for i, v in pairs(ClientData.get_data()[game.Players.LocalPlayer.Name].inventory.pets) do
+            if v.id ~= "practice_dog" and v.id ~= "winter_2024_minigame_winter_fawn" and v.id ~= "winter_2024_minigame_winter_buck" and v.id ~= "winter_2024_minigame_winter_doe" then    
+                table.insert(Pets, i)
+            end
+        end
+    end
+    
+
+            if #Pets == 0 then
+                Pets = {}
+                for i,v in pairs(ClientData.get_data()[game.Players.LocalPlayer.Name].inventory.pets) do
+                    table.insert(Pets, i)
+                end
+                spawn(function()
+                    while true do
+                        Bucks = tonumber(ClientData.get("money"))
+                        if Bucks > 350 then
+                            RS.API["ShopAPI/BuyItem"]:InvokeServer("pets", "cracked_egg", {})
+                            break
+                        end
+                        task.wait(5)
+                    end
+                end)
+                task.wait(2)
+            end
+        end            
+    end
+    MainPet = RoT(Pets)
+
+elseif _G.EggHatchMode then
+    print("== Selected Mode : Egg Hatch ==")
+    print("== Selected Egg : " .. EggName .. " ==")
+    if GetEggAmount() == 0 then
+        Pets = {}
+        EggsInAcc = {}
+        if Bucks > 750 then
+            RS.API["ShopAPI/BuyItem"]:InvokeServer("pets", EggName, {})
+            for i,v in pairs(ClientData.get_data()[game.Players.LocalPlayer.Name].inventory.pets) do
+                if v.id == findPetID(EggName) then        
+                    table.insert(EggsInAcc, i)
+                end
+            end      
+        else
+            for i,v in pairs(ClientData.get_data()[game.Players.LocalPlayer.Name].inventory.pets) do
+                if v.id ~= "practice_dog" and v.id ~= "winter_2024_minigame_winter_fawn" and v.id ~= "winter_2024_minigame_winter_buck" and v.id ~= "winter_2024_minigame_winter_doe" then    
+                    table.insert(Pets, i)
+                end
+            end
+            MainPet = RoT(Pets)
+            _G.EggHatchMode = false
+            _G.AgingPotionMode = true    
+        end
+    end  
+end
+
+---- Main ----
+if _G.AgingPotionMode then
+    function EquipMainPet(id)
+        if CheckExistwID(id) then
+            print("Pet Exists : ", id)
+            game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("ToolAPI/Unequip"):InvokeServer(id)
+            game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("ToolAPI/Equip"):InvokeServer(id)
+        else
+            _G.cFoundFGPet = false
+            for i,v in pairs(ClientData.get_data()[game.Players.LocalPlayer.Name].inventory.pets) do
+                if v.properties.age == 6 then
+                    print("Found FG Pet, equipping it : ", i)
+                    game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("ToolAPI/Unequip"):InvokeServer(i)
+                    game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("ToolAPI/Equip"):InvokeServer(i)
+                    print("FG Pet equipped : ", i)
+                    PetName = ClientData.get("pet_char_wrappers")[1].char
+                    print("New Pet Name :", PetName)
+                    _G.cFoundFGPet = true
+                    MainPet = i
+                    break
+                end
+            end
+            if _G.cFoundFGPet == false then
+                for i,v in pairs(ClientData.get_data()[game.Players.LocalPlayer.Name].inventory.pets) do
+                    if v.id ~= "practice_dog" and v.id ~= "winter_2024_minigame_winter_fawn" and v.id ~= "winter_2024_minigame_winter_buck" and v.id ~= "winter_2024_minigame_winter_doe" then
+                        print("Found pet other than Practice Dog : ", i)
+                        game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("ToolAPI/Unequip"):InvokeServer(i)
+                        game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("ToolAPI/Equip"):InvokeServer(i)
+                        print("Found Pet : ", i)
+                        PetName = ClientData.get("pet_char_wrappers")[1].char
+                        print("New Pet Name :", PetName)
+                        MainPet = i
+                        break
+                    end
+                end
+            end                
+        end
+        task.wait(0.5)
+    end
+
+    EquipMainPet(MainPet)
+    wait(2)
+    if not ClientData.get("pet_char_wrappers")[1] then
+        for i,v in pairs(ClientData.get_data()[game.Players.LocalPlayer.Name].inventory.pets) do
+            game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("ToolAPI/Unequip"):InvokeServer(i)
+            game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("ToolAPI/Equip"):InvokeServer(i)
+            break
+        end
+    end
+
+    repeat task.wait(1) until ClientData.get("pet_char_wrappers")[1] and ClientData.get("pet_char_wrappers")[1].char
+
+    PetName = ClientData.get("pet_char_wrappers")[1].char
+    print("== Pet Name:", PetName, "==")
+    selectedPetID = ClientData.get("pet_char_wrappers")[1].pet_unique
+
+    spawn(function()
+        while task.wait(30) do
+            pcall(function()
+                if ClientData.get("pet_char_wrappers") and ClientData.get("pet_char_wrappers")[1] and ClientData.get("pet_char_wrappers")[1].pet_unique ~= selectedPetID then
+                    print("Other Pet Found: ", ClientData.get("pet_char_wrappers")[1].char, PetName)
+                    if PetName:match("Egg") then
+                        print("Egg Hatched, changing Main Pet..")
+                        MainPet = ClientData.get("pet_char_wrappers")[1].pet_unique
+                        selectedPetID = ClientData.get("pet_char_wrappers")[1].pet_unique
+                    else
+                        EquipMainPet(MainPet)
+                    end
+                elseif not ClientData.get("pet_char_wrappers")[1] then
+                    EquipMainPet(MainPet)
+                end
+            end)
+        end
+    end)
+end
+
+if _G.EggHatchMode then
+    EquipEgg()
+    wait(2)
+
+    print("== Egg Hatching Started ==")
+    spawn(function()
+        while task.wait(5) do
+            if ClientData.get("pet_char_wrappers")[1] then
+                if ClientData.get("pet_char_wrappers")[1].pet_id ~= findPetID(EggName) then 
+                    EquipEgg()
+                end
+            end
+        end
+    end)
+end
+
+------------- FURNITURE STUFF ----------------
+function GetFurniture(name)
+    name = string.lower(name)
+    for i,v in pairs(ClientData.get_data()[game.Players.LocalPlayer.Name].house_interior.furniture) do 
+        if v.id == name then 
+            return i
+        end
+    end
+end
+
+function buyFurniture(furnitureName)
+    local args = {
+        [1] = {
+            [1] = {
+                ["properties"] = {
+                    ["cframe"] = CFrame.new(9e9, 9e9, 9e9)
+                },
+                ["kind"] = furnitureName
+            }
+        }
+    }
+    game:GetService("ReplicatedStorage").API:FindFirstChild("HousingAPI/BuyFurnitures"):InvokeServer(unpack(args))
+    wait(1)
+end
+---------------------- Lure System ------------------
+print("== Lure System Activated ==")
+_G.BaitID = "lures_2023_campfire_cookies"
+_G.LureUniqueID = GetFurniture("lures_2023_normal_lure")
+
+function BuyLureBox()
+    local args5 = {
+        [1] = {
+            [1] = {
+                ["kind"] = "lures_2023_normal_lure",
+                ["properties"] = {
+                    ["cframe"] = CFrame.new(13.5, 0, -22.60009765625, 1, -3.82137093032941e-15, 8.742277657347586e-08, 3.82137093032941e-15, 1, 0, -8.742277657347586e-08, 0, 1)
+                }
+            }
+        }
+    }
+    game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("HousingAPI/BuyFurnitures"):InvokeServer(unpack(args5))
+    task.wait(1)
+    _G.LureUniqueID = GetFurniture("lures_2023_normal_lure")
+end
+
+function LureFeedBeta()
+    for i, v in pairs(ClientData.get_data()[game.Players.LocalPlayer.Name].inventory.food) do
+        if v.id == _G.BaitID then
+            cookieid = v.unique
+        end
+    end
+    local args = {
+        [1] = Player,
+        [2] = _G.LureUniqueID,
+        [3] = "UseBlock",
+        [4] = {
+            ["bait_unique"] = tostring(cookieid)
+        },
+        [5] = Player.Character 
+    }
+    game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("HousingAPI/ActivateFurniture"):InvokeServer(unpack(args))
+end
+
+function ClaimLureBeta()
+    local args = {
+        [1] = Player,
+        [2] = _G.LureUniqueID,
+        [3] = "UseBlock",
+        [4] = true,
+        [5] = Player.Character
+    }
+    game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("HousingAPI/ActivateFurniture"):InvokeServer(unpack(args))
+    LureFeedBeta()
+end
+
+spawn(function()
+    if _G.LureUniqueID == nil and ClientData.get("money") >= 750 then
+        print("Buying Lure Box")
+        BuyLureBox()
+        task.wait(1)
+    end
+
+    -- Get Canine Truck
+    RS.API:WaitForChild("CodeRedemptionAPI/AttemptRedeemCode"):InvokeServer("AMTRUCK2024")
+    print("Fired Truck Remote")
+    
+
+    
+    while task.wait(1) do
+        pcall(function()
+            -- Winter Advent Manager Claim
+            Winter2024AdventManager = ClientData.get_data()[game.Players.LocalPlayer.Name]["winter_2024_advent_manager"]
+            if not Winter2024AdventManager["rewards_claimed"][#Winter2024AdventManager["replicated_rewards"]] then
+                RS.API:WaitForChild("WinterfestAPI/AdventCalendarTryTakeReward"):InvokeServer(i)
+                print("Claimed", v["amount"], findItemName(v["kind"], v["category"]))
+            end
+        end)
+
+        if _G.LureUniqueID then
+            pcall(function()
+                local PetInventory = ClientData.get_data()[game.Players.LocalPlayer.Name].inventory.pets
+                for i, v in pairs(PetInventory) do
+                    if v.id == findPetID("Blazing Lion") then
+                        ScreenGui.Frame.BackgroundColor3 = Color3.fromRGB(255, 165, 0)
+                        break
+                    end
+                end
+
+                local LureInBox = ClientData.get_data()[Player.Name].house_interior.furniture[_G.LureUniqueID].lure
+                if LureInBox then
+                    if LureInBox.finished then
+                        local successA, errorA = pcall(function()
+                            if LureInBox.reward.category == "currency" then
+                                SendLureNotif(string.format("%d %s", (LureInBox.reward.amount or 1), string.upper(LureInBox.reward.kind)))
+                            else
+                                SendLureNotif(string.format("%d %s", (LureInBox.reward.amount or 1), findItemName(LureInBox.reward.kind, LureInBox.reward.category)))
+                            end
+                        end)
+                        if not successA then print(errorA) end
+
+                        ClaimLureBeta()
+                    else
+                        LureEndTime = LureInBox.lure_start_timestamp + 14400
+                        print("Waiting", math.floor(LureEndTime - os.time()), "Seconds for Lure!")
+                        task.wait(LureEndTime - os.time())
+                    end
+                else
+                    print("Lure Box is Empty, inserting Bait into Lure Box!")
+                    LureFeedBeta()
+                end
+            end)
+        end
+    end
+end)
+
+---------------------- LOCATION/FURNITURE STUFF  --------------------
+
+getgenv().aPetCrib = GetFurniture("basiccrib") or GetFurniture("PetBed")
+getgenv().aPetShower = GetFurniture("stylishshower") or GetFurniture("Bath")
+getgenv().aPiano = GetFurniture("piano")
+getgenv().aToilet = GetFurniture("Toilet")
+
+if not aPetCrib then
+    buyFurniture("basiccrib")
+    print("---- Notification ---- Bought Crib")
+    getgenv().aPetCrib = GetFurniture("basiccrib") or GetFurniture("PetBed")
+end
+
+if not aPetShower then
+    buyFurniture("stylishshower")
+    print("---- Notification ---- Bought Shower")
+    getgenv().aPetShower = GetFurniture("stylishshower") or GetFurniture("Bath")
+end
+
+if not aPiano and tonumber(ClientData.get("money")) > 100 then
+    buyFurniture("piano")
+    print("---- Notification ---- Bought Piano")
+    getgenv().aPiano = GetFurniture("Piano")
+end
+
+local Player = game.Players.LocalPlayer
+local player = game.Players.LocalPlayer
+local get_thread_identity = get_thread_context or getthreadcontext or getidentity or syn.get_thread_identity
+local set_thread_identity = set_thread_context or setthreadcontext or setidentity or syn.set_thread_identity
+
+repeat wait() until game.Players.LocalPlayer.Character
+repeat wait() until game.Players.LocalPlayer.Character.HumanoidRootPart
+
+function CreateTempPart()
+    if workspace:FindFirstChild("TempPartA") then 
+        workspace.TempPartA:Destroy() 
+    end
+    if game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then  
+        game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").Anchored = true  
+        local a = Instance.new("Part", workspace)
+        a.Size = Vector3.new(500,0,500)
+        a.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + Vector3.new(0, -2, 0)
+        a.CanCollide = true 
+        a.Anchored = true 
+        a.Transparency = 1 
+        a.Name = "TempPartA"
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = a.CFrame + Vector3.new(0, 1, 0)
+        game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").Anchored = false 
+    end
+end
+
+function IsInMainMap()
+    return game.workspace.Interiors:FindFirstChildWhichIsA("Model")
+end
+
+local SetLocationTP
+--//grab teleportation function
+for _, v in pairs(getgc()) do
+	if type(v) == "function" then
+		if getfenv(v).script == game.ReplicatedStorage.ClientModules.Core.InteriorsM.InteriorsM then
+			if table.find(getconstants(v), "LocationAPI/SetLocation") then
+				SetLocationTP = v
+				break
+			end
+		end
+	end
+end
+
+local SetLocation = function(A, B, C)
+    local O = get_thread_identity()
+    set_thread_identity(2)
+    require(game.ReplicatedStorage.ClientModules.Core.InteriorsM.InteriorsM).enter(A, B, C)
+    --SetLocationTP(A, B, C)
+    set_thread_identity(O)
+end
+
+local GoToMainMap = function()
+    getgenv().TPinProgress = true
+    --spawn(function()
+        --require(game.ReplicatedStorage.ClientModules.Core.InteriorsM.InteriorsM).enter("MainMap", "Neighborhoodd/MainDoor", {})
+        game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").Anchored = true
+        SetLocation("MainMap", "Neighborhood/MainDoor", {["spawn_cframe"] = CFrame.new(-248.025375, -50, -1746.41724, -0.998434782, -7.92188573e-08, -0.0559278913, -7.50130056e-08, 1, -7.73006334e-08, 0.0559278913, -7.29843208e-08, -0.998434782)})
+        if workspace:FindFirstChildWhichIsA("Terrain") then workspace.Terrain:Clear() end
+        repeat task.wait() until IsInMainMap()
+        CreateTempPart()
+        game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").Anchored = false
+    --end)
+    getgenv().TPinProgress = false
+    return false
+end
+
+local GoToHome = function()
+    game.ReplicatedStorage.API["HousingAPI/SubscribeToHouse"]:FireServer(game:GetService("Players").LocalPlayer)
+    spawn(function()
+        pcall(function()
+            SetLocation("housing", "MainDoor", {["house_owner"] = Player})
+        end)
+    end)       
+    task.wait(1)
+    --Player.Character.HumanoidRootPart.CFrame = Workspace.HouseInteriors.blueprint:FindFirstChildWhichIsA('Model'):GetModelCFrame():ToWorldSpace(CFrame.new(0, 0, -8))
+    return false
+end
+
+local GoToPlace = function(Name)
+    spawn(function()
+        pcall(function()
+            SetLocation(Name, "MainDoor", {})
+        end)
+    end)   
+end
+
+---------------- Function Tasks ------------------
+
+function farmGingerbreads()
+    for _, v in RS.Resources.IceSkating.GingerbreadMarkers:GetChildren() do
+        if v:IsA("BasePart") then
+            RS.API:FindFirstChild("WinterEventAPI/PickUpGingerbread"):InvokeServer(v.Name)
+            task.wait()
+        end
+    end
+    task.wait(1)
+    RS.API:FindFirstChild("WinterEventAPI/RedeemPendingGingerbread"):FireServer()
+end
+
+function hasStroller()
+    for i,v in pairs(ClientData.get_data()[game.Players.LocalPlayer.Name].inventory.strollers) do
+        if v.id == "stroller-default" then
+            return v.unique
+        end
+    end
+end
+
+function hasGoldenApple()
+    for i,v in pairs(ClientData.get_data()[game.Players.LocalPlayer.Name].inventory.food) do
+        if v.id == "healing_apple" then
+            return v.unique
+        end
+    end   
+end
+
+-- Food / Hungry Task
+function HungryTask()
+    EquipLastPet()
+    
+    RS.API["ShopAPI/BuyItem"]:InvokeServer("food", "icecream", {})
+    for _, v in pairs(ClientData.get_data()[Player.Name].inventory.food) do
+        if v.id == "icecream" then
+            RS.API["ToolAPI/Equip"]:InvokeServer(v.unique, { ["use_sound_delay"] = true })
+            task.wait(1)
+            RS.API:WaitForChild("PetAPI/ConsumeFoodItem"):FireServer(v.unique, ClientData.get("pet_char_wrappers")[1]["pet_unique"])
+            break
+        end
+    end
+end
+
+-- Dirty / Shower Task
+
+function DirtyTask()
+    EquipLastPet()
+    task.wait(0.5)
+    local args = {
+        [1] = game:GetService("Players").LocalPlayer,
+        [2] = aPetShower,
+        [3] = "UseBlock",
+        [4] = {
+            ["cframe"] = Player.Character.HumanoidRootPart.CFrame
+        },
+        [5] = ClientData.get("pet_char_wrappers")[1].char
+    }
+    RS.API:WaitForChild("HousingAPI/ActivateFurniture"):InvokeServer(unpack(args))
+end
+
+-- Sleeping Task
+
+function SleepyTask()
+    EquipLastPet()
+    task.wait(0.5)
+    local args = {
+        [1] = game:GetService("Players").LocalPlayer,
+        [2] = aPetCrib,
+        [3] = "UseBlock",
+        [4] = {
+            ["cframe"] = Player.Character.HumanoidRootPart.CFrame
+        },
+        [5] = ClientData.get("pet_char_wrappers")[1].char
+    }
+    RS.API:WaitForChild("HousingAPI/ActivateFurniture"):InvokeServer(unpack(args))
+end
+
+-- Toilet / Potty Task
+function ToiletTask()
+    EquipLastPet()
+    task.wait(0.5)
+    local args = {
+        [1] = game:GetService("Players").LocalPlayer,
+        [2] = aToilet,
+        [3] = "Seat1",
+        [4] = {
+            ["cframe"] = Player.Character.HumanoidRootPart.CFrame
+        },
+        [5] = ClientData.get("pet_char_wrappers")[1].char
+    }
+    RS.API:WaitForChild("HousingAPI/ActivateFurniture"):InvokeServer(unpack(args))
+end
+
+-- Thirsty Task
+
+function ThirstyTask()
+    EquipLastPet()
+    task.wait(0.3)
+    game.ReplicatedStorage:FindFirstChild("ShopAPI/BuyItem",true):InvokeServer('food', 'tea', {})
+    local Foods = ClientData.get_data()[Player.Name].inventory.food or {}
+    local Tea
+    for i, v in pairs(Foods) do
+        if v.id == 'tea' then
+            Tea = v.unique
+            break
+        end
+    end
+    if not Tea then
+        return
+    end
+    wait(2)
+    game.ReplicatedStorage:FindFirstChild("PetAPI/ConsumeFoodItem",true):FireServer(Tea, ClientData.get("pet_char_wrappers")[1]["pet_unique"])
+end
+
+-- School Task
+function SchoolTask()
+    CreateTempPart()
+    EquipLastPet()
+    for i=1,35 do task.wait(.35)
+        game.ReplicatedStorage.API:FindFirstChild("LocationAPI/SetLocation"):FireServer("School")
+    end
+
+    local startTime = tick()
+    repeat task.wait(1) until not CheckTaskExist("school") or (tick() - startTime >= 90)   
+end
+
+-- Sick / Hospital Task
+function SickTask()
+    EquipLastPet()
+    goldenAppleID = hasGoldenApple()
+    if goldenAppleID then
+        RS:FindFirstChild("PetAPI/ConsumeFoodItem",true):FireServer(goldenAppleID, ClientData.get("pet_char_wrappers")[1]["pet_unique"])
+    end
+end
+
+-- Pizza Party Task
+function PizzaPartyTask()
+    CreateTempPart()
+    EquipLastPet()
+    for i=1,35 do task.wait(.35)
+        game.ReplicatedStorage.API:FindFirstChild("LocationAPI/SetLocation"):FireServer("PizzaShop")
+    end
+
+    local startTime = tick()
+    repeat task.wait(1) until not CheckTaskExist("pizza_party") or (tick() - startTime >= 90)   
+end
+
+-- Bored / Playground Task
+function BoredTask()
+    EquipLastPet()
+    if aPiano then
+        game.ReplicatedStorage.API["HousingAPI/ActivateFurniture"]:InvokeServer(game.Players.LocalPlayer, aPiano, "Seat1", {['cframe'] = CFrame.new(game:GetService("Players").LocalPlayer.Character:FindFirstChild("Head").Position)}, ClientData.get("pet_char_wrappers")[1]["char"])
+    end
+end
+
+-- Camping Task
+function CampingTask()
+    -- Camping + Sleeping
+    print("Tping to Main Map")
+    
+    RS.API:FindFirstChild("LocationAPI/SetLocation"):FireServer("MainMap", Player, LiveOpsMapSwap.get_current_map_type())
+    task.wait(5)
+    if workspace:FindFirstChildWhichIsA("Terrain") then workspace.Terrain:Clear() end
+
+    print("Tping to Camping")
+    HRP.CFrame = CFrame.new(-27,20,-1056) -- set 25
+    game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Landed)
+    if workspace:FindFirstChildWhichIsA("Terrain") then workspace.Terrain:Clear() end
+    CreateTempPart()
+    EquipLastPet()
+
+    local startTime = tick()
+    repeat task.wait(1) until not CheckTaskExist("camping") or (tick() - startTime >= 90)
+end
+
+-- Beach Party Task
+function BeachPartyTask()
+    print("Tping to Main Map")
+    RS.API:FindFirstChild("LocationAPI/SetLocation"):FireServer("MainMap", Player, LiveOpsMapSwap.get_current_map_type())
+    task.wait(5)
+    if workspace:FindFirstChildWhichIsA("Terrain") then workspace.Terrain:Clear() end
+
+    print("Tping to Beach")
+    HRP.CFrame = CFrame.new(-667, 20, -1421) -- set 25
+    game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Landed)
+    if workspace:FindFirstChildWhichIsA("Terrain") then workspace.Terrain:Clear() end
+    CreateTempPart()
+    EquipLastPet()
+
+    local startTime = tick()
+    repeat task.wait(1) until not CheckTaskExist("beach_party") or (tick() - startTime >= 90)
+end
+
+-- Salon Task
+function SalonTask()
+    CreateTempPart()
+    EquipLastPet()
+    for i=1,35 do task.wait(.35)
+        game.ReplicatedStorage.API:FindFirstChild("LocationAPI/SetLocation"):FireServer("Salon")
+    end
+
+    local startTime = tick()
+    repeat task.wait(1) until not CheckTaskExist("salon") or (tick() - startTime >= 90)
+end
+
+-- Ride Task
+function EquipBike()
+    for i,v in pairs(ClientData.get_data()[game.Players.LocalPlayer.Name].inventory.transport) do
+        if v.id == "vehicle_shop_2022_bicycle" then
+            game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("ToolAPI/Unequip"):InvokeServer(i)
+            task.wait(0.5)
+            game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("ToolAPI/Equip"):InvokeServer(i)
+            return i
+        end
+    end
+end
+
+function RideTask()
+    CreateTempPart()
+    task.wait(2)
+    EquipLastPet()
+    task.wait(2)
+
+    strollerId = hasStroller()
+    if strollerId then
+        RS.API:FindFirstChild("ToolAPI/Equip"):InvokeServer(strollerId, {})
+        local args = {
+            [1] = ClientData.get("pet_char_wrappers")[1].char,
+            [2] = Player.Character.StrollerTool.ModelHandle.TouchToSits.TouchToSit
+        }
+        RS.API:FindFirstChild("AdoptAPI/UseStroller"):InvokeServer(unpack(args))
+        task.wait(1)
+
+        local st = tick()
+        repeat
+            if Player.Character.Humanoid:GetState() ~= Enum.HumanoidStateType.Freefall then
+                Player.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+            end
+            task.wait(0.1)
+        until not CheckTaskExist("ride") or (tick() - st >= 90)
+        task.wait(1)
+
+        RS.API:FindFirstChild("AdoptAPI/EjectBaby"):FireServer(ClientData.get("pet_char_wrappers")[1]["char"])
+        print("[PET] - Completed Ride Task")
+    end
+end
+
+-- Walk Task
+function WalkTask()
+    CreateTempPart()
+    task.wait(2)
+    EquipLastPet()
+    task.wait(2)
+    RS.API["AdoptAPI/HoldBaby"]:FireServer(ClientData.get("pet_char_wrappers")[1]["char"])
+    local st = tick()
+    repeat
+        if Player.Character.Humanoid:GetState() ~= Enum.HumanoidStateType.Freefall then
+            Player.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+        end
+        task.wait(0.1)
+    until not CheckTaskExist("walk") or (tick() - st >= 90)
+    RS.API:FindFirstChild("AdoptAPI/EjectBaby"):FireServer(ClientData.get("pet_char_wrappers")[1]["char"])
+end
+
+function PlayTask()
+    EquipLastPet()
+    task.wait(2)
+    boneId = nil
+    local st = tick()
+    for i,v in pairs(ClientData.get_data()[game.Players.LocalPlayer.Name].inventory.toys) do
+        if v.id == "squeaky_bone_default" then
+            boneId = i
+            game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("ToolAPI/Unequip"):InvokeServer(i)
+            game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("ToolAPI/Equip"):InvokeServer(i)
+            break
+        end
+    end
+    repeat
+        for i,v in pairs(ClientData.get_data()[game.Players.LocalPlayer.Name].inventory.toys) do
+            if v.id == "squeaky_bone_default" then
+                RS.API:WaitForChild("PetObjectAPI/CreatePetObject"):InvokeServer("__Enum_PetObjectCreatorType_1", {["reaction_name"] = "ThrowToyReaction", ["unique_id"] = i})
+                break
+            end
+        end
+        task.wait(5.2)
+    until not CheckTaskExist("play") or (tick() - st >= 60)
+    game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("ToolAPI/Unequip"):InvokeServer(boneId)
+end
+
+----------- BOOST PERFORMANCE ----------
+spawn(function()
+    task.wait(3)
+    print("-- Boost Performance Activated --")
+    UserSettings():GetService("UserGameSettings").MasterVolume = 0
+    local decalsyeeted = true
+    local g = game
+    local w = g.Workspace
+    local l = g.Lighting
+    local t = w.Terrain
+    sethiddenproperty(l,"Technology",2)
+    sethiddenproperty(t,"Decoration",false)
+    game:GetService("StarterGui"):SetCoreGuiEnabled(Enum.CoreGuiType.Chat,false)
+    t.WaterWaveSize = 0
+    t.WaterWaveSpeed = 0
+    t.WaterReflectance = 0
+    t.WaterTransparency = 0
+    l.GlobalShadows = 0
+    l.FogEnd = 9e9
+    l.Brightness = 0
+    settings().Rendering.QualityLevel = "0"
+    settings().Rendering.MeshPartDetailLevel = Enum.MeshPartDetailLevel.Level04
+    task.wait()
+    for i, v in pairs(w:GetDescendants()) do
+        if v:IsA("BasePart") and not v:IsA("MeshPart") then
+            v.Material = "Plastic"
+            v.Reflectance = 0
+        elseif (v:IsA("Decal") or v:IsA("Texture")) and decalsyeeted then
+            v.Transparency = 1
+        elseif v:IsA("ParticleEmitter") or v:IsA("Trail") then
+            v.Lifetime = NumberRange.new(0)
+        elseif v:IsA("Explosion") then
+            v.BlastPressure = 1
+            v.BlastRadius = 1
+        elseif v:IsA("Fire") or v:IsA("SpotLight") or v:IsA("Smoke") or v:IsA("Sparkles") then
+            v.Enabled = false
+        elseif v:IsA("MeshPart") and decalsyeeted then
+            v.Material = "Plastic"
+            v.Reflectance = 0
+            v.TextureID = 10385902758728957
+        elseif v:IsA("SpecialMesh") and decalsyeeted then
+            v.TextureId=0
+        elseif v:IsA("ShirtGraphic") and decalsyeeted then
+            v.Graphic=1
+        elseif (v:IsA("Shirt") or v:IsA("Pants")) and decalsyeeted then
+            v[v.ClassName.."Template"]=1
+            elseif v.Name == "Foilage" and v:IsA("Folder") then
+            v:Destroy()
+        elseif string.find(v.Name, "^Tree.*$") or string.find(v.Name, "Water") or string.find(v.Name, "^Bush.*$") or string.find(v.Name, "^grass.*$") then
+            task.wait()
+            v:Destroy()
+        elseif string.find(v.Name, "Model") or string.find(v.Name, "Debris") or string.find(v.Name, "Interactable") then
+            v:Destroy()	
+        end
+    end
+    for i = 1,#l:GetChildren() do
+        e=l:GetChildren()[i]
+        if e:IsA("BlurEffect") or e:IsA("SunRaysEffect") or e:IsA("ColorCorrectionEffect") or e:IsA("BloomEffect") or e:IsA("DepthOfFieldEffect") then
+            e.Enabled = false
+        end
+    end
+    w.DescendantAdded:Connect(function(v)
+        pcall(function()
+            if v:IsA("BasePart") and not v:IsA("MeshPart") then
+                v.Material = "Plastic"
+                v.Reflectance = 0
+            elseif v:IsA("Decal") or v:IsA("Texture") and decalsyeeted then
+                v.Transparency = 1
+            elseif v:IsA("ParticleEmitter") or v:IsA("Trail") then
+                v.Lifetime = NumberRange.new(0)
+            elseif v:IsA("Explosion") then
+                v.BlastPressure = 1
+                v.BlastRadius = 1
+            elseif v:IsA("Fire") or v:IsA("SpotLight") or v:IsA("Smoke") or v:IsA("Sparkles") then
+                v.Enabled = false
+            elseif v:IsA("MeshPart") and decalsyeeted then
+                v.Material = "Plastic"
+                v.Reflectance = 0
+                v.TextureID = 10385902758728957
+            elseif v:IsA("SpecialMesh") and decalsyeeted then
+                v.TextureId=0
+            elseif v:IsA("ShirtGraphic") and decalsyeeted then
+                v.ShirtGraphic=1
+            elseif (v:IsA("Shirt") or v:IsA("Pants")) and decalsyeeted then
+                v[v.ClassName.."Template"]=1
+                elseif v.Name == "Foilage" and v:IsA("Folder") then
+                v:Destroy()
+            elseif string.find(v.Name, "^Tree.*$") or string.find(v.Name, "Water") or string.find(v.Name, "^Bush.*$") or string.find(v.Name, "^grass.*$") then
+                task.wait()
+                v:Destroy()
+            end
+        end)
+        task.wait()
+    end)
+    
+    workspace.HouseInteriors.furniture:Destroy()
+    workspace.HouseInteriors.ChildAdded:Connect(function()
+        if workspace:FindFirstChildWhichIsA("Terrain") then workspace.Terrain:Clear() end
+        local doctor = workspace.HouseInteriors.furniture:FindFirstChild("Doctor", true)
+        if not doctor then
+            if workspace.HouseInteriors.furniture then
+                for i, v in pairs(workspace.HouseInteriors.furniture:GetChildren()) do
+                    v:Destroy()
+                end
+            end
+            if workspace.HouseInteriors.blueprint:FindFirstChildOfClass("Model") then 
+                workspace.HouseInteriors.blueprint:FindFirstChildOfClass("Model"):Destroy()
+            end
+        end
+    end)
+
+    workspace.Terrain.WaterReflectance = 0
+    workspace.Terrain.WaterTransparency = 1
+    workspace.Terrain.WaterWaveSize = 0
+    workspace.Terrain.WaterWaveSpeed = 0
+
+    pcall(function()
+        if workspace:FindFirstChildWhichIsA("Terrain") then
+            workspace.Terrain:Clear()
+        end
+        workspace.StaticMap.Balloon:Destroy()
+    end)
+    pcall(function()
+        workspace.StaticMap.Park.Trampolines:Destroy()
+    end)
+    pcall(function()
+        workspace.StaticMap.Park.PlaygroundSlide:Destroy()
+    end)
+    pcall(function()
+        workspace.StaticMap.Park.Roundabout:Destroy()
+    end)
+    pcall(function()
+        workspace.StaticMap.Park.Seesaw:Destroy()
+    end)
+    pcall(function()
+        workspace.StaticMap.Park.SwingSets:Destroy()
+    end)
+    pcall(function()
+        workspace.Events:Destroy()
+    end)
+
+    for i,v in pairs(game.Lighting:GetChildren()) do 
+        if v:IsA("Model") then
+            v:Destroy()
+        elseif v.Name:match("Weather") then 
+            v:Destroy()
+        end 
+    end
+    game.Lighting.Brightness = 0
+
+    game.Lighting.ChildAdded:Connect(function()
+        for i,v in pairs(game.Lighting:GetChildren()) do 
+            if v:IsA("Model") then
+                v:Destroy()
+            elseif v.Name:match("Weather") then 
+                v:Destroy()
+            end 
+        end
+        game.Lighting.Brightness = 0
+    end)
+
+    workspace.Interiors.ChildAdded:Connect(function()
+        if workspace:FindFirstChildWhichIsA("Terrain") then workspace.Terrain:Clear() end
+        pcall(function()
+            workspace.Interiors["MainMap/Default"].Static.Boundaries:Destroy()
+            workspace.Interiors["MainMap/Default"].Static.Props:Destroy()
+            workspace.Interiors["MainMap/Default"].Static.Campsite:Destroy()
+            workspace.Interiors["MainMap/Default"].Static.Bridges:Destroy()
+            --workspace.Interiors["MainMap/Default"].Buildings:Destroy()
+            workspace.Interiors["MainMap/Default"].TimePortalHub:Destroy()
+            workspace.Interiors["MainMap/Default"].Static.Beach.Lighthouse:Destroy()
+
+            for i, v in pairs(workspace.Interiors["MainMap/Default"].Park:GetChildren()) do
+                if v.Name ~= "Ground" then
+                    v:Destroy()
+                end
+            end
+            for i, v in pairs(workspace.Interiors["MainMap/Default"].Static.Beach.BeachSetDressing:GetChildren()) do
+                if v.Name ~= "BoardWalk" and v.Name ~= "Sand" and v.Name ~= "SandGrass" and v.Name ~= "GrassBeach" then
+                    v:Destroy()
+                end
+            end
+        end)
+    end)
+end)
+
+--
+networkSettings = settings().Network
+renderSettings = settings().Rendering
+physicsSettings = settings()['Physics']
+gameSettings = settings()["Game Options"]
+userGameSettings = UserSettings():FindService("UserGameSettings") or UserSettings():GetService("UserGameSettings")
+
+-- -- Render Settings
+renderSettings.QualityLevel = Enum.QualityLevel.Level01
+renderSettings.ShowBoundingBoxes = false
+renderSettings.RenderCSGTrianglesDebug = false
+renderSettings.MeshCacheSize = 0
+renderSettings.GraphicsMode = Enum.GraphicsMode.NoGraphics
+renderSettings.MeshCacheSize = Enum.MeshPartDetailLevel.Level01
+renderSettings.MeshPartDetailLevel = Enum.MeshPartDetailLevel.Level01
+renderSettings.EagerBulkExecution = false
+renderSettings.EnableFRM = true
+renderSettings.AutoFRMLevel = 0
+renderSettings.ExportMergeByMaterial = false
+renderSettings.ReloadAssets = false 
+renderSettings.MeshPartDetailLevel = "Level00"
+renderSettings.QualityLevel = "Level01"
+renderSettings.EditQualityLevel = "Level01"
+
+-- -- User Game Settings
+userGameSettings.SavedQualityLevel = Enum.SavedQualitySetting.QualityLevel1
+userGameSettings.HasEverUsedVR = false 
+userGameSettings.ChatVisible = false
+userGameSettings.AllTutorialsDisabled = false
+userGameSettings.Fullscreen = false
+userGameSettings.GraphicsQualityLevel = 0
+userGameSettings.SavedQualityLevel = 0 
+
+
+--Physics Settings 
+physicsSettings.AllowSleep = true 
+physicsSettings.AreAnchorsShown = false 
+physicsSettings.AreAssembliesShown = false 
+physicsSettings.AreAssemblyCentersOfMassShown = false 
+physicsSettings.AreAwakePartsHighlighted = false 
+physicsSettings.AreBodyTypesShown = false 
+physicsSettings.AreCollisionCostsShown = false 
+physicsSettings.AreConstraintForcesShownForSelectedOrHoveredInstances = false 
+physicsSettings.AreContactForcesShownForSelectedOrHoveredAssemblies = false 
+physicsSettings.AreContactIslandsShown = false 
+physicsSettings.AreContactPointsShown = false 
+physicsSettings.AreJointCoordinatesShown = false 
+physicsSettings.AreMagnitudesShownForDrawnForcesAndTorques = false 
+physicsSettings.AreMechanismsShown = false 
+physicsSettings.AreModelCoordsShown = false 
+physicsSettings.AreOwnersShown = false 
+physicsSettings.ArePartCoordsShown = false 
+physicsSettings.AreRegionsShown = false 
+physicsSettings.AreSolverIslandsShown = false 
+physicsSettings.AreTerrainReplicationRegionsShown = false 
+physicsSettings.AreTimestepsShown = false 
+physicsSettings.AreUnalignedPartsShown = false 
+physicsSettings.AreWorldCoordsShown = false 
+physicsSettings.DisableCSGv2 = true 
+physicsSettings.ForceDrawScale = 0 
+physicsSettings.IsInterpolationThrottleShown = false 
+physicsSettings.IsReceiveAgeShown = false 
+physicsSettings.IsTreeShown = false 
+physicsSettings.PhysicsEnvironmentalThrottle = Enum.EnviromentalPhysicsThrottle.Disabled
+physicsSettings.ShowDecompositionGeometry = false 
+physicsSettings.ThrottleAdjustTime = 1
+
+-- Network Settings
+networkSettings.PrintPhysicsErrors = false
+networkSettings.PrintJoinSizeBreakdown = false
+networkSettings.PrintStreamInstanceQuota = false
+networkSettings.RandomizeJoinInstanceOrder = false
+networkSettings.RenderStreamedRegions = false
+networkSettings.ShowActiveAnimationAsset = false
+
+--[[
+for i,v in pairs(workspace.Interiors:GetDescendants()) do 
+    if v:IsA("MeshPart") or v:IsA("Part") or v:IsA("Model") or v:IsA("Folder") then 
+        v:Destroy()
+    end
+end]]
+for i,v in pairs(workspace.HouseExteriors:GetDescendants()) do 
+    if v:IsA("MeshPart") or v:IsA("Part") or v:IsA("Model") or v:IsA("Folder") then 
+        v:Destroy()
+    end
+end
+
+if workspace.HouseInteriors.blueprint:FindFirstChildOfClass("Model") then 
+    workspace.HouseInteriors.blueprint:FindFirstChildOfClass("Model"):Destroy()
+end
+
+
+--[[
+for i,v in pairs(game:GetService("ReplicatedStorage").ClientServices:GetDescendants()) do 
+    if v:IsA("ModuleScript") and require(v) and require(v).init and v.Name ~= "DoorsClient" and v.Name ~= "ResetHandler" then 
+    require(v).init = function() return end 
+    end 
+end 
+for i,v in pairs(require(game:GetService("ReplicatedStorage").ClientModules.Core.WeatherClient.WeatherClient)) do 
+    if type(v) == "function" then 
+    v = function() return end 
+    end
+end   
+for i,v in pairs(game:GetService("ReplicatedStorage").ClientModules.Game.PetEntities.PetPerformancesFolder.Emotes:GetChildren()) do 
+    if v:IsA("ModuleScript") then 
+        require(v).step = function() return end 
+    end
+end    
+for i,v in pairs(game:GetService("ReplicatedStorage").ClientModules.Game.PetEntities.PetReactions:GetChildren()) do 
+    require(v).init_reaction = function() return end 
+end  
+for i,v in pairs(game:GetService("ReplicatedStorage").ClientModules.Game.PetEntities.PetPerformancesFolder.Transitions:GetChildren()) do 
+    if v:IsA("ModuleScript") then 
+        require(v).step = function() return end 
+    end
+end   
+for Data,Effect in pairs(require(game:GetService("ReplicatedStorage").ClientModules.Core.UIManager.Apps.SpecialEffectsApp)) do 
+    if type(Data) == "function" then 
+        Data = function() return end 
+    end
+end
+]]
+
+function CleanStaticMap()
+    for i,v in pairs(workspace.StaticMap:GetChildren()) do 
+        if v.Name ~= "Park" and v.Name ~= "Campsite" and v.Name ~= "Pool" and v.Name ~= "TeleportLocations" then 
+            v:Destroy()
+        elseif v.Name == "Park" then 
+            for i,v in pairs(v:GetChildren()) do 
+                if v.Name ~= "BoredAilmentTarget" and v.Name ~= "BoredAilmentPerimeter" then 
+                    v:Destroy()
+                end
+            end
+        elseif v.Name == "Campsite" then 
+            for i,v in pairs(v:GetChildren()) do 
+                if v.Name ~= "CampsiteOrigin" then 
+                    v:Destroy()
+                elseif v.Name == "CampsiteOrigin" then 
+                    v.Transparency = 1 
+                end
+            end
+        end
+    end
+
+    for i,v in pairs(workspace.Interiors:FindFirstChildWhichIsA("Model").Static:GetChildren()) do 
+        if v.Name ~= "Park" and v.Name ~= "Campsite" and v.Name ~= "Pool" and v.Name ~= "TeleportLocations" then 
+            v:Destroy()
+        elseif v.Name == "Park" then 
+            for i,v in pairs(v:GetChildren()) do 
+                if v.Name ~= "BoredAilmentTarget" and v.Name ~= "BoredAilmentPerimeter" then 
+                    v:Destroy()
+                end
+            end
+        elseif v.Name == "Campsite" then 
+            for i,v in pairs(v:GetChildren()) do 
+                if v.Name ~= "CampsiteOrigin" then 
+                    v:Destroy()
+                elseif v.Name == "CampsiteOrigin" then 
+                    v.Transparency = 1 
+                end
+            end
+        end
+    end
+end
+
+spawn(function()
+    while task.wait(0.5) do 
+        pcall(CleanStaticMap)
+        pcall(function()
+            for i,v in pairs(workspace.Pets:GetChildren()) do 
+                if ClientData.get("pet_char_wrappers")[1] and ClientData.get("pet_char_wrappers")[1]["char"] and ClientData.get("pet_char_wrappers")[1]["char"] ~= nil and v and v ~= ClientData.get("pet_char_wrappers")[1]["char"] then 
+                    v:Destroy()
+                end
+            end
+        end)
+        pcall(function()
+            for i,v in pairs(game.Players:GetChildren()) do 
+                if v~= game.Players.LocalPlayer then 
+                v:Destroy()
+                end 
+            end
+        end)
+
+        pcall(function()
+            for i, v in pairs(workspace.PlayerCharacters:GetChildren()) do
+                if v.Name ~= Player.Name then
+                    v:Destroy()
+                end
+            end
+        end)
+        --[[
+        pcall(function()
+            for i,v in pairs(game.Players.LocalPlayer.PlayerGui:GetChildren()) do 
+                if v.Name ~= "BackpackApp" and v.Name ~= "AltCurrencyIndicatorApp" and v.Name ~= "AilmentsMonitorApp" and v.Name ~= "BucksIndicatorApp" and v.Name ~= "ToolApp" and v.Name ~= "TransitionsApp" and v.Name ~= "ScrollingBannerApp" then
+                   v:Destroy()
+                else
+                    v.Parent = game.ReplicatedStorage
+                end 
+            end
+            for i,v in pairs(game.Players.LocalPlayer.PlayerGui:GetDescendants()) do
+                v.Parent = game.ReplicatedStorage
+            end
+        end)
+        pcall(function()
+            ClientData.get("pet_char_wrappers")[1]["char"].PetModel.AnimationController:Destroy()
+        end)
+        ]]
+    end
+end)
+
+--------------- Main Task ---------------
+
+----- Auto Pet Tasks ------
+
+function GetPetTasks()
+    local a,b = pcall(function()
+        ailmentData = ClientData.get_data()[Player.Name]["ailments_manager"]
+        if ailmentData["ailments"] and ailmentData["ailments"][ClientData.get("pet_char_wrappers")[1].pet_unique] then
+            return ClientData.get_data()[Player.Name]["ailments_manager"]["ailments"][ClientData.get("pet_char_wrappers")[1].pet_unique]
+        else
+            return {}
+        end
+    end)
+    if a then return b else return {} end
+end
+
+function CheckTaskExist(taskName)
+    for i, v in pairs(GetPetTasks()) do
+        if i == taskName then
+            return true
+        end
+    end
+    return false
+end
+
+-- Baby Tasks
+function GetBabyTasks()
+    local a,b = pcall(function()
+        ailmentData = ClientData.get_data()[Player.Name]["ailments_manager"]["baby_ailments"]
+        return ailmentData
+    end)
+    if a then return b else return {} end
+end
+
+function CheckBabyTaskExist(taskName)
+    for i, v in pairs(GetBabyTasks()) do
+        if i == taskName then
+            return true
+        end
+    end
+    return false
+end
+
+----- Auto Baby Tasks -----
+spawn(function()
+    _G.Status = "Script Started..."
+    while task.wait(1) do
+        for taskName, v in pairs(GetBabyTasks()) do
+            local startTick = tick()
+            if (not CheckTaskExist("walk")) and (not CheckTaskExist("ride")) then
+                if taskName == "dirty" and not CheckTaskExist("dirty") then
+                    spawn(function() task.wait(30) 
+                        RS.API:WaitForChild("AdoptAPI/BabyJump"):FireServer(Player.Character)
+                        RS.API["AdoptAPI/MakeBabyJumpOutOfSeat"]:FireServer(ClientData.get("char_wrapper")["char"])
+                    end)
+                    print("[BABY] - Waiting for Dirty Task to end")
+                    repeat
+                        RS.API:WaitForChild("HousingAPI/ActivateFurniture"):InvokeServer(Player, aPetShower, "UseBlock", {["cframe"] = HRP.CFrame}, Player.Character)
+                        task.wait(0.25)
+                    until not CheckBabyTaskExist("dirty") or (tick() - startTick >= 45) or CheckTaskExist("dirty")
+                    print("[BABY] - Dirty Task Ended")
+                elseif taskName == "sleepy" and not CheckTaskExist("sleepy") then
+                    spawn(function() task.wait(30) 
+                        RS.API:WaitForChild("AdoptAPI/BabyJump"):FireServer(Player.Character)
+                        RS.API["AdoptAPI/MakeBabyJumpOutOfSeat"]:FireServer(ClientData.get("char_wrapper")["char"])
+                    end)
+                    print("[BABY] - Waiting for Sleepy Task to end")
+                    repeat
+                        RS.API:WaitForChild("HousingAPI/ActivateFurniture"):InvokeServer(Player, aPetCrib, "UseBlock", {["cframe"] = HRP.CFrame}, Player.Character)
+                        task.wait(0.25)
+                    until not CheckBabyTaskExist("sleepy") or (tick() - startTick >= 45) or CheckTaskExist("sleepy")
+                    print("[BABY] - Sleepy Task Ended")
+                elseif taskName == "bored" and not CheckTaskExist("bored") then
+                    spawn(function() task.wait(30) 
+                        RS.API:WaitForChild("AdoptAPI/BabyJump"):FireServer(Player.Character)
+                        RS.API["AdoptAPI/MakeBabyJumpOutOfSeat"]:FireServer(ClientData.get("char_wrapper")["char"])
+                    end)
+                    print("[BABY] - Waiting for Bored Task to end")
+                    repeat
+                        RS.API["HousingAPI/ActivateFurniture"]:InvokeServer(game.Players.LocalPlayer, aPiano, "Seat1", {['cframe'] = CFrame.new(game:GetService("Players").LocalPlayer.Character:FindFirstChild("Head").Position)}, game.Players.LocalPlayer.Character)
+                        task.wait(0.25)
+                    until not CheckBabyTaskExist("bored") or (tick() - startTick >= 45) or CheckTaskExist("bored")
+                    print("[BABY] - Bored Task Ended")
+                end
+            end
+            if taskName == "hungry" then
+                print("[BABY] - Hungry Task")
+                RS.API["ShopAPI/BuyItem"]:InvokeServer("food", "icecream", {})
+                for _, v in pairs(ClientData.get_data()[Player.Name].inventory.food) do
+                    if v.id == "icecream" then
+                        hasFood = true
+                        RS.API["ToolAPI/Equip"]:InvokeServer(v.unique, { ["use_sound_delay"] = true })
+                        task.wait(1)
+                        RS.API:WaitForChild("ToolAPI/ServerUseTool"):FireServer(v.unique, "START")
+                        task.wait()
+                        RS.API:WaitForChild("ToolAPI/ServerUseTool"):FireServer(v.unique, "END")
+                        break
+                    end
+                end
+            elseif taskName == "thirsty" then
+                print("[BABY] - Thirsty Task")
+                for _, v in pairs(ClientData.get_data()[Player.Name].inventory.food) do
+                    if v.id == "water" then
+                        RS.API["ToolAPI/Equip"]:InvokeServer(v.unique, { ["use_sound_delay"] = true })
+                        task.wait(1)
+                        for i = 1, 9 do
+                            RS.API:WaitForChild("ToolAPI/ServerUseTool"):FireServer(v.unique, "START")
+                            task.wait()
+                            RS.API:WaitForChild("ToolAPI/ServerUseTool"):FireServer(v.unique, "END")
+                            task.wait(0.2)
+                        end
+                        break
+                    end
+                end
+                if CheckBabyTaskExist("thirsty") then
+                    RS.API["ShopAPI/BuyItem"]:InvokeServer("food", "water", {})
+                    for _, v in pairs(ClientData.get_data()[Player.Name].inventory.food) do
+                        if v.id == "water" then
+                            RS.API["ToolAPI/Equip"]:InvokeServer(v.unique, { ["use_sound_delay"] = true })
+                            task.wait(1)
+                            for i = 1, 9 do
+                                RS.API:WaitForChild("ToolAPI/ServerUseTool"):FireServer(v.unique, "START")
+                                task.wait()
+                                RS.API:WaitForChild("ToolAPI/ServerUseTool"):FireServer(v.unique, "END")
+                                task.wait(0.1)
+                            end
+                            break
+                        end
+                    end
+                end
+            end
+            RS.API:WaitForChild("AdoptAPI/BabyJump"):FireServer(Player.Character)
+            RS.API["AdoptAPI/MakeBabyJumpOutOfSeat"]:FireServer(ClientData.get("char_wrapper")["char"])
+
+            task.wait(3)
+        end
+    end
+end)
+
+function ChooseMysteryTask(mysteryID)
+    getgenv().MysteryChoosing = true
+
+    local tasksList = {
+        "thirsty",
+        "dirty",
+        "sleepy",
+        "toilet",
+        "hungry",
+        "school",
+        "bored",
+        "pizza_party",
+        "salon",
+        "camping",
+        "beach_party",
+        "sick",
+        "ride",
+        "walk",
+        "play"
+    }
+
+    for _, taskA in pairs(tasksList) do
+        for x = 1, 3 do
+            local success, err = pcall(function()
+                local args = {
+                    [1] = mysteryID,
+                    [2] = x,
+                    [3] = taskA
+                }
+                RouterClient.get("AilmentsAPI/ChooseMysteryAilment"):FireServer(unpack(args))
+            end)
+            
+            if not success then
+                warn("Failed to fire server:", err)
+            end
+
+            task.wait(1)
+        end
+        if not CheckTaskExist(mysteryID) then break end
+    end
+    getgenv().MysteryChoosing = false
+end
+
+spawn(function()
+    while task.wait(0.1) do
+        pcall(function()
+            if HRP.CFrame.Y < -250 then
+                print("Safety Net Utilized!")
+                CreateTempPart()
+                HRP.CFrame = CFrame.new(-248.025375, -50, -1746.41724, -0.998434782, -7.92188573e-08, -0.0559278913, -7.50130056e-08, 1, -7.73006334e-08, 0.0559278913, -7.29843208e-08, -0.998434782)
+                CreateTempPart()
+                task.wait(0.5)
+                repeat task.wait(1) until HRP.CFrame > -250
+            end
+        end)
+    end
+end)
+
+spawn(function()
+    while task.wait(1) do
+        farmGingerbreads()
+        task.wait(200)
+    end
+end)
+
+-- Get 30 Golden Apples
+local args = {
+    [1] = "food",
+    [2] = "healing_apple",
+    [3] = {
+        ["buy_count"] = 30
+    }
+}
+game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("ShopAPI/BuyItem"):InvokeServer(unpack(args))
+
+print("Creating Temp Part")
+CreateTempPart()
+task.wait(2)
+
+getgenv().MysteryChoosing = false
+
+while task.wait(1) do
+    pcall(function()
+        if ClientData.get("pet_char_wrappers") and ClientData.get("pet_char_wrappers")[1] and ClientData.get("pet_char_wrappers")[1].pet_unique ~= selectedPetID then
+            print("[0] Other Pet Found: ", ClientData.get("pet_char_wrappers")[1].char, PetName)
+            if PetName:match("Egg") then
+                print("[0] Egg Hatched, changing Main Pet..")
+                MainPet = ClientData.get("pet_char_wrappers")[1].pet_unique
+                selectedPetID = ClientData.get("pet_char_wrappers")[1].pet_unique
+            else
+                EquipMainPet(MainPet)
+            end
+        elseif not ClientData.get("pet_char_wrappers")[1] then
+            print("[0] No Pet Equipped, equipping main pet!")
+            EquipMainPet(MainPet)
+        end
+    end)
+
+    pcall(function()
+        for taskName, v in pairs(GetPetTasks()) do
+            local success, errorMessage = pcall(function()
+                if taskName == "hungry" then
+                    print("[PET] - Hungry task appeared.", "Pet Name:", ClientData.get("pet_char_wrappers")[1].char)
+                    _G.Status = "Completing Hungry Task..."
+                    HungryTask()
+                    print("[PET] - Hungry Task Completed")
+                elseif taskName == "thirsty" then
+                    print("[PET] - Thirsty task appeared.")
+                    _G.Status = "Completing Thirsty Task..."
+                    ThirstyTask()
+                elseif taskName == "bored" then
+                    print("[PET] - Bored task appeared.")
+                    _G.Status = "Completing Bored Task..."
+                    BoredTask()
+                elseif taskName == "camping" then
+                    print("[PET] - Camping task appeared.")
+                    _G.Status = "Completing Camping Task..."
+                    CampingTask()
+                elseif taskName == "school" then
+                    print("[PET] - School task appeared.")
+                    _G.Status = "Completing School Task..."
+                    SchoolTask()
+                elseif taskName == "beach_party" then
+                    print("[PET] - Beach party task appeared.")
+                    _G.Status = "Completing Beach Party Task..."
+                    BeachPartyTask()
+                elseif taskName == "salon" then
+                    print("[PET] - Salon task appeared.")
+                    _G.Status = "Completing Salon Task..."
+                    SalonTask()
+                elseif taskName == "pizza_party" then
+                    print("[PET] - Pizza Party task appeared.")
+                    _G.Status = "Completing Pizza Party Task..."
+                    PizzaPartyTask()
+                elseif taskName == "dirty" then
+                    print("[PET] - Dirty task appeared. F :", aPetShower, "Pet Name", ClientData.get("pet_char_wrappers")[1].char)
+                    _G.Status = "Completing Dirty Task..."
+                    DirtyTask()
+                elseif taskName == "sleepy" then
+                    print("[PET] - Sleepy task appeared. F :", aPetCrib, "Pet Name", ClientData.get("pet_char_wrappers")[1].char)
+                    _G.Status = "Completing Sleepy Task..."
+                    SleepyTask()
+                elseif taskName == "toilet" then
+                    print("[PET] - Toilet task appeared. F :", aToilet, "Pet Name", ClientData.get("pet_char_wrappers")[1].char)
+                    _G.Status = "Completing Toilet Task..."
+                    ToiletTask()
+                elseif taskName == "sick" and hasGoldenApple() then
+                    print("[PET] - Sick task appeared.")
+                    _G.Status = "Completing Sick Task..."
+                    SickTask()
+                elseif taskName == "ride" and hasStroller() then
+                    print("[PET] - Ride task appeared.")
+                    _G.Status = "Completing Ride Task..."
+                    RideTask()
+                elseif taskName == "walk" then
+                    print("[PET] - Walk task appeared.")
+                    _G.Status = "Completing Walk Task..."
+                    WalkTask()
+                elseif taskName == "play" then
+                    print("[PET] - Play task appeared.")
+                    _G.Status = "Completing Play Task..."
+                    PlayTask()
+                elseif taskName:match("mystery") and not getgenv().MysteryChoosing then
+                    print("[PET] - Choosing Random Mystery Task!")
+                    getgenv().MysteryChoosing = true
+                    spawn(function() 
+                        ChooseMysteryTask(taskName)
+                    end)
+                    EquipLastPet()
+                end
+                
+                --print("Waiting for Task Completion!")
+                --[[
+                startTime = tick()
+                if taskName == "walk" or taskName == "ride" then
+                    task.wait(15)
+                    repeat task.wait(1) until not CheckTaskExist(taskName) or (tick() - startTime >= 90)
+                elseif (not taskName:match("mystery")) and (taskName ~= "ride") then
+                    task.wait(15)
+                    local timeout = 60
+                    repeat
+                        wait(1)
+                        timeout = timeout - 1
+                    until not CheckTaskExist(taskName) or timeout <= 0
+                end
+                ]]
+
+                task.wait(1)
+
+                RS.API["AdoptAPI/MakeBabyJumpOutOfSeat"]:FireServer(ClientData.get("char_wrapper")["char"])
+                RS.API["AdoptAPI/MakeBabyJumpOutOfSeat"]:FireServer(ClientData.get("pet_char_wrappers")[1]["char"])
+                _G.Status = "Idle"
+            end)
+
+            if not success then
+                warn("An error occurred while executing the task: " .. errorMessage)
+            end
+        end
+    end)
+end
+
+
+---------
+-------------------
+------------------------------------- GUI
