@@ -1,6 +1,6 @@
 -- List of main accounts (receivers)
 local MainAccounts = {"XrjnbWFhzxW", "SxrOwLugQAv", "sSVyTcBAwGN", "xpBLEvtcwFF", "zYdxHxMzmcS", "HzDYFdRByVM", "ugNbEbbeyBV", "PZAMvTAJnzC", "ujvvCpuVyRk", "NXVXzjAVtvd"} -- Add usernames of main accounts
-local PetNames = {"", "Golden Dragon", "Phoenix"} -- Add pet names here
+local PetNames = {"Ice Cube", "Cold Cube", "Berry Cool Cube"} -- Add pet names here
 
 repeat task.wait(1) until game:IsLoaded() and game:GetService("ReplicatedStorage"):FindFirstChild("ClientModules") and game:GetService("ReplicatedStorage").ClientModules:FindFirstChild("Core") and game:GetService("ReplicatedStorage").ClientModules.Core:FindFirstChild("UIManager") and game:GetService("ReplicatedStorage").ClientModules.Core.UIManager.Apps:FindFirstChild("TransitionsApp") and game:GetService("Players").LocalPlayer.PlayerGui:FindFirstChild("TransitionsApp") and game:GetService("Players").LocalPlayer.PlayerGui.TransitionsApp:FindFirstChild("Whiteout")
 
