@@ -1,4 +1,4 @@
-local MainAccUsernames = {"serra4kx", "buddh8k8"} -- List of Main Account Usernames
+local MainAccUsernames = {"balan7mx", "bonsa6wg"} -- List of Main Account Usernames
 local PetNames = {"Ice Cube", "Cold Cube", "Berry Cool Cube"} -- List of Pet Names (case-sensitive)
 
 repeat task.wait(1) until game:IsLoaded() and game:GetService("ReplicatedStorage"):FindFirstChild("ClientModules") 
