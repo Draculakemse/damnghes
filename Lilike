@@ -1,5 +1,5 @@
 --getgenv().CustomPets = {"Golden Jaguar", "Scarebear"}
-_G.stateA = true
+_G.stateA = stateA
 --
 DisableGUI = false
 
