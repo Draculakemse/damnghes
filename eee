@@ -74,19 +74,29 @@ function allPetsTraded()
     for _, petName in pairs(PetNames) do
         local petID = findPetID(petName)
         local petTraded = true
+
+        print("Checking pet:", petName, "ID:", petID) -- Debug log for pet name and ID
+
         if petID then
             petTraded = false
             for _, pet in pairs(ClientData.get_data()[Player.Name].inventory.pets) do
+                print("Found Pet:", pet.id, "Mega Neon:", pet.properties.mega_neon) -- Debug each pet
                 if pet.id == petID and pet.properties.mega_neon then
                     petTraded = true
+                    print("Pet available for trade:", pet.id) -- Confirm pet is available
                     break
                 end
             end
         end
-        if not petTraded then return false end
+
+        if not petTraded then 
+            print("Pet NOT traded yet:", petName) -- Debug log for missing pets
+            return false 
+        end
     end
     return true
 end
+
 
 -- Main Loop for Multiple Accounts
 repeat
