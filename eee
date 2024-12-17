@@ -1,0 +1,102 @@
+local MainAccUsernames = {"serra4kx", "buddh8k8"} -- List of Main Account Usernames
+local PetNames = {"Ice Cube", "Cold Cube", "Berry Cool Cube"} -- List of Pet Names (case-sensitive)
+
+repeat task.wait(1) until game:IsLoaded() and game:GetService("ReplicatedStorage"):FindFirstChild("ClientModules") 
+    and game:GetService("ReplicatedStorage").ClientModules:FindFirstChild("Core") 
+    and game:GetService("ReplicatedStorage").ClientModules.Core:FindFirstChild("UIManager") 
+    and game:GetService("ReplicatedStorage").ClientModules.Core.UIManager.Apps:FindFirstChild("TransitionsApp") 
+    and game:GetService("Players").LocalPlayer.PlayerGui:FindFirstChild("TransitionsApp") 
+    and game:GetService("Players").LocalPlayer.PlayerGui.TransitionsApp:FindFirstChild("Whiteout")
+
+local RS = game:GetService("ReplicatedStorage")
+local ClientData = require(RS.ClientModules.Core.ClientData)
+local RouterClient = require(RS.ClientModules.Core:WaitForChild("RouterClient"):WaitForChild("RouterClient"))
+local Player = game:GetService("Players").LocalPlayer
+
+-- Disable AFK kick
+for _, conn in pairs(getconnections(Player.Idled)) do conn:Disable() end
+
+function findPetID(petName)
+    for _, entry in pairs(require(RS.ClientDB.Inventory.InventoryDB).pets) do
+        if type(entry) == "table" and string.lower(entry.name) == string.lower(petName) then
+            return entry.id
+        end
+    end
+    return nil
+end
+
+function checkPetVersion(petID)
+    for _, entry in pairs(require(RS.ClientDB.Inventory.InventoryDB).pets) do
+        if entry.id == petID and entry.version == v.properties.mega_neon then
+            return true
+        end
+    end
+    return false
+end
+
+function tradePetsToAccount(account)
+    if not game.Players:FindFirstChild(account) then return false end
+    local tradedPetNames = {}
+
+    repeat
+        task.wait(1)
+        RS.API.TradeAPI.SendTradeRequest:FireServer(game.Players:WaitForChild(account))
+    until Player.PlayerGui:FindFirstChild("TradeApp") and Player.PlayerGui.TradeApp.Frame.Visible
+
+    -- Trade only one pet per name
+    for _, petName in ipairs(PetNames) do
+        if not tradedPetNames[petName] then
+            local petID = findPetID(petName)
+            if petID then
+                for _, pet in pairs(ClientData.get_data()[Player.Name].inventory.pets) do
+                    if pet.id == petID and pet.properties.mega_neon then
+                        RS.API.TradeAPI.AddItemToOffer:FireServer(pet.unique)
+                        tradedPetNames[petName] = true
+                        break -- Stop after adding one valid pet for this name
+                    end
+                end
+            end
+        end
+    end
+
+    -- Accept and Confirm Trade
+    while Player.PlayerGui.TradeApp.Frame.Visible do
+        RS.API.TradeAPI.AcceptNegotiation:FireServer()
+        wait(0.1)
+        RS.API.TradeAPI.ConfirmTrade:FireServer()
+        wait(0.1)
+    end
+
+    return true
+end
+
+function allPetsTraded()
+    for _, petName in pairs(PetNames) do
+        local petID = findPetID(petName)
+        local petTraded = true
+        if petID then
+            petTraded = false
+            for _, pet in pairs(ClientData.get_data()[Player.Name].inventory.pets) do
+                if pet.id == petID and pet.properties.mega_neon then
+                    petTraded = true
+                    break
+                end
+            end
+        end
+        if not petTraded then return false end
+    end
+    return true
+end
+
+-- Main Loop for Multiple Accounts
+repeat
+    for _, account in ipairs(MainAccUsernames) do
+        if not allPetsTraded() then
+            tradePetsToAccount(account)
+        end
+    end
+    task.wait(1.5)
+    print("Waiting for accounts...")
+until allPetsTraded()
+
+print("All accounts completed.")
