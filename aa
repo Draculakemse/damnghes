@@ -1,0 +1,32 @@
+_G.stateA = true -- Automatically activate the auto accept
+
+spawn(function()
+    while _G.stateA do
+        for _, player in ipairs(game.Players:GetChildren()) do
+            pcall(function()
+                local TradeAPI = game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("TradeAPI")
+                TradeAPI:WaitForChild("AcceptOrDeclineTradeRequest"):InvokeServer(player, true)
+            end)
+        end
+        wait(0.5) -- Slight delay to reduce server strain
+    end
+end)
+
+game.Players.LocalPlayer.PlayerGui.DialogApp.Enabled = not _G.stateA
+
+spawn(function()
+    while _G.stateA do
+        wait()
+        local tradeFrame = game:GetService("Players").LocalPlayer.PlayerGui:FindFirstChild("TradeApp") and 
+                           game:GetService("Players").LocalPlayer.PlayerGui.TradeApp:FindFirstChild("Frame")
+        if tradeFrame and tradeFrame.Visible then
+            pcall(function()
+                local TradeAPI = game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("TradeAPI")
+                TradeAPI:WaitForChild("AcceptNegotiation"):FireServer()
+                wait(0.1)
+                TradeAPI:WaitForChild("ConfirmTrade"):FireServer()
+            end)
+        end
+        wait(0.5) -- Delay between checks
+    end
+end)
