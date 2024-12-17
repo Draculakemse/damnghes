@@ -649,26 +649,40 @@ end)
 
 TradeSection:NewToggle("Auto Accept ALL", "ToggleInfo", function(stateA)
     _G.stateA = stateA
+
     spawn(function()
         while _G.stateA do
-            for i, v in pairs(game.Players:GetChildren()) do
-                game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("TradeAPI/AcceptOrDeclineTradeRequest"):InvokeServer(v, true)
+            -- Accept trade requests from all players
+            for _, player in pairs(game.Players:GetChildren()) do
+                -- Accept trade request from the player
+                local tradeRequest = game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("TradeAPI/AcceptOrDeclineTradeRequest")
+                if tradeRequest then
+                    tradeRequest:InvokeServer(player, true)
+                end
             end
-            wait()
+            wait(0.5) -- Wait for a small interval before checking again
         end
     end)
+
+    -- Hide or show the trade dialog based on toggle state
     game.Players.LocalPlayer.PlayerGui.DialogApp.Enabled = not _G.stateA
+
     while _G.stateA do
-        wait()
+        -- Wait for the trade UI to be visible
         while not game:GetService("Players").LocalPlayer.PlayerGui.TradeApp.Frame.Visible and _G.stateA do
-            wait()
+            wait(0.1)
         end
-        wait()
+
+        -- Confirm the trade if the UI is visible
         while game:GetService("Players").LocalPlayer.PlayerGui.TradeApp.Frame.Visible and _G.stateA do
-            game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("TradeAPI/AcceptNegotiation"):FireServer()
-            wait(0.1)
-            game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("TradeAPI/ConfirmTrade"):FireServer()
-            wait(0.1)
+            local tradeAPI = game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("TradeAPI")
+            if tradeAPI then
+                -- Accept and confirm the trade immediately
+                tradeAPI:WaitForChild("AcceptNegotiation"):FireServer()
+                wait(0.1)
+                tradeAPI:WaitForChild("ConfirmTrade"):FireServer()
+            end
+            wait(0.1) -- Adjust wait time as necessary for better responsiveness
         end
     end
 end)
