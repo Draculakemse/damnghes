@@ -1,112 +1,1000 @@
-local MainAccUsernames = {"balan7mx", "bonsa6wg"} -- List of Main Account Usernames
-local PetNames = {"Ice Cube", "Cold Cube", "Berry Cool Cube"} -- List of Pet Names (case-sensitive)
-
-repeat task.wait(1) until game:IsLoaded() and game:GetService("ReplicatedStorage"):FindFirstChild("ClientModules") 
-    and game:GetService("ReplicatedStorage").ClientModules:FindFirstChild("Core") 
-    and game:GetService("ReplicatedStorage").ClientModules.Core:FindFirstChild("UIManager") 
-    and game:GetService("ReplicatedStorage").ClientModules.Core.UIManager.Apps:FindFirstChild("TransitionsApp") 
-    and game:GetService("Players").LocalPlayer.PlayerGui:FindFirstChild("TransitionsApp") 
-    and game:GetService("Players").LocalPlayer.PlayerGui.TransitionsApp:FindFirstChild("Whiteout")
+repeat task.wait() until game:IsLoaded() and game:GetService("ReplicatedStorage"):FindFirstChild("ClientModules") and game:GetService("ReplicatedStorage").ClientModules:FindFirstChild("Core") and game:GetService("ReplicatedStorage").ClientModules.Core:FindFirstChild("UIManager") and game:GetService("ReplicatedStorage").ClientModules.Core:FindFirstChild("UIManager").Apps:FindFirstChild("TransitionsApp") and game:GetService("Players").LocalPlayer.PlayerGui:FindFirstChild("TransitionsApp") and game:GetService("Players").LocalPlayer.PlayerGui:FindFirstChild("TransitionsApp"):FindFirstChild("Whiteout")
 
 local RS = game:GetService("ReplicatedStorage")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local ClientData = require(RS.ClientModules.Core.ClientData)
-local RouterClient = require(RS.ClientModules.Core:WaitForChild("RouterClient"):WaitForChild("RouterClient"))
 local Player = game:GetService("Players").LocalPlayer
+local RouterClient = require(RS.ClientModules.Core:WaitForChild("RouterClient"):WaitForChild("RouterClient"))
+local Main_Menu = require(RS.ClientModules.Core.UIManager.Apps.MainMenuApp)
+local VirtualInputManager = game:GetService("VirtualInputManager")
+local LiveOpsMapSwap = require(RS.SharedModules.Game.LiveOpsMapSwap)
 
--- Disable AFK kick
-for _, conn in pairs(getconnections(Player.Idled)) do conn:Disable() end
+local MinigameClient = require(RS.ClientModules.Game.MinigameHelpers.MinigameClient)
+local SpleefMinigameClient = require(RS.SharedModules.ContentPacks.Winter2024.Minigames.SpleefMinigameClient)
+local FrostclawsRevengeMinigameClient = require(RS.SharedModules.ContentPacks.Winter2024.Minigames.FrostclawsRevengeMinigameClient)
 
-function findPetID(petName)
-    for _, entry in pairs(require(RS.ClientDB.Inventory.InventoryDB).pets) do
-        if type(entry) == "table" and string.lower(entry.name) == string.lower(petName) then
-            return entry.id
-        end
-    end
-    return nil
+local gingerbeadIds = {
+    ['Winter2024Shop'] = {
+        '{0f2ada20-90cd-44b4-932d-68815f8f7b65}',
+        '{f88ddb65-d569-42ff-afb8-5b11b0e799d9}',
+        '{3c91f411-3ccd-4e66-a565-5a17c453f628}',
+        '{8032d531-f7da-47e1-bac5-59349becee8c}',
+        '{4f351ee6-eb60-4a35-b25a-14c7c9aaa897}',
+        '{84ff7975-dea6-42e6-ace8-adda29a12206}',
+        '{71f01b8c-9ef9-44e9-ac55-26d8cdbaf409}',
+        '{2497f3e9-e6c8-447a-bce3-42f0b0ba08ac}',
+        '{848f5737-038c-46f1-bf44-d169384a905f}',
+        '{f27432d9-4337-4179-a132-ade6ee5eae8a}',
+        '{3bcbc022-0414-4e70-a18a-20fdb849f699}',
+        '{fd4f7786-ba8d-4951-80e0-7bebb9b8937c}',
+        '{5d148c2c-7767-4f4f-9cb3-875953695021}',
+        '{fa97c9f8-adda-488f-b10f-374590f5500d}',
+        '{0cc116a7-8cb4-4baa-ba21-e9c7a3107f1b}',
+        '{b2526631-e0e4-419e-9f72-1cb554a071bd}',
+        '{1a9611f2-d868-4473-8255-2cc42846e961}',
+        '{dd3957b4-dc18-4bd0-8fcd-32c208bb6419}',
+        '{47202484-5e98-40ab-ad22-2de071895667}',
+        '{b35535e9-feec-48ea-9296-a4077835f8b7}',
+        '{1358288e-cc02-428a-937b-d2241fcae709}',
+        '{361460b4-6309-43e1-81dc-d3772ff6f5b4}',
+        '{0b06408f-84d3-4420-b5b7-ecbd9dce3600}',
+        '{81a5d5dc-4f69-4bae-bf19-5cd29e0f0d5b}',
+        '{466c42d8-6c81-4c5d-945c-febea46cc71e}',
+        '{fa78cbd6-e690-4adc-9305-b7ddc90c27f2}',
+        '{c469bdc6-d2a0-4926-b8a4-8f6334e7252f}',
+        '{82da849f-0ce2-4690-8f8c-b8353b6ef1c5}',
+        '{21a06a15-47e9-49e6-872e-5d09b34074df}',
+        '{5cbca7c9-02ab-4cf7-812b-da773f4451bc}',
+        '{0aaf71f0-7573-43a3-ae5b-f2e97f445347}',
+        '{158c6156-4811-4be5-b9a4-b7b768ea973a}',
+        '{43d9c602-9b1d-4013-9e78-36b12843c0c9}',
+        '{acdcf0fd-c411-4932-bbda-bda88630f45f}',
+        '{76f34a6f-185a-4ab2-8775-ae7dcdc84576}',
+        '{ff592ec8-6c7f-4afc-94ce-a3e25b078927}',
+        '{d2f2e3bc-5e46-4e8c-9ac6-ce750e88f40c}',
+        '{4576b5f7-377b-471f-9c5a-f5d4338c6c70}',
+        '{29c1cd09-4531-4fd4-95d5-e00c82909b5f}',
+        '{5ca5e508-c9ed-45cd-b935-9e7154ecf9fe}',
+        '{b4361bb2-2d2f-4458-9dc7-271542edbd0a}',
+        '{c1678b43-f01d-4b8a-b44f-07c566a509f0}',
+        '{4390612f-f8c2-420a-b45d-c8a5319455d8}',
+        '{23005b2a-613d-4c54-8457-c7f468dcbac6}',
+        '{85d067e0-3c07-4587-b427-e66b4d11fc80}',
+        '{a948993e-2367-4b69-9be5-af5c0b5c320a}',
+        '{e88cb67b-24ae-49d3-ac52-b44c6d84d1aa}',
+    },
+    ['MainMap!Snow'] = {
+        '{29580925-384D-4CF6-810A-5B2FBEBE14EF}',
+        '{AFFECD3D-9FCD-4822-BDF8-1B7F589620DD}',
+        '{2BEB302F-EB22-4403-B2E7-F4239A306A9C}',
+        '{53C81678-DDD1-410F-9476-0A1AFD17B22D}',
+        '{96EB009D-84A2-464B-925E-41E269B5D7E4}',
+        '{C61B5F35-B5E6-4DDE-B9CA-8C5CDE82D3F5}',
+        '{FE0C85D8-2E11-46BA-BE97-9EC67E96ABB8}',
+        '{487EE748-30B2-40A5-AEAC-2724E29C6C6D}',
+        '{54E9E593-8C0E-4120-9637-83B0BA891573}',
+        '{28F6FD49-55C2-4E45-88F3-E62344AEE010}',
+        '{677BBA18-0BDA-4A19-92F9-8C8DF6A11E30}',
+        '{4B0E202F-743E-46C3-A538-CAAABE3D6A76}',
+        '{1CA3C55C-E6FF-4632-B023-4AFABBD3175F}',
+        '{A6482191-3E6B-45E0-B1F6-5BE8600C0D46}',
+        '{B097C8D5-6034-42F2-ABE1-4CEFE35E76FB}',
+        '{8743B7A9-257B-48DF-8DB0-0F4FD057A4B0}',
+        '{FD974ABC-023F-4238-BB26-EA963179D61F}',
+        '{1479F2D4-D712-4B53-8B24-546270239BE7}',
+        '{E8749084-B9C2-4C1C-8DCA-8DD601B57E99}',
+        '{600EB06A-F13D-411D-BEB3-E04E93ED4276}',
+        '{FD6318F0-8A5F-41CF-9B91-64EBBBCB3E98}',
+        '{437F2FA1-230F-498F-9276-DE0EF87C3AE1}',
+        '{D1B20364-78F5-4CCC-A510-E40A8D625D16}',
+        '{F72AED52-624E-43BA-AF8E-7C3C311B93D7}',
+        '{0836BB00-2107-49A6-8544-72FC3EECC742}',
+        '{2883E3B9-AEB4-4577-A1E6-D75BD7D00042}',
+        '{8B70133A-0EDA-439B-B41D-26B9EE5B824D}',
+        '{5FD5BDBD-5847-4EFD-9DF1-0AB7B94A3548}',
+        '{3DE5F28B-8893-4BD0-B742-6096E9DDEDB6}',
+        '{B6510D79-459E-40A7-88A1-06EECF7DFEDD}',
+        '{850FA732-1759-41FD-8D11-A966F663DC54}',
+        '{A76214EC-C75E-4E91-B515-32CF008CA73F}',
+        '{11496169-8138-4EB2-9883-9F0453297D84}',
+        '{D356DB30-2CDC-48D8-AB28-F9E1C4C8E82D}',
+        '{51E924AC-12DF-46F8-A77C-C2756C38AD3B}',
+        '{A33B95DC-4636-4FB9-81E1-098C819359A8}',
+        '{0DBD86AB-EDAD-4C5F-B64A-E879935418FD}',
+        '{69372C32-4F4E-4786-B973-36405115DC84}',
+        '{C4194D7B-54B5-4B35-B262-1B700143DB56}',
+        '{1F5105D1-7F27-4C3F-88F8-DAB5AC6F80A7}',
+        '{E774C005-3B66-4736-8E35-421710DB25FB}',
+        '{058EE9BE-D9A9-4660-9729-60E2FF891783}',
+        '{71CB1A2A-6433-496F-A75D-79B57EA2020D}',
+        '{45912694-2CF8-4B46-9222-B4E052EC74FC}',
+        '{A6C07949-FE1D-4C8A-9234-782981398813}',
+        '{CC47FF49-48FD-444E-8F70-BFB36EB4E1DE}',
+        '{6C05E92C-38EB-4033-B610-4503E5262FDF}',
+        '{7A2585D3-0477-40CD-B6FF-BD781A3B5777}',
+        '{248879AA-6B47-4BCF-AFC0-161C2EBFF6AD}',
+        '{537FCB8D-0868-463D-B2A1-A85E3F9507A3}',
+        '{8897445D-6138-4BD6-8DA1-1F02ECFE5898}',
+        '{4112DDAB-4A73-4C16-A75C-DD260D6D0155}',
+        '{65EF0557-0D8E-4B74-AFD8-FC5DB243EDB8}',
+        '{39592C2B-0CC3-4BDD-9E64-00846F06C629}',
+        '{14F3C7DB-D67E-4288-9D94-AB33653FD928}',
+        '{DD193776-16EC-4550-B696-19E19CE313D4}',
+        '{4FE802B6-9D8D-4CAA-B07A-775154792D1A}',
+        '{87A78497-E137-47E5-AE8A-5E4C0F30D90A}',
+        '{40D33237-E99B-4BA3-A0BE-7AEE3AD7B607}',
+        '{08D592C6-8F94-435E-98CD-D038E23CF236}',
+        '{F0B27251-FFE7-4A70-9077-80D73E10BD1E}',
+        '{439925AF-0A96-40F3-8707-D5A65AA605AF}',
+        '{381C38F4-4B07-4F2E-A12E-AF6328F96A54}',
+        '{25DA2E1D-7191-4B7F-AB26-5EFECB267307}',
+        '{154F7871-BCA0-4691-9210-AD6D76103119}',
+        '{808A9B20-FA50-412A-9A5D-D728B1D355A9}',
+        '{AE2F9B5B-589F-4A12-B4A5-0912FFE8C463}',
+        '{04A431CF-78AD-4200-9B3E-8DA02A6DA347}',
+        '{F0F44CAC-FF90-4B94-A996-5094CECF1531}',
+        '{069AFA82-D910-45A2-AF24-7F33E0237182}',
+        '{24236D55-6152-4783-B736-9CAA56F6F655}',
+        '{33430CD2-A47B-4987-ACEA-5EA4ABF9AAE0}',
+        '{FC8810F5-8C12-46AC-9260-12E9276199B2}',
+        '{177D7587-F672-49D5-85D1-090AA2AAAB29}',
+        '{1B7E9043-B129-4341-BDB9-FA83CE503F5C}',
+        '{82B7AF91-D7FD-48D5-BEA1-A7048595647E}',
+        '{1A218809-DBE4-4542-80B2-2B585D33CEC6}',
+        '{449145AC-B3DC-4FDD-9C9F-5FFF5F2FA183}',
+        '{4A3B540E-FC78-4095-AFDA-F560F263AD13}',
+        '{8F6C3881-F732-42C9-936A-5852D3A194B4}',
+        '{D5EBC9DB-8E7A-45AD-BF8F-F93703B61F20}',
+        '{6F890B4D-2BB8-446F-A492-21C61EC7D36D}',
+        '{9B4F9569-4463-47AB-B753-0DBF64B56883}',
+        '{30189A3D-F6CE-4B86-A19C-C71E64541796}',
+        '{4F764D10-CC2B-447E-9876-DC9259316804}',
+        '{45E5C75E-DB43-4196-9B2A-6A3C044C6095}',
+        '{AB788250-8C62-45AF-BE63-6493F5363116}',
+        '{D194622B-F101-47D3-8974-7610FB3830AE}',
+        '{3C929F9E-9C60-4844-B6A6-C5AB16B89030}',
+        '{48BB1D7E-0B33-4171-A423-A911FE9A4972}',
+        '{A5D4CB92-D091-41DF-A0F5-968778175398}',
+        '{B0390D1A-AAFF-45F9-823E-9DBF1EE671DF}',
+        '{5E5EAA7A-C7C4-4AB0-AB22-DBFD967098BF}',
+        '{0217C4CB-EBE3-4EAD-BAA8-801D1DD0BD8F}',
+        '{6DEDCEB2-62B4-4259-BDFF-A3FA56DF71A7}',
+        '{93479D49-84B0-4410-B39D-D2553FFFFCF0}',
+        '{CBE7FE13-7C12-4469-8F0E-B32E7B224B20}',
+        '{505165ED-12ED-4FC3-8E0B-DE786471F388}',
+        '{F8FAEF3D-A8EC-4FC6-B6DA-9900D9F01089}',
+        '{27AE43F6-30C5-477C-BD53-2511CD23C5CA}',
+        '{2EEF9B08-10D5-40A6-B563-94FF012868D9}',
+        '{2FAC02AF-1E80-4890-BC34-C5D8F22F12F2}',
+        '{51F28E59-3CEC-46F4-84C3-5D6FD3FBCCF1}',
+        '{80612A9C-FDE0-4CEE-B5F8-8B7DE2E9DC39}',
+        '{1E4A9A9E-F945-4A6A-A777-EA765AC9892D}',
+        '{5C9A79E8-A97B-4DD9-8B8B-7DAD80B541E0}',
+        '{316F5213-D48B-4F4B-8AFB-D18E44ACDDCB}',
+        '{084B9A25-9B24-461B-8FEB-1A071D2800FB}',
+        '{40475233-9A85-4BE4-B20F-4C7A2C04C67E}',
+        '{832B63F3-FBA5-4380-99DB-78CFB9F87D6F}',
+        '{E8AD7C9A-C60C-4DE2-A111-A3E8AD26B1D0}',
+        '{8BEADFD7-FB96-4F3D-A2A3-32FC758A60CE}',
+        '{137708F4-430A-4C0D-A63C-B75A59C5EB2E}',
+        '{9989159C-CF88-4D53-A30D-037A337969D3}',
+        '{DEB255CE-6405-43A3-81AD-DCAA8A0A707C}',
+        '{81E888FB-BEF4-4F79-AE22-C5F438EF0E4E}',
+        '{85A9AEA7-5427-4144-AFC1-12DCE9D5ECB7}',
+        '{60E33537-47D5-4212-958D-307C17501331}',
+        '{E58BFD84-62BE-4A62-A2C8-5D088FB0E6BF}',
+        '{B484E83E-396E-4ACA-828E-0E1121708E88}',
+        '{FCE711AB-1097-47DF-AFD5-E3D8BA0B4BA5}',
+        '{20619AAB-74D9-4F8D-AB89-62DB4130C6A9}',
+        '{94D2643C-32DC-4D5F-9350-BA5BD54BCA23}',
+        '{F11CFC7D-3222-4856-AB81-532ADB118D34}',
+        '{2FA1E614-9B22-495E-8543-A28A449662C0}',
+        '{65E06DD8-CCCB-4DFC-ADED-EC29B7890D53}',
+        '{21119F02-5EB6-4308-B15A-AE086F9605EC}',
+        '{FB967ED2-445C-4B78-8576-5D99AB7AA4B9}',
+        '{569DD3EB-30D5-4CDD-85B6-5AA6C886D51C}',
+        '{63E116B6-1955-4B06-B28F-3113E0760583}',
+        '{C8380520-D52C-46F1-A257-ADA9BC410E79}',
+        '{0F4D8710-8B26-4D9C-92EC-FFAB5CFEDA15}',
+        '{0447C188-1620-4CE4-897D-E34CDBE3F30D}',
+        '{D0A52723-FF4A-40E5-A6B7-16FC57BF9B9E}',
+        '{5926D161-4B98-4901-8A66-6178F21B616C}',
+        '{ED15A0DF-DEA5-4EE5-91D4-568CF3D13D20}',
+        '{9E8B22FE-410D-4005-8610-B5BEE9058A01}',
+        '{6DAB765F-B559-4BB5-B70B-C868947D1C56}',
+        '{50BC1E72-EE91-4332-B707-B24E1622A214}',
+        '{CF994B67-FA40-453E-ADEA-859E4B2C48A3}',
+        '{D07D63E3-184C-41E1-9664-4DD8E26237C6}',
+        '{DD2C92B9-881C-4128-B11D-A92E8873472E}',
+        '{93F23433-BA8C-49CF-B1A8-D8FDA736623A}',
+        '{5A651C27-4680-40DB-968C-71B89B56F3D0}',
+        '{301B6795-D383-41BC-AB6C-6A4C4CAA8EDF}',
+        '{5F3EECB5-14F4-4481-BA0D-86EED34D4597}',
+        '{B6709EA9-0B13-47F5-9022-524426FC2B20}',
+        '{6147E9F3-8FDA-45AF-AF7B-96245CA32096}',
+        '{57CF0C2B-CB8F-430A-AE09-6A271E46447D}',
+        '{F72BD7C6-B22D-4E5C-AA9C-C0FE8F034E43}',
+        '{081D2B7B-79A6-4330-93EC-C36DF19BBC93}',
+        '{D85AC2E0-131F-4316-B8CF-0CD0BFAC639D}',
+        '{374FCE6C-D73A-4E68-AA7F-8954D47A913E}',
+        '{0FBAF510-CE97-44B5-B5EE-43B31B642530}',
+        '{9A475EE6-2AA9-407F-96B8-AFD73C904E9C}',
+        '{1F104AAC-B4CF-4B9E-8ACA-C72F3B7601D7}',
+        '{82062F93-CB93-48AF-9DEB-AB5385F67173}',
+        '{F6D9E4BE-9433-4563-A10A-9E3684407E20}',
+        '{A2CBBB92-06FB-4CB3-A81F-6926203BD34E}',
+        '{EB9C2171-5D89-43AB-BA09-2F6439BF805D}',
+    },
+}
+
+game.Players.LocalPlayer.Idled:Connect(function() 
+    game:GetService("VirtualUser"):Button2Down(Vector2.new(0, 0), workspace.CurrentCamera.CFrame) 
+    task.wait(1)
+    game:GetService("VirtualUser"):Button2Up(Vector2.new(0, 0), workspace.CurrentCamera.CFrame) 
+end)
+
+for i, v in pairs(debug.getupvalue(RouterClient.init, 7)) do
+    v.Name = i
 end
 
-function checkPetVersion(petID)
-    for _, entry in pairs(require(RS.ClientDB.Inventory.InventoryDB).pets) do
-        if entry.id == petID and entry.version == v.properties.mega_neon then
-            return true
-        end
-    end
-    return false
+-- Press Button Functions
+function FireButton(PassOn, dialogFramePass)
+	task.wait()
+	local dialogFrame = dialogFramePass or "NormalDialog"
+	for i, v in pairs(Player.PlayerGui.DialogApp.Dialog[dialogFrame].Buttons:GetDescendants()) do
+		if v.Name == "TextLabel" then
+			if v.Text == PassOn then
+                task.wait(2)
+                firesignal(v.Parent.Parent.MouseButton1Down)
+                firesignal(v.Parent.Parent.MouseButton1Click)
+                firesignal(v.Parent.Parent.MouseButton1Up)
+				break
+			end
+		end
+	end
 end
 
-function tradePetsToAccount(account)
-    if not game.Players:FindFirstChild(account) then return false end
-    local tradedPetNames = {}
+function clickGuiButton(button: Instance, xOffset: number, yOffset: number)
+    if typeof(button) ~= "Instance" then print("button is not a Instance") return end
+	local xOffset = xOffset or 60
+	local yOffset = yOffset or 60
 
-    repeat
-        task.wait(1)
-        RS.API.TradeAPI.SendTradeRequest:FireServer(game.Players:WaitForChild(account))
-    until Player.PlayerGui:FindFirstChild("TradeApp") and Player.PlayerGui.TradeApp.Frame.Visible
+	task.wait()
+	VirtualInputManager:SendMouseButtonEvent(button.AbsolutePosition.X + xOffset, button.AbsolutePosition.Y + yOffset, 0, true, game, 1)
+	task.wait()
+	VirtualInputManager:SendMouseButtonEvent(button.AbsolutePosition.X + xOffset, button.AbsolutePosition.Y + yOffset, 0, false, game, 1)
+	task.wait()
+end
 
-    -- Trade only one pet per name
-    for _, petName in ipairs(PetNames) do
-        if not tradedPetNames[petName] then
-            local petID = findPetID(petName)
-            if petID then
-                for _, pet in pairs(ClientData.get_data()[Player.Name].inventory.pets) do
-                    if pet.id == petID and pet.properties.mega_neon then
-                        RS.API.TradeAPI.AddItemToOffer:FireServer(pet.unique)
-                        tradedPetNames[petName] = true
-                        break -- Stop after adding one valid pet for this name
+-- Daily Rewards Func
+local function dailyLoginAppClick()
+	if not Player.PlayerGui.DailyLoginApp.Enabled then return end
+	Player.PlayerGui.DailyLoginApp:WaitForChild("Frame")
+	Player.PlayerGui.DailyLoginApp.Frame:WaitForChild("Body")
+	Player.PlayerGui.DailyLoginApp.Frame.Body:WaitForChild("Buttons")
+	for _, v in Player.PlayerGui.DailyLoginApp.Frame.Body.Buttons:GetDescendants() do
+		if v.Name == "TextLabel" then
+			if v.Text == "CLOSE" then
+				clickGuiButton(v.Parent.Parent)
+				task.wait(1)
+			elseif v.Text == "CLAIM!" then
+				firesignal(v.Parent.Parent.MouseButton1Down)
+				firesignal(v.Parent.Parent.MouseButton1Click)
+				firesignal(v.Parent.Parent.MouseButton1Up)
+				task.wait(.2)
+				firesignal(v.Parent.Parent.MouseButton1Down)
+				firesignal(v.Parent.Parent.MouseButton1Click)
+				firesignal(v.Parent.Parent.MouseButton1Up)
+			end
+		end
+	end
+end
+
+-- Dismiss Popups
+RoleChooserDialogConnection = Player.PlayerGui.DialogApp.Dialog.RoleChooserDialog:GetPropertyChangedSignal("Visible"):Connect(function()
+	task.wait()
+	if Player.PlayerGui.DialogApp.Dialog.RoleChooserDialog.Visible then
+		firesignal(Player.PlayerGui.DialogApp.Dialog.RoleChooserDialog.Baby.MouseButton1Down)
+		firesignal(Player.PlayerGui.DialogApp.Dialog.RoleChooserDialog.Baby.MouseButton1Click)
+		firesignal(Player.PlayerGui.DialogApp.Dialog.RoleChooserDialog.Baby.MouseButton1Up)
+		RoleChooserDialogConnection:Disconnect()
+	end
+end)
+
+RobuxProductDialogConnection1 = Player.PlayerGui.DialogApp.Dialog.RobuxProductDialog:GetPropertyChangedSignal("Visible"):Connect(function()
+	if not Player.PlayerGui.DialogApp.Dialog.RobuxProductDialog.Visible then return end
+	Player.PlayerGui.DialogApp.Dialog.RobuxProductDialog:WaitForChild("Buttons")
+	task.wait()
+	for _, v in Player.PlayerGui.DialogApp.Dialog.RobuxProductDialog.Buttons:GetDescendants() do
+		if v.Name == "TextLabel" then
+			if v.Text == "No Thanks" then
+				firesignal(v.Parent.Parent.MouseButton1Down)
+				firesignal(v.Parent.Parent.MouseButton1Click)
+				firesignal(v.Parent.Parent.MouseButton1Up)
+				RobuxProductDialogConnection1:Disconnect()
+			end
+		end
+	end
+end)
+
+
+RobuxProductDialogConnection2 = Player.PlayerGui.DialogApp.Dialog:GetPropertyChangedSignal("Visible"):Connect(function()
+	if not Player.PlayerGui.DialogApp.Dialog.Visible then return end
+	Player.PlayerGui.DialogApp.Dialog:WaitForChild("RobuxProductDialog")
+	if not Player.PlayerGui.DialogApp.Dialog.RobuxProductDialog.Visible then return end
+	Player.PlayerGui.DialogApp.Dialog.RobuxProductDialog:WaitForChild("Buttons")
+	task.wait()
+	for _, v in Player.PlayerGui.DialogApp.Dialog.RobuxProductDialog.Buttons:GetDescendants() do
+		if v.Name == "TextLabel" then
+			if v.Text == "No Thanks" then
+				firesignal(v.Parent.Parent.MouseButton1Down)
+				firesignal(v.Parent.Parent.MouseButton1Click)
+				firesignal(v.Parent.Parent.MouseButton1Up)
+				RobuxProductDialogConnection2:Disconnect()
+			end
+		end
+	end
+end)
+
+
+DailyClaimConnection = Player.PlayerGui.DailyLoginApp:GetPropertyChangedSignal("Enabled"):Connect(function()
+	dailyLoginAppClick()
+end)
+
+--[[
+Player.PlayerGui.DialogApp.Dialog.NormalDialog:GetPropertyChangedSignal("Visible"):Connect(function()
+    if Player.PlayerGui.DialogApp.Dialog.NormalDialog.Visible then
+        Player.PlayerGui.DialogApp.Dialog.NormalDialog:WaitForChild("Info")
+        Player.PlayerGui.DialogApp.Dialog.NormalDialog.Info:WaitForChild("TextLabel")
+        Player.PlayerGui.DialogApp.Dialog.NormalDialog.Info.TextLabel:GetPropertyChangedSignal("Text"):Connect(function()
+            task.wait(2)
+            if Player.PlayerGui.DialogApp.Dialog.NormalDialog.Info.TextLabel.Text:match("You have been awarded") or Player.PlayerGui.DialogApp.Dialog.NormalDialog.Info.TextLabel.Text:match("was added to your inventory") then
+                for i, v in pairs(Player.PlayerGui.DialogApp.Dialog["NormalDialog"].Buttons:GetDescendants()) do
+                    if v.Name == "TextLabel" then
+                        if v.Text == "Awesome!" then
+                            clickGuiButton(v.Parent.Parent)
+                            break
+                        end
+                    end
+                end
+            elseif Player.PlayerGui.DialogApp.Dialog.NormalDialog.Info.TextLabel.Text:match("Are you subscribed") then
+                FireButton("No")
+            elseif Player.PlayerGui.DialogApp.Dialog.NormalDialog.Info.TextLabel.Text:match("You found a") or Player.PlayerGui.DialogApp.Dialog.NormalDialog.Info.TextLabel.Text:match("Subscribe to") then
+                for i, v in pairs(Player.PlayerGui.DialogApp.Dialog["NormalDialog"].Buttons:GetDescendants()) do
+                    if v.Name == "TextLabel" then
+                        if v.Text == "Okay" then
+                            clickGuiButton(v.Parent.Parent)
+                            break
+                        end
                     end
                 end
             end
+        end)
+    end
+end)
+]]
+
+repeat task.wait(1) until Player.PlayerGui.NewsApp.Enabled
+
+if Player.PlayerGui.NewsApp.Enabled then
+	local AbsPlay = Player.PlayerGui.NewsApp
+		:WaitForChild("EnclosingFrame")
+		:WaitForChild("MainFrame")
+		:WaitForChild("Contents")
+		:WaitForChild("PlayButton")
+
+	firesignal(AbsPlay.MouseButton1Down)
+	firesignal(AbsPlay.MouseButton1Click)
+	firesignal(AbsPlay.MouseButton1Up)
+end
+
+if Player.PlayerGui.DialogApp.Dialog.RoleChooserDialog.Visible then --Baby, ChooseParent
+	firesignal(Player.PlayerGui.DialogApp.Dialog.RoleChooserDialog.Baby.MouseButton1Click)
+	RoleChooserDialogConnection:Disconnect()
+end
+
+-- Load in house
+ReplicatedStorage:WaitForChild("API"):WaitForChild("HousingAPI/SetDoorLocked"):InvokeServer(true)
+repeat task.wait() until game:IsLoaded() and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
+Player.PlayerGui.DialogApp.Enabled = false
+
+--[[
+if Player.PlayerGui.DialogApp.Dialog.NormalDialog.Info.TextLabel.Text:match("Thanks for subscribing!") then
+	FireButton("Okay")
+end
+
+if Player.PlayerGui.DialogApp.Dialog.NormalDialog.Info.TextLabel.Text:match("Are you subscribed") then
+	FireButton("No")
+end
+
+if Player.PlayerGui.DialogApp.Dialog.NormalDialog.Info.TextLabel.Text:match("You have been awarded") then
+	FireButton("Awesome!")
+end
+]]
+
+dailyLoginAppClick()
+
+-- Minigame Code
+
+Player.PlayerGui.FrostclawsRevengeUpgradeApp.Background.Upgrades.ChildAdded:Connect(function(child)
+    if child.Name ~= "Upgrade1" then return end
+    child:WaitForChild("Icon")
+    child.Icon:WaitForChild("Container")
+    child.Icon.Container:WaitForChild("Button")
+
+    local count = 0
+    repeat
+        task.wait(1)
+        if child:FindFirstChild("Icon") then
+            firesignal(child.Icon.Container.Button.Activated)
+        end
+        count += 1
+    until not Player.PlayerGui.FrostclawsRevengeUpgradeApp.Enabled or count > 15
+
+    print("[Rolox Event Script] : Upgrade Selected")
+end)
+
+local function disp_time(time)
+    local days = math.floor(time / 86400)
+    local hours = math.floor((time % 86400) / 3600)
+    local minutes = math.floor((time % 3600) / 60)
+    local seconds = time % 60
+    return string.format("%d:%02d:%02d:%02d", days, hours, minutes, seconds)
+end
+
+function farmGingerbreads()
+    local gingerbreadCaptured = ClientData.get_data()[Player.Name].winter_2024_ice_skating_manager.gingerbread_captured_set_by_interior
+
+    for _, id in gingerbeadIds['Winter2024Shop']do
+        if not gingerbreadCaptured['Winter2024Shop'] or not gingerbreadCaptured['Winter2024Shop'][id] then
+            RS.API:FindFirstChild('WinterEventAPI/PickUpGingerbread'):InvokeServer('Winter2024Shop', id)
+        end
+    end
+    for _, id in gingerbeadIds['MainMap!Snow']do
+        if not gingerbreadCaptured['MainMap!Snow'] or not gingerbreadCaptured['MainMap!Snow'][id] then
+            RS.API:FindFirstChild('WinterEventAPI/PickUpGingerbread'):InvokeServer('MainMap!Snow', id)
         end
     end
 
-    -- Accept and Confirm Trade
-    while Player.PlayerGui.TradeApp.Frame.Visible do
-        RS.API.TradeAPI.AcceptNegotiation:FireServer()
-        wait(0.1)
-        RS.API.TradeAPI.ConfirmTrade:FireServer()
-        wait(0.1)
-    end
-
-    return true
+    RS.API:FindFirstChild('WinterEventAPI/RedeemPendingGingerbread'):FireServer()
+    print('Redeemed Gingerbread')
 end
 
-function allPetsTraded()
-    for _, petName in pairs(PetNames) do
-        local petID = findPetID(petName)
-        local petTraded = true
 
-        print("Checking pet:", petName, "ID:", petID) -- Debug log for pet name and ID
+function getEventCurrency()
+    return (ClientData.get_data()[Player.Name][require(RS.SharedModules.SharedDB.AltCurrencyData)["name"]] or 0)
+end
 
-        if petID then
-            petTraded = false
-            for _, pet in pairs(ClientData.get_data()[Player.Name].inventory.pets) do
-                print("Found Pet:", pet.id, "Mega Neon:", pet.properties.mega_neon) -- Debug each pet
-                if pet.id == petID and pet.properties.mega_neon then
-                    petTraded = true
-                    print("Pet available for trade:", pet.id) -- Confirm pet is available
-                    break
-                end
+function ChangeDestination(zone)
+    print("Old Destination:", FrostclawsRevengeMinigameClient["join_zone_destination_id"])
+    FrostclawsRevengeMinigameClient["join_zone_destination_id"] = zone
+    FrostclawsRevengeMinigameClient["minigame_options"]["join_zone_destination_id"] = zone   
+    print("New Destination:", FrostclawsRevengeMinigameClient["join_zone_destination_id"])
+end
+
+local function createLobby()
+    print("Create lobby")
+    local success, output = pcall(function()
+        return RS.API["MinigameAPI/LobbyCreate"]:InvokeServer("frostclaws_revenge")
+    end)
+    print("lobby created")
+    if not success then
+        print("error occured:", output)
+    else
+        print("lobby :", output)
+        return output
+    end
+    
+    return x
+end
+
+local function startLobby()
+    print("Start lobby")
+    RS.API["MinigameAPI/LobbyStart"]:FireServer()
+    print("lobby started")
+end
+
+function GetMinigameInterior()
+    for i, v in pairs(game.workspace.Interiors:GetChildren()) do
+        if v.Name:match("FrostclawsRevengeInterior") then
+            return v
+        end
+    end
+end
+
+function getMinigameId()
+    local gameId
+    local model = GetMinigameInterior()
+    if not model then
+        local count = 0
+        repeat
+            task.wait(1)
+            count += 1
+            model = GetMinigameInterior()
+        until model  or count > 10
+        if count > 10 then
+            print("wouldnt get model")
+            return nil
+        end
+    end
+
+    if model then
+        local count = 0
+        repeat
+            if model.Name:match("FrostclawsRevengeInterior") then
+                gameId = model.Name:split("::")[2]
+            end
+            count += 1
+            task.wait(1)
+        until gameId or count > 30
+    end
+  
+    return gameId
+end
+
+function isGameActive()
+    if workspace.Interiors:FindFirstChildWhichIsA("Model") then
+        return (workspace.Interiors:FindFirstChildWhichIsA("Model").Name):match("Frostclaw")
+    end
+end
+
+local function hitEnemy(name, gameId)
+    local args = {
+        [1] = "frostclaws_revenge::"..gameId,
+        [2] = "hit_enemies",
+        [3] = {
+            [1] = name
+        },
+        [4] = "sword_slash"
+    }
+
+    ReplicatedStorage.API["MinigameAPI/MessageServer"]:FireServer(unpack(args))
+end
+
+function StartGame()
+    local minigameId = getMinigameId()
+    if not minigameId then return end
+
+    ChangeDestination("School")
+
+    local isGameActive = true
+
+    for _, v in workspace.Minigames[`FrostclawsRevengeInterior::{minigameId}`]:WaitForChild("FrostclawsRevengeEnemies"):GetChildren() do
+        repeat task.wait()
+            hitEnemy(v.Name, minigameId)
+        until not v.Parent
+    end
+
+    workspace.Interiors["FrostclawsRevengeInterior::"..minigameId].LocalEnemies.ChildAdded:Connect(function(v)
+        repeat task.wait()
+            hitEnemy(v.Name, minigameId)
+        until not v.Parent
+    end)
+
+    while isGameActive and task.wait() do
+        local minigameStateFolder = workspace.StaticMap:FindFirstChild(`frostclaws_revenge::{minigameId}_minigame_state`)
+        if not minigameStateFolder then print("game over or no folder") break end
+        isGameActive = minigameStateFolder:WaitForChild("is_game_active").Value
+    end
+
+    local count = 0
+    repeat
+        count += 1
+        task.wait(1)
+    until not workspace.Interiors:FindFirstChild(`FrostclawsRevengeInterior::{minigameId}`) or count > 30
+
+    CreatePlatform()
+    game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").Anchored = true
+end
+
+function CreateAndStartLobby()
+    print("createNStart Lobby")
+    local count = 0
+    local name
+    repeat
+        createLobby()
+        task.wait(1)
+        startLobby()
+        count += 1
+        task.wait(4)
+        for i, v in pairs(game.workspace.Interiors:GetChildren()) do
+            if v.Name:match("FrostclawsRevengeInterior") then
+                name = v.Name:match("FrostclawsRevengeInterior")
             end
         end
-
-        if not petTraded then 
-            print("Pet NOT traded yet:", petName) -- Debug log for missing pets
-            return false 
-        end
+    until name == "FrostclawsRevengeInterior" or count > 5
+    if count > 5 then
+        return false
     end
+
     return true
 end
 
 
--- Main Loop for Multiple Accounts
-repeat
-    for _, account in ipairs(MainAccUsernames) do
-        if not allPetsTraded() then
-            tradePetsToAccount(account)
+
+function CreatePlatform()
+    if workspace:FindFirstChild("TempPartA") then 
+        workspace.TempPartA:Destroy() 
+    end
+    if game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then  
+        game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").Anchored = true
+        local a = Instance.new("Part", workspace)
+        a.Size = Vector3.new(500,0,500)
+        a.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + Vector3.new(0, -2, 0)
+        a.CanCollide = true 
+        a.Anchored = true 
+        a.Transparency = 1 
+        a.Name = "TempPartA"
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = a.CFrame + Vector3.new(0, 1, 0)
+        Player.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Landed)
+    end
+end
+
+-- Optimization
+require(RS.ClientModules.Core.UIManager.Apps.TransitionsApp).transition = function() return end 
+require(RS.ClientModules.Core.UIManager.Apps.TransitionsApp).sudden_fill = function() return end
+if Player.PlayerGui.TransitionsApp:FindFirstChild("Whiteout").Visible then 
+    Player.PlayerGui.TransitionsApp:FindFirstChild("Whiteout").Visible = false 
+end
+
+networkSettings = settings().Network
+renderSettings = settings().Rendering
+physicsSettings = settings()['Physics']
+gameSettings = settings()["Game Options"]
+userGameSettings = UserSettings():FindService("UserGameSettings") or UserSettings():GetService("UserGameSettings")
+
+-- -- Render Settings
+renderSettings.QualityLevel = Enum.QualityLevel.Level01
+renderSettings.ShowBoundingBoxes = false
+renderSettings.RenderCSGTrianglesDebug = false
+renderSettings.MeshCacheSize = 0
+renderSettings.GraphicsMode = Enum.GraphicsMode.NoGraphics
+renderSettings.MeshCacheSize = Enum.MeshPartDetailLevel.Level01
+renderSettings.MeshPartDetailLevel = Enum.MeshPartDetailLevel.Level01
+renderSettings.EagerBulkExecution = false
+renderSettings.EnableFRM = true
+renderSettings.AutoFRMLevel = 0
+renderSettings.ExportMergeByMaterial = false
+renderSettings.ReloadAssets = false 
+renderSettings.MeshPartDetailLevel = "Level00"
+renderSettings.QualityLevel = "Level01"
+renderSettings.EditQualityLevel = "Level01"
+
+-- -- User Game Settings
+userGameSettings.SavedQualityLevel = Enum.SavedQualitySetting.QualityLevel1
+userGameSettings.HasEverUsedVR = false 
+userGameSettings.ChatVisible = false
+userGameSettings.AllTutorialsDisabled = false
+userGameSettings.Fullscreen = false
+userGameSettings.GraphicsQualityLevel = 0
+userGameSettings.SavedQualityLevel = 0 
+
+
+--Physics Settings 
+physicsSettings.AllowSleep = true 
+physicsSettings.AreAnchorsShown = false 
+physicsSettings.AreAssembliesShown = false 
+physicsSettings.AreAssemblyCentersOfMassShown = false 
+physicsSettings.AreAwakePartsHighlighted = false 
+physicsSettings.AreBodyTypesShown = false 
+physicsSettings.AreCollisionCostsShown = false 
+physicsSettings.AreConstraintForcesShownForSelectedOrHoveredInstances = false 
+physicsSettings.AreContactForcesShownForSelectedOrHoveredAssemblies = false 
+physicsSettings.AreContactIslandsShown = false 
+physicsSettings.AreContactPointsShown = false 
+physicsSettings.AreJointCoordinatesShown = false 
+physicsSettings.AreMagnitudesShownForDrawnForcesAndTorques = false 
+physicsSettings.AreMechanismsShown = false 
+physicsSettings.AreModelCoordsShown = false 
+physicsSettings.AreOwnersShown = false 
+physicsSettings.ArePartCoordsShown = false 
+physicsSettings.AreRegionsShown = false 
+physicsSettings.AreSolverIslandsShown = false 
+physicsSettings.AreTerrainReplicationRegionsShown = false 
+physicsSettings.AreTimestepsShown = false 
+physicsSettings.AreUnalignedPartsShown = false 
+physicsSettings.AreWorldCoordsShown = false 
+physicsSettings.DisableCSGv2 = true 
+physicsSettings.ForceDrawScale = 0 
+physicsSettings.IsInterpolationThrottleShown = false 
+physicsSettings.IsReceiveAgeShown = false 
+physicsSettings.IsTreeShown = false 
+physicsSettings.PhysicsEnvironmentalThrottle = Enum.EnviromentalPhysicsThrottle.Disabled
+physicsSettings.ShowDecompositionGeometry = false 
+physicsSettings.ThrottleAdjustTime = 1
+
+-- Network Settings
+networkSettings.PrintPhysicsErrors = false
+networkSettings.PrintJoinSizeBreakdown = false
+networkSettings.PrintStreamInstanceQuota = false
+networkSettings.RandomizeJoinInstanceOrder = false
+networkSettings.RenderStreamedRegions = false
+networkSettings.ShowActiveAnimationAsset = false
+
+print("[Optimizer] : Level 1 Executed")
+
+function Optimizer()
+    UserSettings():GetService("UserGameSettings").MasterVolume = 0
+    local decalsyeeted = true
+    local g = game
+    local w = g.Workspace
+    local l = g.Lighting
+    local t = w.Terrain
+    sethiddenproperty(l,"Technology",2)
+    sethiddenproperty(t,"Decoration",false)
+    game:GetService("StarterGui"):SetCoreGuiEnabled(Enum.CoreGuiType.Chat,false)
+    t.WaterWaveSize = 0
+    t.WaterWaveSpeed = 0
+    t.WaterReflectance = 0
+    t.WaterTransparency = 0
+    l.GlobalShadows = 0
+    l.FogEnd = 9e9
+    l.Brightness = 0
+    settings().Rendering.QualityLevel = "0"
+    settings().Rendering.MeshPartDetailLevel = Enum.MeshPartDetailLevel.Level04
+    task.wait()
+    for i, v in pairs(w:GetDescendants()) do
+        if v:IsA("BasePart") and not v:IsA("MeshPart") then
+            v.Material = "Plastic"
+            v.Reflectance = 0
+        elseif (v:IsA("Decal") or v:IsA("Texture")) and decalsyeeted then
+            v.Transparency = 1
+        elseif v:IsA("ParticleEmitter") or v:IsA("Trail") then
+            v.Lifetime = NumberRange.new(0)
+        elseif v:IsA("Explosion") then
+            v.BlastPressure = 1
+            v.BlastRadius = 1
+        elseif v:IsA("Fire") or v:IsA("SpotLight") or v:IsA("Smoke") or v:IsA("Sparkles") then
+            v.Enabled = false
+        elseif v:IsA("MeshPart") and decalsyeeted then
+            v.Material = "Plastic"
+            v.Reflectance = 0
+            v.TextureID = 10385902758728957
+        elseif v:IsA("SpecialMesh") and decalsyeeted  then
+            v.TextureId=0
+        elseif v:IsA("ShirtGraphic") and decalsyeeted then
+            v.Graphic=1
         end
     end
-    task.wait(1.5)
-    print("Waiting for accounts...")
-until allPetsTraded()
+    for i = 1,#l:GetChildren() do
+        e=l:GetChildren()[i]
+        if e:IsA("BlurEffect") or e:IsA("SunRaysEffect") or e:IsA("ColorCorrectionEffect") or e:IsA("BloomEffect") or e:IsA("DepthOfFieldEffect") then
+            e.Enabled = false
+        end
+    end
+    w.DescendantAdded:Connect(function(v)
+        pcall(function()
+            if v:IsA("BasePart") and not v:IsA("MeshPart") then
+                v.Material = "Plastic"
+                v.Reflectance = 0
+            elseif v:IsA("Decal") or v:IsA("Texture") and decalsyeeted then
+                v.Transparency = 1
+            elseif v:IsA("ParticleEmitter") or v:IsA("Trail") then
+                v.Lifetime = NumberRange.new(0)
+            elseif v:IsA("Explosion") then
+                v.BlastPressure = 1
+                v.BlastRadius = 1
+            elseif v:IsA("Fire") or v:IsA("SpotLight") or v:IsA("Smoke") or v:IsA("Sparkles") then
+                v.Enabled = false
+            elseif v:IsA("MeshPart") and decalsyeeted then
+                v.Material = "Plastic"
+                v.Reflectance = 0
+                v.TextureID = 10385902758728957
+            elseif v:IsA("SpecialMesh") and decalsyeeted then
+                v.TextureId=0
+            elseif v:IsA("ShirtGraphic") and decalsyeeted then
+                v.ShirtGraphic=1
+            end
+        end)
+        task.wait()
+    end)
 
-print("All accounts completed.")
+    workspace.Terrain.WaterReflectance = 0
+    workspace.Terrain.WaterTransparency = 1
+    workspace.Terrain.WaterWaveSize = 0
+    workspace.Terrain.WaterWaveSpeed = 0
+
+    for i,v in pairs(game.Lighting:GetChildren()) do 
+        if v:IsA("Model") then
+            v:Destroy()
+        elseif v.Name:match("Weather") then 
+            v:Destroy()
+        end 
+    end
+    game.Lighting.Brightness = 0
+
+    game.Lighting.ChildAdded:Connect(function()
+        for i,v in pairs(game.Lighting:GetChildren()) do 
+            if v:IsA("Model") then
+                v:Destroy()
+            elseif v.Name:match("Weather") then 
+                v:Destroy()
+            end 
+        end
+        game.Lighting.Brightness = 0
+    end)
+    print("[Optimizer] : Level 2 Executed")
+end
+
+workspace.Pets.ChildAdded:Connect(function(c)
+    task.wait(1)
+    for i, v in pairs(workspace.Pets:GetChildren()) do
+        v.Parent = game.ReplicatedStorage
+    end
+end)
+
+workspace.PlayerCharacters.ChildAdded:Connect(function(c)
+    task.wait(1)
+    for i, v in pairs(workspace.PlayerCharacters:GetChildren()) do
+        if v.Name ~= game.Players.LocalPlayer.Name then
+            v.Parent = game.ReplicatedStorage
+        end
+    end
+end)
+
+workspace.Interiors.ChildAdded:Connect(function(c)
+    task.wait(0.1)
+    if c.Name == "Winter2024Shop" then
+        CreatePlatform()
+        for i,v in pairs(workspace.Interiors.Winter2024Shop:GetChildren()) do
+            if v.Name == "Visual" or v.Name == "Mannequins" or v.Name == "ShopPedestals" then
+                if v.Name == "Visual" then
+                    for l,o in pairs(workspace.Interiors.Winter2024Shop.Visual:GetChildren()) do
+                        if o.Name ~= "Model" then
+                            o.Parent = game.ReplicatedStorage
+                        end
+                    end
+                else
+                    v.Parent = game.ReplicatedStorage
+                end
+                task.wait()
+            end
+        end
+    elseif c.Name:match("FrostclawsRevengeInterior") then
+        for i,v in pairs(c:GetDescendants()) do
+            if v.Name == "Visual" then
+                v.Parent = game.ReplicatedStorage
+                task.wait()
+            end
+        end
+        if workspace:FindFirstChildWhichIsA("Terrain") then workspace.Terrain:Clear() end
+    end
+end)
+
+Optimizer()
+
+pcall(function()
+    for i,v in pairs(game:GetService("ReplicatedStorage").ClientServices:GetDescendants()) do 
+        if v:IsA("ModuleScript") and require(v) and require(v).init and v.Name ~= "DoorsClient" and v.Name ~= "ResetHandler" then 
+        require(v).init = function() return end 
+        end 
+    end 
+    for i,v in pairs(require(game:GetService("ReplicatedStorage").ClientModules.Core.WeatherClient.WeatherClient)) do 
+        if type(v) == "function" then 
+        v = function() return end 
+        end
+    end   
+    for i,v in pairs(game:GetService("ReplicatedStorage").ClientModules.Game.PetEntities.PetPerformancesFolder.Emotes:GetChildren()) do 
+        if v:IsA("ModuleScript") then 
+            require(v).step = function() return end 
+        end
+    end    
+    for i,v in pairs(game:GetService("ReplicatedStorage").ClientModules.Game.PetEntities.PetReactions:GetChildren()) do 
+        require(v).init_reaction = function() return end 
+    end  
+    for i,v in pairs(game:GetService("ReplicatedStorage").ClientModules.Game.PetEntities.PetPerformancesFolder.Transitions:GetChildren()) do 
+        if v:IsA("ModuleScript") then 
+            require(v).step = function() return end 
+        end
+    end   
+    for Data,Effect in pairs(require(game:GetService("ReplicatedStorage").ClientModules.Core.UIManager.Apps.SpecialEffectsApp)) do 
+        if type(Data) == "function" then 
+            Data = function() return end 
+        end
+    end
+    print("[Optimizer] : Level 3 Executed")
+end)
+
+spawn(function()
+    while task.wait() do
+        Winter2024AdventManager = ClientData.get_data()[game.Players.LocalPlayer.Name]["winter_2024_advent_manager"]
+        if not Winter2024AdventManager["rewards_claimed"][#Winter2024AdventManager["replicated_rewards"]] then
+            RS.API:WaitForChild("WinterEventAPI/AdventCalendarTryTakeReward"):InvokeServer(i)
+        end
+
+        farmGingerbreads()
+
+        task.wait(200)
+    end
+end)
+
+-- OVERLAY
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Frame_2 = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.Name = "RoloxBotOverlay"
+ScreenGui.Enabled = true
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0, 0, 0, -70)
+Frame.Size = UDim2.new(1, 0, 1, 70)
+
+Frame_2.Parent = Frame
+Frame_2.AnchorPoint = Vector2.new(0.5, 0.5)
+Frame_2.BackgroundTransparency = 1
+Frame_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+Frame_2.Size = UDim2.new(0.75, 0, 0, 750)
+
+TextLabel.Parent = Frame_2
+TextLabel.BackgroundTransparency = 1
+TextLabel.Size = UDim2.new(1, 0, 1, 0)
+TextLabel.Font = Enum.Font.GothamBold
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 45
+TextLabel.RichText = true
+TextLabel.Text = "Loading.."
+
+local StartEventCurr = (ClientData.get_data()[game.Players.LocalPlayer.Name][require(game:GetService("ReplicatedStorage").SharedModules.SharedDB.AltCurrencyData)["name"]] or 0)
+local StartTimeAC = os.time()
+
+local function SetStatus()
+    local EventCurrency = (ClientData.get_data()[game.Players.LocalPlayer.Name][require(game:GetService("ReplicatedStorage").SharedModules.SharedDB.AltCurrencyData)["name"]] or 0)
+    local DifEventCur = EventCurrency - StartEventCurr
+
+    if DifEventCur > 0 then
+        EventCurrency = EventCurrency .. " (+" .. DifEventCur .. ")"
+    end
+
+    TextLabel.Text = [[<font color="rgb(255,180,180)">]] .. game.Players.LocalPlayer.Name .. [[</font> - RoloxEventFarm
+    Event Currency: <font color="rgb(237, 63, 14)">]] .. EventCurrency .. [[</font>
+    Total Time: <font color="rgb(137, 41, 255)">]] .. disp_time(os.time() - StartTimeAC) .. [[</font>
+
+    <font color="rgb(130, 255, 228)">Click anywhere to toggle</font>
+    ]]
+end
+
+game:GetService("UserInputService").InputBegan:Connect(function(input, isProcessed)
+    if not isProcessed and input.UserInputType == Enum.UserInputType.MouseButton1 then
+        ScreenGui.Enabled = not ScreenGui.Enabled
+    end
+end)
+
+spawn(function()
+    while task.wait(1) do
+        local successC, errorC = pcall(SetStatus)
+        if not successC then
+            warn(errorC)
+        end
+    end
+end)
+
+Player.Character.HumanoidRootPart.Anchored = true
+ChangeDestination("School")
+
+while task.wait() do
+    local suc, err = pcall(function()
+        local startGingerbread = getEventCurrency()
+        print("[Rolox Event Script] : Start Gingerbread:", startGingerbread)
+
+        local gameStartTime = tick()
+    
+        if CreateAndStartLobby() then
+            print("[Rolox Event Script] : Minigame Started")
+            StartGame()
+        end
+
+        print("[Rolox Event Script] : Game Over! Took", math.floor(tick()-gameStartTime), "seconds long!")
+
+        print("[Rolox Event Script] : Gained Gingerbread:", getEventCurrency()-startGingerbread)
+        print("[Rolox Event Script] : Total Gingerbread:", getEventCurrency())
+
+        pcall(CreatePlatform)
+    end)
+    if not suc then print(err) end
+end
